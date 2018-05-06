@@ -26,13 +26,44 @@ Die SI-Einheit der Schwerebeschleunigung ist $\left[g\right]=\eb{1}{m}{s^2}$, wo
 
 Meist möchte man durch die gemessenen Schwereunterschiede auf einen unbekannten Dichteunterschied im Untergrund schließen. Dazu müssen jedoch die bekannten Schwereunterschiede aus den Messwerten eliminiert werden. Es wird von Reduktion der Schwerewerte gesprochen.
 
-Die Freiluftreduktion berücksichtigt, dass die Schwere mit zunehmender Höhe abnimmt. Es gilt dabei
+Die Freiluftreduktion (oder auch Niveaureduktion) berücksichtigt, dass die Schwere mit zunehmender Höhe $H$ abnimmt. Es gilt dabei
 \begin{equation}
- \q{\delta}{gFreiluft}=\eb{-0,3086}{mGal}{m} \fullstop
+ \q{\delta}{g\,Freiluft}=\eb{-0,3086\cdot H}{mGal}{m} \fullstop
 \end{equation}
-Den gleichen Effekt muss man bei der Instrumentenhöhe beachten, was zu $\q{\delta}{gInstrumentenhöhe}$ führt.
+Den gleichen Effekt muss man bei der Instrumentenhöhe beachten, was zu $\q{\delta}{g\,Instrumentenhöhe}$ führt.
 
-Bei der Gezeitenreduktion $\q{\delta}{gGezeiten}$ wird die Gravitationswirkung anderer Planeten berücksichtigt, die sich mit der Zeit verändert.
+Bei der Gezeitenreduktion $\q{\delta}{g\,Gezeiten}$ wird die Gravitationswirkung anderer Planeten berücksichtigt, die sich mit der Zeit verändert.
 
-% Drift?
+% Drift???
 
+Die Geländereduktion $\q{\delta}{g\,Gelände}$ berücksichtigt die Verringerung des Schwerewerts durch zum Beispiel Berge und Täler in der Nähe des Messorts. Nach der Korrektur ist der Messwert also vergrößert.
+
+Die Bouguerreduktion berücksichtigt den Effekt, dass eine Gesteinsschicht zwischen Referenzfläche und Messpunkt den gemessenen Wert der Schwere vergrößert. Es wird angenommen, dass diese Gesteinsschicht aus homogenem Material der Dichte $\rho$ besteht. Dies führt zur Gleichung
+\begin{equation}
+ \q{\delta}{g\,Bouguer}=2\pi\rho GH=\eb{0,0419\cdot H\cdot\rho\cdot 10^{-8}}{m^3}{s^2kg}
+\end{equation}
+für diese Reduktion.
+
+Die Breitenreduktion beinhaltet die räumlichen Schwereunterschiede aufgrund der breitenabhängigen Zentrifugalbeschleunigung, die durch die Erdrotation hervorgerufen wird. Der Schwerewert vergrößert sich hierbei mit zunehmender Breite. Die Normalschwereformel
+\begin{equation}
+ \q{\delta}{g\,Breite}=\eb{8,2\cdot L\cdot 10^{-9}}{1}{s^2}
+\end{equation}
+liefert mit dem Abstand $L$ zur geographischen Breite des Referenzpunkts den Korrekturwert.
+
+% regionale Reduktion???
+
+Von einer Bougueranomalie $\q{g}{Bouguer}$ wird gesprochen, wenn all diese Reduktionen auf den Messwert $\q{g}{mess}$ angewendet wurden. Es gilt also
+% regio??? Drift???
+\begin{equation}
+ \q{g}{Bouguer}=\q{g}{mess}-\q{\delta}{g\,Instrumentenhöhe}-\q{\delta}{g\,Gezeiten}-\q{\delta}{g\,Gelände}-\q{\delta}{g\,Freiluft}-\q{\delta}{g\,Breite}-\q{\delta}{g\,Bouguer}
+\end{equation}
+
+\section{Dichtebestimmung über bekannte Störkörper???}
+
+% Was machen wir dazu???
+
+\section{Gravimeter}
+
+\section{Bestimmung der Höhe???}
+
+% Nivellement??? -> wird nicht verwendet, Tachymeter??? GPS???
