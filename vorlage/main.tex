@@ -12,20 +12,18 @@
 % amsmath, amssymb, mathtools, bbm, upgreek, nicefrac,
 % siunitx, varioref, booktabs, graphicx, tikz, multicol
 
-\usepackage{rotating}
-\usepackage{icomma}
-\usepackage{subfig}
-\usepackage{pdfpages}
+
+
 
 
 %% ---------------------------------------------
 %% |    Informationen über dieses Protokoll    |
 %% ---------------------------------------------
-\newcommand{\praktikum}{P3}                % P1 oder P2
-\newcommand{\semester}{WS17/18}            % z.B. "WS14/15" oder "SS15"
+\newcommand{\praktikum}{P1}                % P1 oder P2
+\newcommand{\semester}{WS16/17}            % z.B. "WS14/15" oder "SS15"
 
-\newcommand{\wochentag}{Mi}                % Mo, Di, Mi oder Do
-\newcommand{\gruppennr}{144}                % Zweistellige Gruppennummer
+\newcommand{\wochentag}{Di}                % Mo, Di, Mi oder Do
+\newcommand{\gruppennr}{04}                % Zweistellige Gruppennummer
 
 \newcommand{\nachnamea}{Friedrich}             % Nachname des ersten Praktikanten
 \newcommand{\vornamea}{Tabea}               % Vorname des ersten Praktikanten
@@ -35,15 +33,15 @@
 \newcommand{\emailadressen}{lea.stockmeier@web.de, tabea.friedrich@t-online.de}
 % optionale Angabe von Emailadresse(n) für den Kontakt mit dem Betreuer
 
-\newcommand{\versuch}{Name Versuch} % Name des Versuchs
-\newcommand{\versuchsnr}{00}               % bitte die korrekte Nummer dem 
+\newcommand{\versuch}{Toller Name Versuch} % Name des Versuchs
+\newcommand{\versuchsnr}{80}               % bitte die korrekte Nummer dem 
                                            % Arbeitsplatz am Versuchstag 
                                            % entnehmen
-\newcommand{\fehlerrechnung}{Ja}         % Ob Fehlerrechnung im Versuch 
+\newcommand{\fehlerrechnung}{Nein}         % Ob Fehlerrechnung im Versuch 
                                            % durchgeführt wurde oder nicht
 
-\newcommand{\betreuer}{Betreuer}      % Name des zuständigen Betreuers
-\newcommand{\durchgefuehrt}{00.00.17}      % Datum, an dem der Versuch 
+\newcommand{\betreuer}{M. Mustermann}      % Name des zuständigen Betreuers
+\newcommand{\durchgefuehrt}{01.09.16}      % Datum, an dem der Versuch 
                                            % durchgeführt wurde
 
 
@@ -99,15 +97,13 @@
 \begin{document}
     % Titlepage und ToC
     \FrontMatter
-      \setboolean{@twoside}{false}
-      \includepdf[pages=-, offset=2.5cm -1.5cm]{fig/deckblatt.pdf}
 
-  %  \input{include/titlepage} %\cleardoublepage
+    \input{include/titlepage} %\cleardoublepage
 
     \begingroup \let\clearpage\relax    % in order to avoid listoffigures and
     \tableofcontents                    % listoftables on new pages
     \listoffigures
-%   \listoftables
+    \listoftables
     \endgroup
     %\cleardoublepage
 
@@ -116,22 +112,20 @@
     % Contents
     \MainMatter
     
-    %\emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
+    \emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
                                         %        in toc]{name of the chapter}
-    %\pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
+    \pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
                                         %        added]{name of the chapter}
     
- %   \pseudochapter[2]{Versuchsbeschreibung}
-%    \pseudochapter[4]{Messprotokoll}
-    \chapter{Vorbereitung}
-%    \input{./chap/0.tex}
+    \chapter{Auswertung}
+    \input{./chap/chapter1.tex} %\cleardoublepage
 
     % appendix for more or less interesting calculations
- %   \Appendix
- %   \chapter*{\appendixname} \addcontentsline{toc}{chapter}{\appendixname}
+    \Appendix
+    \chapter*{\appendixname} \addcontentsline{toc}{chapter}{\appendixname}
     % to make the appendix appear in ToC without number. \appendixname = 
     % Appendix or Anhang (depending on chosen language)
- %   \input{./chap/appendix.tex} %\cleardoublepage
+    \input{./chap/appendix.tex} %\cleardoublepage
 
 
 
