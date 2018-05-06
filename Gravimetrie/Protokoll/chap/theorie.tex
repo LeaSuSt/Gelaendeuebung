@@ -1,0 +1,38 @@
+\section{Schwerebeschleunigung}
+
+Die Gravitationsbeschleunigung aufgrund der Anziehung zweier Massen ist
+\begin{equation}
+ \vec{b}_a(\vec{r})=G\int_V \frac{\rho(\vec{r}')}{|\vec{r}'-\vec{r}|^3}(\vec{r}'-\vec{r})\text{d}V'
+\end{equation}
+mit der Gravitationskonstanten
+\begin{equation}
+ G=\eb{6,673\cdot 10^{-11}}{m^3}{kg\,s^2} \fullstop
+\end{equation}
+
+Außerdem wirken noch scheinbare Schwerewirkungen wie zum Beispiel die Zentrifugalbeschleunigung $\vec{z}(\vec{r})$, die durch die Erdrotation hervorgerufen wird.
+
+Wird eine Messung der Schwere durchgeführt, wird immer die vektorielle Summe dieser beiden Beschleunigungen
+\begin{equation}
+ \vec{g}_a(\vec{r})=\vec{b}_a(\vec{r})+\vec{z}(\vec{r})
+\end{equation}
+gemessen.
+
+Die SI-Einheit der Schwerebeschleunigung ist $\left[g\right]=\eb{1}{m}{s^2}$, wobei in der Geophysik meist die Einheit $\e{1}{Gal}$ verwendet wird. Die Umrechnung erfolgt durch
+\begin{equation}
+ \eb{1}{m}{s^2}=\e{100}{Gal} \fullstop
+\end{equation}
+
+\section{Reduktionen}
+
+Meist möchte man durch die gemessenen Schwereunterschiede auf einen unbekannten Dichteunterschied im Untergrund schließen. Dazu müssen jedoch die bekannten Schwereunterschiede aus den Messwerten eliminiert werden. Es wird von Reduktion der Schwerewerte gesprochen.
+
+Die Freiluftreduktion berücksichtigt, dass die Schwere mit zunehmender Höhe abnimmt. Es gilt dabei
+\begin{equation}
+ \q{\delta}{gFreiluft}=\eb{-0,3086}{mGal}{m} \fullstop
+\end{equation}
+Den gleichen Effekt muss man bei der Instrumentenhöhe beachten, was zu $\q{\delta}{gInstrumentenhöhe}$ führt.
+
+Bei der Gezeitenreduktion $\q{\delta}{gGezeiten}$ wird die Gravitationswirkung anderer Planeten berücksichtigt, die sich mit der Zeit verändert.
+
+% Drift?
+
