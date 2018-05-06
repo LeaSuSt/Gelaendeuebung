@@ -48,8 +48,52 @@ Während der Geländeübung werden die Messungen mit dem Gleichstromverfahren du
 Hierbei unterscheidet man zwischen elektrischer Leitfähigkeit, wenn Elektronen bewegt werden, und ionischer Leitfähigkeit, dem Transport von Ionen. 
 Aufgrund der elektrischen Leitfähigkeit können z.B Metallrohre im Boden lokalisiert werden. Ionische Leitfähigkeit tritt in Gesteinen und Lockersedimenten auf,die einen entsprechenden Wassergehalt haben. \\
 \\
-Als Materialeigenschaft wird der spezifischen Widerstands $$[q] = \SI{1}{\Omega m}$$ bestimmt, er ist der Kehrwert der Leitfähigkeit $\sigma$.
+Als Materialeigenschaft wird der spezifischen Widerstands $$[\rho] = \SI{1}{\Omega m}$$ bestimmt, er ist der Kehrwert der Leitfähigkeit $\sigma$.
+
+\subsection{Wenner-Anordnung und Geometriefaktor}
+In Abbildung \ref{abb:Wenner} ist der schematische Aufbau der Wenner-Anordnung zu sehen. Bei \textbf{A} und \textbf{B} sind die Elektroden und bei \textbf{M}, \textbf{N} die Sonden zur Spannungsmessung.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{Wenner.png}
+\caption{Interferenz-Spektrum von UV-Licht}
+\label{abb:Wenner}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Die Potentialdifferenz bei einem Angelegten Strom I ist
+\begin{equation}
+V = \rho \, I \, \frac{1}{2 \pi} \big(\frac{1}{r_{\mathrm{AM}}} - \frac{1}{r_{\mathrm{MB}}} + \frac{1}{r_{\mathrm{NB}}} - \frac{1}{r_{\mathrm{AN}}} \big) \, ,
+\end{equation}
+wobei mit $r_{\mathrm{AM}}$ usw. jeweils die Abstände zwischen den Sonden und Elektroden bezeichnet werden.
+Um den spezifischen Widerstand leichter berechnen zu können wird der Geometriefaktor $F$ eingeführt,
+$$F = \frac{2 \pi}{\frac{1}{r_{\mathrm{AM}}} - \frac{1}{r_{\mathrm{MB}}} + \frac{1}{r_{\mathrm{NB}}} - \frac{1}{r_{\mathrm{AN}}}}\,.$$
+Damit lässt sich $\rho$ berechnen mit 
+\begin{equation}
+\rho = \frac{V}{I} \, F.
+\end{equation} \label{eq:roh}
+
+\textbf{Scheinbarer spezifischer Widerstand}
+
+Ist der Untergrund nicht homogen, dann wird der Wert der Formel \ref{eq:roh} als scheinbarer spezifischer Widerstand bezeichnet. Der Geometriefaktor hängt nur von der geometrischen Anordnung ab und nicht von der 
+Leitfähigkeit des Untergrunds, weshalb der scheinbare spezifische Widerstand $q_a$ nur im Falle eines homogenen Untergrunds gleich dem spezifischen Widerstands ist.\\
+Bei einer Messung wird versucht durch Interpretation der gemessenen scheinbaren Widerstände den spezifischen Widerstand zu finden.
 
 
 
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{thebibliography}{999}
+\bibitem {Zitat01} \url{https://de.wikipedia.org/wiki/Geoelektrik} Datum: 06.05.18
+
+
+\end{thebibliography}
 \end{document}
