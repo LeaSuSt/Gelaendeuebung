@@ -1,4 +1,4 @@
-\documentclass{include/protokollclass}
+ \documentclass{include/protokollclass}
 % Main File - Based on protokollclass.cls
 % Comments are mostly in English (and some in German, concerning the Praktikum)
 % ------------------------------------------------------------------------------
@@ -89,7 +89,10 @@
 % english or ngerman (new german für neue deutsche Rechtschreibung statt german)
 \SelectLanguage{ngerman}
 
-
+\author{Svenja Müller \\ E-Mail
+\\und\\
+Lea Stockmeier \\ lea.stockmeier@web.de}
+\title{Gravimetrie}
 
 
 
@@ -98,11 +101,9 @@
 %% -----------------------
 \begin{document}
     % Titlepage und ToC
-    \FrontMatter
-      \setboolean{@twoside}{false}
-      \includepdf[pages=-, offset=2.5cm -1.5cm]{fig/deckblatt.pdf}
 
-  %  \input{include/titlepage} %\cleardoublepage
+    \maketitle
+
 
     \begingroup \let\clearpage\relax    % in order to avoid listoffigures and
     \tableofcontents                    % listoftables on new pages
