@@ -1,1 +1,31 @@
-\section{kjgkjgr}
+\section{Seismische Wellen und Seismik}
+
+Ausgelöst durch zum Beispiel Stöße auf die Erdoberfläche oder Erdbeben, kommt es auf der Erde zur Bewegung der Partikel in der Erdoberfläche. Diese Bewegung breitet sich vom Ursprungsort in alle Richtungen aus. Es wird von seismischen Wellen gesprochen. Abhängig von der Partikelbewegung im Untergrund, gibt es longitudinale und transversale Wellen.
+
+Bei longitudinal polarisierten Wellen schwingen die Partikel parallel zur Ausbreitungsgeschwindigkeit der Welle. Sie werden auch P-Wellen oder Kompressionswellen genannt und haben in homogenen isotropen Medien eine Geschwindigkeit von
+\begin{equation}
+ \q{v}{P}=\sqrt{\frac{\kappa+\frac{4}{3}\mu}{\rho}} \comma
+\end{equation}
+wobei $\kappa$ das Volumenkompressionsmodul und $\rho$ die Massendichte ist.
+
+Bei senkrechter Partikelbewegung zur Ausbreitungsgeschwindigkeit ist die Welle transversal polarisiert. Sie Wird auch A-Welle oder Scherwelle genannt und hat in homogenen isotropen Medien eine Ausbreitungsgeschwindigkeit von
+\begin{equation}
+ \q{v}{S}=\sqrt{\frac{\mu}{\rho}} \fullstop
+\end{equation}
+Da in Flüssigkeiten $\mu=\e{0}{Pa}$ gilt, können sich in diesen keine Scherwellen ausbreiten.
+
+In der Seismik werden diese Wellen durch zum Beispiel einen Hammer (Hammerschlagseismik) künstlich ausgelöst. In verschiedenen Abständen zur Quelle wird mit  Geophonen die Bodenbewegung gemessen und daraus kann dann auf die Ausbreitungsgeschwindigkeit der Wellen im Untergrund geschlossen werden. Es werden bei der Refraktionsseismik nur die Ersteinsätze betrachtet, es wird also nur die P-Wellengeschwindigkeit $\q{v}{P}$ analysiert, weil diese Größer ist als die S-Wellengeschwindigkeit. Die Ersteinsätze erfolgen also immer durch P-Wellen.
+
+\section{Snelliussches Brechungsgesetz und refraktierte Welle} %oder Strahlenseismik???
+
+Wenn die Wellenlänge der Welle sehr viel kleiner als der Abstand zwischen Quelle und Empfänger ist, können die Wellen als Strahl beschrieben werden. Trifft eine Welle auf eine Schichtgrenze (Grenze zwischen Materialien mit unterschiedlichen Ausbreitungsgeschwindigkeiten), wird sie sowahl reflektiert, als auch in das andere Medium gebrochen. Für die reflektierte Welle gilt das Snelliussche Brechungsgesetz
+\begin{equation}
+ \frac{\sin(\alpha_1)}{\sin(\alpha_2)}=\frac{v_1}{v_2}\fullstop
+\end{equation}
+$\alpha_1$ ist dabei der der Einfallswinkel zum Lot hin gemessen und $v_1$ die Geschwindigkeit im Medium, in dem der Strahl auf die Grenzfläche einfällt. $\alpha_2$ ist der Ausfallswinkel zum Lot hin gemessen und $v_2$ die Geschwindigkeit im Medium, in das der Strahl hinein gebrochen wird.
+
+Falls $v_2>v_1$ gilt, ist auch $\alpha_2>\alpha_1$. Sobald $\alpha_2=90^\circ$ gilt, kommt es statt zur Reflektion zur Refraktion. Dies passiert ab dem kritischen Winkel
+\begin{equation}
+ \sin(\q{\alpha}{k}) =\frac{v_1}{v_2} \fullstop
+\end{equation}
+Eine Welle, die im kritischen Winkel auf die Grenzfläche auftritt, läuft mit der Geschwindigkeit $v_2$ an der Grenzfläche entlang und strahlt permanent ebenfalls unter dem kritischen Winkel Wellen nach oben ab, die dann wieder die Geschwindigkeit $v_1$ des oberen Mediums haben.
