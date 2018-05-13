@@ -18,13 +18,7 @@ Dia- und paramagnetische Materialien weißen nur induzierte Magnetisierung auf. 
 Daneben gibt es noch die thermoremanente Magnetisierung, hierbei entsteht die Magnetisierung während Gesteine in einem äußeren Magnetfeld (z.B. dem Erdmagnetfeld) abkühlen.
 
 
-\subsection{Magnetisches Moment $\vec{m}$}
-Das magnetische Moment [$\vec{m}$]  wird berechnet über das Integral
-\begin{equation}
-\vec{m}  = \int_V \vec{M}(\vec{x}) dV
-\end{equation}
-
-
+\
 
 
 

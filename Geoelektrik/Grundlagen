@@ -57,7 +57,7 @@ In Abbildung \ref{abb:Wenner} ist der schematische Aufbau der Wenner-Anordnung z
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{Wenner.png}
-\caption{Interferenz-Spektrum von UV-Licht}
+\caption{Schematische Darstellung der Schlumberger-Anordnung}
 \label{abb:Wenner}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -83,13 +83,13 @@ berechnet.
 Bei einer Messung wird versucht durch Interpretation der gemessenen scheinbaren Widerstände den spezifischen Widerstand zu finden.
 
 \subsection{Schlumberger-Anordnung}
-Die Schlumberger-Anordnung wird in der Geländeübung zur Sondierung verwendet.
+Die Schlumberger-Anordnung wird in der Geländeübung zur Sondierung verwendet. Es wird die Änderung des spezifischen Widerstands in den verschiedenen Schichten den Untergrunds bestimmt.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{Schlumberger.png}
-\caption{Interferenz-Spektrum von UV-Licht}
+\caption{Schematische Darstellung der Schlumberger-Anordnung}
 \label{abb:Schlumberger}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

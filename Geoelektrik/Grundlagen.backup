@@ -57,7 +57,7 @@ In Abbildung \ref{abb:Wenner} ist der schematische Aufbau der Wenner-Anordnung z
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{Wenner.png}
-\caption{Interferenz-Spektrum von UV-Licht}
+\caption{Schematische Darstellung der Schlumberger-Anordnung}
 \label{abb:Wenner}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -77,7 +77,22 @@ Damit lässt sich $\rho$ berechnen mit
 
 Ist der Untergrund nicht homogen, dann wird der Wert der Formel \ref{eq:roh} als scheinbarer spezifischer Widerstand bezeichnet. Der Geometriefaktor hängt nur von der geometrischen Anordnung ab und nicht von der 
 Leitfähigkeit des Untergrunds, weshalb der scheinbare spezifische Widerstand $q_a$ nur im Falle eines homogenen Untergrunds gleich dem spezifischen Widerstands ist.\\
+Im Falle der Wenner-Anordnung wird  der scheinbare spezifische Widerstand mit der Formel
+$$ \rho_a = 2 \pi \frac{V}{I} a $$
+berechnet.
 Bei einer Messung wird versucht durch Interpretation der gemessenen scheinbaren Widerstände den spezifischen Widerstand zu finden.
+
+\subsection{Schlumberger-Anordnung}
+Die Schlumberger-Anordnung wird in der Geländeübung zur Sondierung verwendet.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{Schlumberger.png}
+\caption{Schematische Darstellung der Schlumberger-Anordnung}
+\label{abb:Schlumberger}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -93,7 +108,7 @@ Bei einer Messung wird versucht durch Interpretation der gemessenen scheinbaren 
 \newpage
 \begin{thebibliography}{999}
 \bibitem {Zitat01} \url{https://de.wikipedia.org/wiki/Geoelektrik} Datum: 06.05.18
-
+\bibitem {Zitat02} \url{https://commons.wikimedia.org/wiki/File:Schlumberger.png} Datum 06.05.18
 
 \end{thebibliography}
 \end{document}
