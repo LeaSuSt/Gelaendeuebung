@@ -30,13 +30,13 @@ Die Freiluftreduktion (oder auch Niveaureduktion) berücksichtigt, dass die Schw
 \begin{equation}
  \q{\delta}{g\,Freiluft}=\eb{-0,3086\cdot H}{mGal}{m} \fullstop
 \end{equation}
-Den gleichen Effekt muss man bei der Instrumentenhöhe beachten, was zu $\q{\delta}{g\,Instrumentenhöhe}$ führt. Die Instrumentenhöhe wird jedoch direkt bei der Messung aus den Messwerten eliminiert, weil dies eine von der Geometrie der Messung unabhängige Auswertung ermöglicht.
+Den gleichen Effekt muss man bei der Instrumentenhöhe beachten, was zu $\q{\delta}{g\,Instrumentenhoehe}$ führt. Die Instrumentenhöhe wird jedoch direkt bei der Messung aus den Messwerten eliminiert, weil dies eine von der Geometrie der Messung unabhängige Auswertung ermöglicht.
 
 Bei der Gezeitenreduktion $\q{\delta}{g\,Gezeiten}$ wird die Gravitationswirkung anderer Planeten berücksichtigt, die sich mit der Zeit verändert.
 
-% Drift???
+Die Driftreduktion $\q{\delta}{g\,Drift}$ muss durchgeführt werden, weil sich die Eigenschaften der Bauteile des Gravimeters mit der Zeit ändern können. Um diese Änderung erfassen zu können, wird an allen Messpunkten mindestens zweimal gemessen. Dadurch kann eine Funktion interpoliert bestimmt werde, die die Drift im Laufe der Zeit darstellt. Diese Korrektur muss auf jeden Fall nach der Gezeitenkorrektur durchgeführt werden, damit alle anderen zeitlichen Veränderungen schon aus der Messung eliminiert sind.
 
-Die Geländereduktion $\q{\delta}{g\,Gelände}$ berücksichtigt die Verringerung des Schwerewerts durch zum Beispiel Berge und Täler in der Nähe des Messorts. Nach der Korrektur ist der Messwert also vergrößert.
+Die Geländereduktion $\q{\delta}{g\,Gelaende}$ berücksichtigt die Verringerung des Schwerewerts durch zum Beispiel Berge und Täler in der Nähe des Messorts. Nach der Korrektur ist der Messwert also vergrößert.
 
 Die Bouguerreduktion berücksichtigt den Effekt, dass eine Gesteinsschicht zwischen Referenzfläche und Messpunkt den gemessenen Wert der Schwere vergrößert. Es wird angenommen, dass diese Gesteinsschicht aus homogenem Material der Dichte $\rho$ besteht. Dies führt zur Gleichung
 \begin{equation}
@@ -53,16 +53,18 @@ liefert mit dem Abstand $L$ zur geographischen Breite des Referenzpunkts den Kor
 % regionale Reduktion???
 
 Von einer Bougueranomalie $\q{g}{Bouguer}$ wird gesprochen, wenn all diese Reduktionen auf den Messwert $\q{g}{mess}$ angewendet wurden. Es gilt also
-% regio??? Drift???
+% regio???
 \begin{equation}
- \q{g}{Bouguer}=\q{g}{mess}-\q{\delta}{g\,Instrumentenhöhe}-\q{\delta}{g\,Gezeiten}-\q{\delta}{g\,Gelände}-\q{\delta}{g\,Freiluft}-\q{\delta}{g\,Breite}-\q{\delta}{g\,Bouguer}
+ \q{g}{Bouguer}=\q{g}{mess}-\q{\delta}{g\,Instrumentenhoehe}-\q{\delta}{g\,Gezeiten}-\q{\delta}{g\,Drift}-\q{\delta}{g\,Gelaende}-\q{\delta}{g\,Freiluft}-\q{\delta}{g\,Breite}-\q{\delta}{g\,Bouguer}
 \end{equation}
 
 \section{Dichtebestimmung über bekannte Störkörper???}
 
 % Was machen wir dazu???
 
-\section{Gravimeter}
+\section{Messinstrumente}
+
+\subsection{Gravimeter}
 
 Im Versuch werden LaCoste-Romberg G-Gravimeter benutzt. Der Aufbau eines solchen Gravimeters ist in Abbildung ??? zu sehen. Das grundlegende Prinzip ist, dass sich eine an einer Feder hängende Masse im Schwerefeld der Erde befindet und die unterschiedliche Auslenkung der Masse an unterschiedlichen Orten oder zu unterschiedlichen Zeiten gemessen wird. Diese Gravimeter können also Differenzen von Schwerebeschleunigungen messen, aber keine Absolutwerte.
 
@@ -77,6 +79,20 @@ mit einem geräteabhängigen Proportionalitätsfaktor $p$.
 
 Ein Gravimeter hat eine Messempfindlichkeit von $\e{0,01}{mGal}$, weswegen das Gerät sehr gut gegen physikalische Nebeneffekte geschützt werden muss. Es ist zum Beispiel mit einem Thermostat auf ein Hundertstel Grad temperaturstabilisiert, druckdicht gebaut und magnetisch abgeschirmt. Trotzdem ist eine sehr sorgfältige Messung wichtig, um brauchbare Ergebnisse zu erhalten. 
 
-\section{Bestimmung der Höhe???}
+\subsection{Tachymeter}
 
-% Nivellement??? -> wird nicht verwendet, Tachymeter??? GPS???
+Obwohl die Höhenbestimmung beim Nivellement genauer ist, wird in diesem Versuch die Höhe mit einer Totalstation bestimmt. Es handelt sich dabei um eine Kombination aus einem Tachymeter und einem elektronischen Entfernungsmesser. Mit einem Fernrohr wird der Punkt anvisiert, dessen Höhe gegenüber der Totalstation gemessen werden soll. Dadurch ist der Winkel $\alpha$ gegenüber der Horizontalen bekannt (siehe Abbildung ???). Außerdem wird am zu vermessenden Punkt ein Reflektor angebracht. Dadurch wird ein vom elektronischen Entfernungsmesser ausgehender Laserstrahl zurück geschickt und mit der Laufzeit $t$ und der Lichtgeschwindigkeit $c$ kann mit der Formel
+\begin{equation}
+ s=c\cdot \frac{t}{2}
+\end{equation}
+die Entfernung $s$ berechnet werden. Dies geschieht direkt im Gerät. Aus der Länge $s$ kann direkt die Höhendifferenz
+\begin{equation}
+ \Delta h=\sin(\alpha)\cdot s
+\end{equation}
+bestimmt werden. 
+% Abbildung Prinzip Tachymeter einfügen
+
+\subsection{Global Navigation Satellite System (GNSS)}
+
+
+% GPS???

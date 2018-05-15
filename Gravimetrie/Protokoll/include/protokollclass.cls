@@ -19,7 +19,7 @@
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{include/protokollclass}
-\LoadClass[a4paper,11pt,titlepage,openany]{scrbook}
+\LoadClass[a4paper,12pt,titlepage,openany]{scrbook}
 
 
 
