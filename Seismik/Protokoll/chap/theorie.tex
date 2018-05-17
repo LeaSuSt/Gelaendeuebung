@@ -18,7 +18,7 @@ In der Seismik werden diese Wellen durch zum Beispiel einen Hammer (Hammerschlag
 
 \section{Snelliussches Brechungsgesetz und refraktierte Welle} %oder Strahlenseismik???
 
-Wenn die Wellenlänge der Welle sehr viel kleiner als der Abstand zwischen Quelle und Empfänger ist, können die Wellen als Strahl beschrieben werden. Trifft eine Welle auf eine Schichtgrenze (Grenze zwischen Materialien mit unterschiedlichen Ausbreitungsgeschwindigkeiten), wird sie sowahl reflektiert, als auch in das andere Medium gebrochen. Für die reflektierte Welle gilt das Snelliussche Brechungsgesetz
+Wenn die Wellenlänge der Welle sehr viel kleiner als der Abstand zwischen Quelle und Empfänger ist, können die Wellen als Strahl beschrieben werden. Trifft eine Welle auf eine Schichtgrenze (Grenze zwischen Materialien mit unterschiedlichen Ausbreitungsgeschwindigkeiten), wird sie sowohl reflektiert, als auch in das andere Medium gebrochen. Für die reflektierte Welle gilt das Snelliussche Brechungsgesetz
 \begin{equation}
  \frac{\sin(\alpha_1)}{\sin(\alpha_2)}=\frac{v_1}{v_2}\fullstop
 \end{equation}
@@ -35,4 +35,12 @@ Eine Welle, die im kritischen Winkel auf die Grenzfläche auftritt, läuft mit d
 % Basalt: $\q{v}{P}>\eb{4000}{m}{s}$
 Im Seismogramm werden die Einsätze der Wellen abgelesen. Dann können die Laufzeiten $t$ gegen die Geophondistanz $x$ vom Schussort aufgetragen werden. Die erhaltene Kurve heißt Laufzeitdiagramm. Die weitere Auswertung erfolgt aus diesen Diagrammen, wobei nur die Ersteinsätze ausgewertet werden. Zuerst wird der Ersteinsatz durch die direkte Welle (Kompressionswelle, die an Erdoberfläche entlang läuft) gebildet und ab einer bestimmten Geophondistanz überholt die refraktierte Welle die direkte Welle, so dass der Ersteinsatz nun durch diese erfolgt. Dies ist auch in Abbildung ??? zu sehen.
 % Laufzeitkurve für eine Schicht über dem homogenen Halbraum???
+% Auswertung (eine Schicht, zwei Schichten, geneigte Schichten, Verfahren der Verzögerungszeiten) ???
 
+\section{Messinsrumente}
+
+Der Messaufbau dieser Seismik-Versuche ist in Abbildung ??? dargestellt. Als Signalquelle dient ein Vorschlaghammer (Hammerschlagseismik) oder eine Verpuffung (schwache Explosion), die die seismischen Wellen anregt. Die Bodenbewegung wird mit Geophonen gemessen. Diese bestehen aus einem Magneten, der Fest mit deren Gehäuse verbunden ist und um den eine Spule frei schwingen kann. Eine Bodenbewegung versetzt die Spule und den Magneten in Relativbewegung zueinander, wodurch eine elektrische Spannung in der Spule induziert wird. Diese Spannung ist proportional zur Bodenschwinggeschwindigkeit und wird vom Digitalisierer (in diesem Versuch wird eine Geode genutzt) abgetastet, gepuffert und dann an das Laptop weitergeleitet, welches die Messwerte ausgibt und aufzeichnet. Die Signale werden im seismische Dateiformat SEG-Y-Format auf der Festplatte abgespeichert.
+
+Der Trigger gibt der Software auf dem Laptop das Startsignal zur Aufzeichnung der Messung. Dies geschieht genau dann, wenn die Quelle ausgelöst wird. Er ist an der Quelle angebracht und an einer Diode angeschlossen, die das Triggersignal an andere Geoden und die Software weiterleitet.  
+
+Wird die Hammerschlagseismik verwendet, werden pro Schusspunkt oft mehrere Schläge durchgeführt und die Seismogramme danach aufsummiert. Die Signale werden dadurch deutlicher, weil sich die Nutzsignale konstruktiv addieren, was jedoch für die Störsignale (Rauschen) nicht der Fall ist. Dieses Prinzip wird Stapelung genannt. Bei längeren Messprofilen wird die Verpuffungsquelle S.I.S.Sy verwendet, weil sie eine höherer Energie als der Hammerschlag aufweist und so ein Schuss ausreicht.
