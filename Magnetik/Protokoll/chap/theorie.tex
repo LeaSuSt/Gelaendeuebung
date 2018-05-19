@@ -6,11 +6,12 @@ betrachtet werden.
 Das gesamte gemessene Magnetfeld setzt sich aus dem Hintergrundfeld und Anomalien zusammen. Diese Anomalien 
  werden durch magnetisierbare und remanent magnetisierbare Gesteine hervorgerufen. 
 
-Die Messgröße die in diesem Versuch gemessen wird ist die \textbf{magnetische Flussdichte} $\vec{B}$, sie gibt die Stärke des Magnetfeldes an. \\
+Die Messgröße die in diesem Versuch gemessen wird ist die \textbf{magnetische Flussdichte} $\vec{B}$, sie gibt die Stärke des Magnetfeldes an.
+
 Eine andere wichtige Größe ist \textbf{Magnetisierung} $\vec{M}$ eines Materials, sie hängt sowohl von der Stärke des Magnetfelds als auch den Materialeigenschaften ab.\\
 
 \section{Induzierte und remantente Magnetisierung}
-Gesteine oder sonstige Störkörper könne remanent oder induziert magnetisiert sein. Induzierte Magnetisierung ist Magnetisierung, die nur solange ein äußeres Magnetfeld angelegt ist, vorhanden ist. Remanent magnetisierte 
+Gesteine oder sonstige Störkörper können remanent oder induziert magnetisiert sein. Induzierte Magnetisierung ist Magnetisierung, die nur solange ein äußeres Magnetfeld angelegt ist, vorhanden ist. Remanent magnetisierte 
 Materialien sind dauerhaft magnetisch, auch ohne äußeres Magnetfeld.\\
 Dia- und paramagnetische Materialien weisen nur induzierte Magnetisierung auf. Ferro-, ferri- und antiferromagnetische Materialien können auch remanent magnetisiert sein. \\
 Daneben gibt es noch die thermoremanente Magnetisierung, hierbei entsteht die Magnetisierung während Gesteine in einem äußeren Magnetfeld (z.B. dem Erdmagnetfeld) abkühlen.
@@ -54,4 +55,28 @@ Im Versuch wird ein Gfz-Instrument verwendet, das so ausgerichtet ist, dass die 
 
 \subsection{Protonen-Präzessions-Magnetometer}
 
-Mit Protonen-Präzessions-Magnetometer (kurz: Protonenmagnetometer) wird die Totalintensität $T$ gemessen. In die Messungen gehen nur atomphysikalische Konstanten und eine Zeitmessung ein, sodass die Messung unabhängig von Temperatureffekten ist.
+Mit Protonen-Präzessions-Magnetometern (kurz: Protonenmagnetometer) wird die Totalintensität $T$ gemessen. In die Messungen gehen nur atomphysikalische Konstanten und eine Zeitmessung ein, sodass die Messung unabhängig von Temperatureffekten ist.
+
+In einem Behälter befindet sich Petroleum oder eine andere wasserstoffreiche Flüssigkeit. Dieser ist umgeben von einer Spule. Es muss eine wasserstoffreiche Flüssigkeit verwendet werden, weil die Präzession der Spins der Protonen in den Wasserstoff-Kernen beobachtet wird. In die Spulen wird ein Gleichstrom eingespeist , der ein Magnetfeld erzeugt. Die Spins der Protonen richten sich entlang des resultierenden Magnetfelds aus, das sich aus dem Erdmagnetfeld und dem durch die Spulen erzeugten Magnetfeld zusammen setzt. Das Feld der Spulen ist sehr viel größer als das Erdmagnetfeld. Die Ausrichtung der Spins ist also nahezu entlang des angelegten Feldes. Nach ein paar Sekunden wird das künstliche Feld schnell ausgeschaltet und die Spins präzedieren nun um die Richtung des Erdmagnetfelds, wodurch ein makroskopisches Wechselfeld entsteht. Dieses induziert eine Wechselspannung in der Spule, an der die Präzessionsfrequenz (Lamorfrequenz) $\q{\omega}{L}$ gemessen werden kann. Diese ist proportional zur magnetischen Flussdichte
+\begin{equation}
+ \q{\omega}{L}=\frac{\q{g}{I}\q{\mu}{K}}{\hbar}|\vec{B}|=\gamma |\vec{B}| \fullstop
+\end{equation}
+Der Kern-g-Faktor $\q{g}{I}$ des Protons ist
+\begin{equation}
+ \q{g}{I}=5,585694702\comma
+\end{equation}
+das Kernmagneton
+\begin{equation}
+ \q{\mu}{K}=\e{5,050824\cdot 10^{-7}}{Am^2}
+\end{equation}
+und die Plancksche Konstante
+\begin{equation}
+ \hbar=\frac{h}{2\pi}=\e{1,0545887\cdot 10^{-34}}{Js} \fullstop
+\end{equation}
+Daraus ergibt sich das konstante gyromagnetische Verhältnis der Protonen
+\begin{equation}
+ \gamma=\frac{\q{g}{I}\q{\mu}{K}}{\hbar}=\eb{2,67522205}{1}{Ts} \fullstop
+\end{equation}
+Aus der Lamorfrequenz kann also die magnetische Flussdichte bestimmt werden, die vom Protonenmagnometer direkt in nT ausgegeben wird.
+
+Die Messgenauigkeit liegt im Bereich von $\e{1}{nt}$ bis $\pm\e{0,1}{nT}$. Protonenmagnetometer sind bei starken Wechselfeldern und großen räumlichen Gradienten des Magnetfeldes ungeeignet.
