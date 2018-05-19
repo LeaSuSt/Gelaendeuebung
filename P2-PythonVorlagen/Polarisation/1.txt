@@ -1,0 +1,111 @@
+\documentclass[a4paper,12pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amstext}
+\usepackage{caption, booktabs}
+\usepackage{amssymb}
+\usepackage{a4wide}
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[decimalsymbol=comma]{siunitx}
+\usepackage{subfigure}
+\usepackage{subfig}
+\usepackage{cleveref}
+\usepackage{caption}
+
+
+\usepackage{floatrow}
+
+\floatsetup[table]{capposition=top}
+
+\begin{document}
+\begin{titlepage}
+
+
+
+\title{Physikalisches Praktikum P2\\ P2-11 	Polarisation und Doppelbrechung}
+\author{Elina Merkel, Svenja Müller (Di-15)}
+\date{Versuchstag: Dienstag, 30.05.2017}
+
+\vfill
+
+\end{titlepage}
+
+
+\maketitle
+\newpage
+\addtocounter{section}{-1}
+\tableofcontents
+\newpage
+\section*{Einleitung}
+In diesem Versuch wird verschieden polarisiertes Licht hergestellt und beobachtet. Dabei sollen wir Interferenzerscheinungen mit polarisiertem Licht und deren Verwendung bei der Untersuchung von Kristalleigenschaften und der Materialbeanspruchung kennen lernen.
+
+\section{Demonstrationsversuch Polarisation durch Streuung}
+Es gibt verschiedene Möglichkeiten Licht zu polarisieren. Dazu zählt die Polarisation durch Reflexion an dielektrischen Oberflächen, Absorbtion, und Streuung an kleinen Teilchen(Moleküle/Atome).\\
+Mit letzterem haben wir uns in diesem Versuch befasst. Das Licht einer Halogenlampe wurde durch ein Wasserglas geschickt. Im Wasser war nun ein Lichtstrahl zu erkennen. Um zu überprüfen ob dieser wirklich polarisiert ist wurde er mit einem Polarisationsfilter betrachtet. Je nachdem wie der Polarisationsfilter eingestellt war konnte man den Strahl erkennen oder nicht. Das Licht kann den Polarisationsfilter nur passieren, wenn es in die gleiche Richtung polarisiert ist wie dieser polarisiert. Wäre das Licht unpolarisiert gewesen, so hätte man bei jedem Winkel den Lichtstrahl gesehen.
+
+
+\section{Verschiedene Arten von Polarisation}
+In dieser Aufgabe sollte Licht mit besonderen Polarisationseigenschaften hergestellt und dann die Intensitätsverteilungen hinter einem Analysator in Abhängigkeit von seiner Stellung gemessen werden. Der Versuch wurde entsprechend der Vorbereitungshilfe aufgebaut (s. Abbildung 1).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{Versuchaufbau.jpg}
+\caption{\label{abb:}Versuchsaufbau für die Erzeugung von polarisiertem Licht }
+\end{figure} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Wir befassen uns in diesem Versuch mit drei verschiedenen Eigenschaften von polarisiertem Licht.\\
+\\ (s. Abbildung 2).
+$\mathbf{linear polarisiertes Licht}$\\
+Lineares Licht hat eine konstante Schwingungsrichtung, das bedeutet, dass der Wellenvektor $\vec{k}$ und der Feldvektor des elektrischen Felds $\vec{E}$ eine konstante Ebene aufspannen. Der Betrag der Auslenkung ändert sich jedoch periodisch.\\
+\\
+$\mathbf{elliptisch polarisiertes Licht}$\\
+Ist Licht elliptisch polarisiert, so ändert sich der Betrag der Auslenkung nicht, der Feldvektor $\mathrm{E}$ dreht sich jedoch.\\
+\\
+$\mathbf{zirkular polarisiertes Licht}$\\
+Auch bei zirkular polarisiertem Licht dreht sich der Feldvektor $\vec{E}$ des Elektrischen Felds, der Betrag der Auslenkung bleibt aber konstant.\\
+\\
+Es wurden fünf verschiedene Messreihen durchgeführt. In jedem der Aufbauten gab es einen Polarisator und Analysator, wie in Abbildung 1 zu sehen ist. Der Polarisator war fest auf einen Winkel eingestellt, der Analysator wurde immer um zehn Grad weiter gedreht. Es wurde für jede Einstellung ein Messwert für das am Strahlungsmesser noch ankommende Licht genommen. Der Strahlungsmesser hat eine Spannung in V gemessen. In unserem Messprotokoll sich alle gemessenen Werte zu sehen.\\
+Als erstes wurde die Messung für normales weißes Licht durchgeführt. In Abbildung 2 sind die Messwerte gegen die Verschiebung von Polarisationsfilter und Analysator aufgetragen.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{1a.png}
+\caption{\label{abb:} Intensitätsverteilung (Spannung in V) von weißen Licht}
+\end{figure} 
+\newpage
+In dem Diagramm ist deutlich zu erkennen, dass bei jeder Stellung noch sehr viel Licht am Detektor ankommt. Dies lässt darauf schließen, dass die Polarisationsfilter nicht alle Wellenlängen gleich gut filtern können. Um bessere Ergebnisse zu erhalten, wurde für die folgenden Messreihen ein Interferenzfilter eingebaut, der nur noch Licht von $\lambda$=630 nm passieren lies. 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{1_b.png}
+\caption{\label{abb:} Intensitätsverteilung(Spannung in V) mit Farbfilter}
+\end{figure} 
+Das Ergebnis der nächsten Messung war nun sehr schön. In Abbildung 3 ist zu sehen, dass die Intensität zwei mal fast vollständig auf null geht und damit $\mathbf{linear polarisiertes Licht}$ vorliegt.\\
+\\
+Die dritte Messung wurde mit Bandpassfilter durchgeführt. Dadurch erhalten wir\\ $\mathbf{elliptisch\, polarisiertes \,Licht}$.Bevor wir mit der Messung beginnen konnten wurden die beiden Polarisationfilter so eingestellt, dass wir ein Minima hatten(dunkel). Daraufhin wurde ein Glimmerplätchen zwischen den beiden so angebracht, dass wir immer noch ein Minima hatten. Nun wurde der Polarisationsfilter um $\alpha$ = $45^\circ$ gedreht, so dass sichergestellt war, dass die beiden Filter senkrecht zueinander Polarisierten. Diese Kalibrierung wurde auch für die restlichen Messungen dieser Aufgabe durchgeführt. Die Messung wurde für Glimmerplättchen mit der Dicke 60 $\mu$m und 170 $\mu$m durchgeführt. Wider wurde die Intensität gegen den Drehwinkel aufgetragen, in Abbildung 4 und 5 sind die Diagramme zu sehen. 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{1_c.png}
+\caption{\label{abb:} Intensitätsverteilung(Spannung in V) mit Farbfilter und Gimmerplättchen der Dicke 60 $\mu$m }
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{1_d.png}
+\caption{\label{abb:} Intensitätsverteilung(Spannung in V) mit Farbfilterund und Gimmerplättchen der Dicke 170 $\mu$m }
+\end{figure}
+In Diagramm 5 ist ein Wert zu sehen, der nicht zu den restlichen Messwerten passt. Da es der einzige ist, der daneben liegt, nehmen wir an, dass wir diesen Wert falsch abgeschrieben haben.
+Es ist deutlich zu erkennen, dass es stark von der Dicke des Glimmerplättchens abhängt, wie stark das Licht elliptisch polarisiert wird.\\
+Als letztes betrachten wir $\mathbf{zirkular \,polarisiertes \,Licht}$. Um zirkular polarisierten Licht zu erhalten wurde statt dem Glimmerplättchen ein $\lambda$/4-Plättchen eingebaut. Die Intensitätverteilung ist in Abbildung 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{1_e.png}
+\caption{\label{abb:} Intensitätsverteilung(Spannung in V) mit Farbfilter und $\lambda$/4-Plättchen }
+
+\newpage
+\section{Bestimmung der Differenz der
+Brechungsindizes}
