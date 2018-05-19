@@ -128,7 +128,7 @@ Betreuer: Vorname1 Nachname1 und Vorname2 Nachname2}
                                         %        in toc]{name of the chapter}
     \pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
                                         %        added]{name of the chapter}
-    \chapter{Theoretische Grundlagen}
+     \chapter{Theoretische Grundlagen}
     \input{./chap/theorie.tex}
     
     \chapter{Auswertung}
