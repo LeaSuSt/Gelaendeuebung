@@ -21,7 +21,6 @@
 *.mtc1
 *.out
 *.synctex.gz
-*.pdf
-*.png
-*.jpg
-*.jpeg
+main.pdf
+seismik.pdf
+gravimetrie.pdf
