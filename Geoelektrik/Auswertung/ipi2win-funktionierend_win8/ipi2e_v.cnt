@@ -1,0 +1,39 @@
+:Base ipi2e_v.hlp
+:Title ipi2win(VES-IP)
+1 Overview=start
+1 ToolsBar=toolbar
+1 Menu
+2 File=menu_file
+2 Edit=menu_Edit
+2 VES point=menu_point
+2 Section=menu_section
+2 Option=autosave
+1 Windows
+2 New VES pointwindow=new_ves
+2 Information window=inform
+2 Table window=chg_model
+2 Curves window=chg_mouse
+2 Option=autosave
+2 Conductance=cond
+2 Statistic analysis of data=stav
+2 Analysis of equivalent models=ekvi
+2 Curve editing=chg_curve
+2 Sections
+3 Section window=section
+3 Section options=section_options 
+1 Data
+2 Data files=data_file
+2 DAT files=data_format
+2 DTG files=dtg_format
+2 SDG files=sdg_format
+2 Example of DAT file=example_dat
+2 Examples of DTG file=example_dtg1
+1 Interpteration
+2 Interactive inversion=interactiv
+2 Change model by keyboard=chg_model
+2 Change model by mouse=chg_model
+2 Automatic inversion=inverse
+2 New Model Options=NmodelDlg
+1 Clipboard using=clipboard
+1 Copy rights
+2 Copy rights=rights

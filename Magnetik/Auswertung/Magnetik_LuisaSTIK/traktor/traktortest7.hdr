@@ -1,0 +1,15 @@
+Time = 17:06:57
+Date = 22.05.2018
+Grid Number = 7
+Number of Sensors = 1
+Grid Size = 30 x 30
+Method of collection = Parallel
+Starting Direction = North-West
+Data Range = 1000 nT
+Line Spacing = 1.00 m
+Sampling = 8 samples / m
+Sensor Spacing = 1.0 m
+
+Mean = -9
+Max = 316
+Min = -248

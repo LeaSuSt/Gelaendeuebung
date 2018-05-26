@@ -1,0 +1,95 @@
+ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ  Menu for interpretation mode  ÍÍÍÍÍÍÍÍÍÍÍÍ
+   1. MODEL    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+model parameter selection - by cursor keys or by "mouse"
+manual model changes in table                       - Enter,'0'..'9'
+manual model changes on graph by "mouse"            - Left "mouse" button
+change parameter value with cursor on graph         - Ctrl-Enter
+fixing or unfixing any selected parameter           - F2
+run routine of automatic inversion                  - Spacebar
+undo the last model changes                         - Ctrl-F7
+   2. CHANGE  LAYERS NUMBER    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+split the selected layer into two                   - Ctrl-N
+merge selected layer with lower into one            - Ctrl-Y
+   3. END OF INTERPRETATION   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+VES point change                                    - Ctrl-Right,Left
+VES point change without saving of model            - Esc
+go to cross-section mode                            - F5
+exit to main menu                                   - F10
+go to model menu to select new start model          - F3
+   4. CHANGE THE SCALES OF SECTION ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+zoom in the vertical scale                          -  +
+zoom out the vertical scale                         -  -
+zoom in the horisontal scale                        -  <
+zoom out the horisontal scale                       -  >
+   5. OPERATIONS WITH MOUSE ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Functions of mouse buttons depend on its position and the face of
+mouse pointer. Brief explanations are in lower part of screen.
+   6. OTHER   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+Sound on / off                                      - Ctrl-S
+change the parameters table position vert/horis     - Ctrl-’
+change the parameters table position left/right     - Ctrl-O
+color or black/white cross-section drawing          -  C
+saving BMP-file                                     - Ctrl-F2
+change of lines width                               - Ctrl-W
+save curves and result in "Grapher" format          - "G"
+   7. MTS mode
+change inversion parameter
+(app.resistivity - phase - complex impedance)       - F9
+save results for Grapher in file s_h.txt            - "S"
+Goto to the second MT component                     - Ctrl-X
+Show second MT component                            - X
+Minimum selected parameter                          - Alt-D (down)
+Maximum selected parameter                          - Alt-U (up)
+
+
+
+
+
+
+
+ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ  MODEL MENU   ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+   1. AUTOMATIC SELECTION OF MODEL ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+return to the best-fit model                        - F3
+select the best-fit model among already inerpreted VES - F5
+calculate start model using a transformation        - F7
+   2. MODELS FOR OTHER VES POINTS ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+show models for other VES points                    - Right, Left
+(model is drawing with dashed line on the screen)
+selection the "dashed" model as current with
+calculation direct VES problem                      - Enter
+   3. END THE OPERATIONS IN MODEL MENU ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+return to the last model                            - F2
+return to menu for interpretation mode              - Esc
+
+
+
+
+
+
+ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ  MENU FOR OPERATION WITH THE SECTION ÍÍÍÍÍÍÍÍÍ
+Select VES location                                 - Right,Left,Mouse
+return to interpretation mode                       - Enter,F5,Mouse
+color / black-white mode (for printing)             - C
+logariphmic / linear scale along vertical axis      - Z
+exit to the main menu                               - F10, Esc
+select/deselect zoom in part of the profile         - Ctrl-F5
+show vertical line                                  - Q
+show app.chargeabilty (IP) or phase (MT)            - F9
+   Fitting error
+show fitting error pseudo section                   - "D"
+change color scale                                  - "+", "-"
+   In the case of linear vertical scale only -------------------
+zoom in vertical scale                              -  +
+zoom out vertical scale                             -  -
+return to the initial scale                         -  0
+   Printing (only for black/white mode) ------------------------
+Printing on Epson-mode matrix printer:
+on the whole page (Landscape)                       -  H
+on the half of page (Portrait)                      -  V
+Laser or Ink-Jet printer HP (LaserJet, DeskJet)     - Ctrl-P
+
+save screen picture in BMP format,                  - F2
+   Automatic inversion of profile ------------------------------
+Cancel a model                                      - Delete
+Undo the last canceling                             - Ctrl-F7
+Automatic inversion of not interpreted before VES's - F3 or Alt-F3

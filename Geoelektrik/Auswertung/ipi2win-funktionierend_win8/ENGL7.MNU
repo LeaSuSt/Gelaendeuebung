@@ -1,0 +1,40 @@
+18  Тексты меню для IPI_7.0
+CR/^CR-edit;^Y/^N-layers;Space-auto;F2-fix;F5-section;^Є/^є-Next/Prv pnt;F3-model menu;F10-quit;F1-?
+-- ---      -- --        -----      --     --         -- --              --            ---      --
+ї-view;ENTER-select;F3-best;F5,F7-auto;F2-cancel;ESC-quit;^Є/^є-Next/Prv pnt;spase-mark;F1-?
+-      -----        --      -- --      --        ---      -- --              -----      --
+Press any key to return to DOS
+------------------------------
+ї, Home, End  - layer's depth; ENTER-OK; ЕSC-cancel
+-  ----  ---                   -----     ---
+Ї, PgUp, PgDn - layer's №/¤; ENTER-OK; ЕSC-cancel
+-  ----  ----                -----     ---
+ENTER-OK; ESC-cancel
+-----     ---
+ENTER,∙-interp. screen;C-color/BW;Z-lin/log;^F5-zoom;F2-save BMP;Q -│;Esc-quit;F1-?
+-----                  -          -         ---      --          -    ---      --
+Є/є - frame size; ENTER - OK; Esc - cancel
+- -               -----       ---
+Ї, PgUp, PgDn - select spacing
+-  ----  ----
+
+
+
+
+
+
+
+
+Включите принтер или ESC
+----------------     ---
+ESC-отменить печать
+---
+F2-запись в RKT; % - %/№■ теор; ESC-выход
+--               -              ---
+ENTER-сохранить последнию модель;F3-лучшую
+-----                            --
+ESC-без обновления модели
+---
+Ctrl-PrtScr-печать;Insert-╘S╘T/ST;Esc-выход
+-----------        ------         ---
+Не забудьте указать число строк !!!

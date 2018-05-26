@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri May 25 17:57:35 2018
+
+@author: Kappa
+"""
+
+import numpy as np
+
+#_______________________________#
+# berechne ungenauigkeit in mgal
+#_______________________________#
+
+#declare

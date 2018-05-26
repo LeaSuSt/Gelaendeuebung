@@ -1,0 +1,11 @@
+﻿#Messpunkt;Mittel Messwerte in mgal
+#Werte von oben nach unten von G0, G2, G4, ... G16
+4413.3473
+4413.1195
+4412.973
+4412.89
+4412.8395
+4412.673
+4412.453
+4412.2035
+4411.903

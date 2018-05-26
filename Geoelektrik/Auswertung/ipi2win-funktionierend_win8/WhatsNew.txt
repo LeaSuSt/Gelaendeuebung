@@ -1,0 +1,61 @@
+Version 3.0.1s (7.01.03)
+1. Statistic analysis of data
+
+Version 2.6.3e (16.12.02)
+1. Equivalent models
+2. Improving minimizations algorithm
+3. New Help
+Bug
+1. Min. number of layers for automatic inversions in VES mode
+
+Version 2.6.3c (6.11.02)
+1. Export in Res2dInv format
+Bug
+1. Error for add profile
+
+Version 2.6.3b (15.10.02)
+1. Improving algorithm for missed point presentation
+2. Model copy by mouse in section window ([Ctrl])
+3. Dar-Zarrouk curve for VES data
+Bugs
+1. Problem with SetUp program for some version of Windows (Invalid CRC)
+
+Version 2.6.3a (14.07.02)
+1. Corrected bug for "Auto" check box in Section option window
+2. Infinity correction for true app. resistivity (for VES data) 
+
+Version 2.6.2a (17.06.02)
+1. Phase weight for MT data
+2. Second component for MT data
+3. Backup files exention is "~ext"  (was "ext~")
+4. Remove line for fild curve
+
+Version 2.6.1a (12.04.02)
+1. Fitting error pseudo-section
+2. Vertical derivate pseudo-section
+
+Bugs
+1. Forward modeling for MT data
+2. "Syntetic curve"  for MT data
+
+Version 2.6a (12.04.02)
+1. Editing file more then 64K
+2. Editing field curve for MT data
+3. Backup file of results
+4. Work with different variants of results
+
+Bugs
+1. Reading MT files without MOD file
+2. "Save as" for MT files
+
+Version 2.5b (25.03.02)
+
+1. "Horisontal mirror" of sections is added for MT data as well
+2. S plots for several depths and depth interval
+3. Pseudo-depth calculation for MT data updated
+4. Saving color scale as a bitmap image
+5. Remote electrode actual location is taken into account when 
+   caclulating apparent resisivity for VES data
+8. Support MT and MOD formats (from MSU MT-1D)
+Bugs
+1. Bug in curves' form divider moving

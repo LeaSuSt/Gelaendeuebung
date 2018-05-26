@@ -1,0 +1,34 @@
+                    IPI_GATE2
+   Max line length for Help is          = 51 á¨¬¢®«³
+{- Edit without mouse -}                           ³
+Enter: begin editing of the chosen value
+(instead of this, possible begin input new figures)
+Space: Show final (continious) curve
+
+Tab: go to editing with "mouse".
+
+F10: to end this work.
+
+{- Edit without mouse -}                           ³
+Enter or left button of "mouse":
+go to editing the chosen value with mouse
+Tab: go to editing the chosen value in table
+
+{- Control of calculation  -}                      ³
+Space: go to the next curve.
+
+Esc: return to the correction of this curve.
+
+{- Œouse edit -}                                   ³
+Esc: cancel changes.
+
+Right button of "mouse":
+Input new value.
+{- Edit in table -}                                ³
+Enter: Input new value.
+
+F7: choose mode of editing -
+dU or Rho_a (Value of current is fixed)
++/- : multiplication or division the value on 3.16
+( correction for wrong scale reading )
+{- End of HELP -}                                  ³
