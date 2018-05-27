@@ -80,3 +80,25 @@ Daraus ergibt sich das konstante gyromagnetische Verhältnis der Protonen
 Aus der Lamorfrequenz kann also die magnetische Flussdichte bestimmt werden, die vom Protonenmagnometer direkt in nT ausgegeben wird.
 
 Die Messgenauigkeit liegt im Bereich von $\e{1}{nt}$ bis $\pm\e{0,1}{nT}$. Protonenmagnetometer sind bei starken Wechselfeldern und großen räumlichen Gradienten des Magnetfeldes ungeeignet.
+
+\subsection{Fluxgate-Magnetometer}
+Mit Hilfe dieses Messinstruments wird die Vektorkomponente des Magnetfelds, die parallel zu der magnetischen Achse ist, gemessen.
+Die Sonde ist Aufgebaut aus zwei Weicheisenkernen und vier parallel angeordneten Spulen. Jeweils zwei Spulen befinden sich auf den Weicheisenkernen und sind 
+von Wechselstrom durchflossen. Liegt kein äußeres Magnetfeld an, so erreichen beide Kerne die Sättigung gleichzeitig. Ist dies nicht gegeben befinden sich 
+die Kerne nicht gleich lang in der Sättigungsperiode.\\
+In eine dritte Spule, die Sensorspule, wird durch die beiden ersten Spulen eine Spannung induziert. Durch die vierte Spule, der Rückkopplungsspule wird immer
+ein Strom geschickt, der so groß ist, dass das äußere Feld kompensiert wird. Durch diesen Strom kann man Rückschlüsse auf das äußere Gleichfeld machen. 
+
+\subsection{Gradiometer}
+Das in der Geländeübung verwendete Gradiometer Grad601 der Firma Bartington Instruments enthält zwei 3-Komponenten Fluxgate-Magnetometer. Diese sind mit einem 
+Abstand von 1 m senktrecht übereinander angebracht.
+Aus der Differenz der beiden Vertiaklkomponenten der Magnetometer und deren Abstand kann der vertikale Gradient
+\begin{equation}
+ \frac{\partial B}{\partial z} \approx  \frac{B_{mathrm{u}}-B_0}{\Delta z} \fullstop
+\end{equation}
+$B_{mathrm{u}}$ bezeichnet den Messwert des unteren Sensors und $B_0$ den oberen. Die Einheit des vertikalen Gradienten ist nT/m.
+
+
+
+
+
