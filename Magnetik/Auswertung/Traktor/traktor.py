@@ -15,6 +15,8 @@ plt.grid()
 #plt.savefig('plot_traktor.pdf')
 
 n=97 #Anzahl geplotteter Messpunkte
+#Der Einfluss des Traktors ist nur am Anfang zu sehen.
+#Deshalb reicht es, nur den Anfang der Messung zu plotten.
 
 v=np.zeros(n)
 w=np.zeros(n)
