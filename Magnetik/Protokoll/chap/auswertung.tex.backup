@@ -1,8 +1,8 @@
 \section{Kalibrierung des Torsions-Magnetometers}
 
-Der durch die Spulen fließende Strom wird zunächst mit dem Spulenkennwert $s$ und der Formel
+Die Messwerte der Kalibrierungsmessung sind in Abbildung \ref{fig:MPKalibrierung} zu sehen. Zur Auswertung wird zunächst der durch die Spulen fließende Strom mit dem Spulenkennwert $s$ und der Formel
 \begin{equation}
- B=s\cdot I=I\cdot \eb{29,5}{\mu T}{A} 
+ B=s\cdot I=I\cdot \eb{26,5}{nT}{mA} 
 \end{equation}
 in das Magnetfeld umgerechnet. Der Plot der Messwerte und der linearen Regression ist in Abbildung \ref{fig:kalibrierung} zu sehen. Bei der Regression ergab sich eine Steigung von $\eb{-0.0039}{Skt}{nT}$. Der negative Kehrwert dieser Steigung liefert den Kalibrierungsfaktor
 \begin{equation}
@@ -12,8 +12,19 @@ in das Magnetfeld umgerechnet. Der Plot der Messwerte und der linearen Regressio
 \begin{figure}
  \centering
  \includegraphics[width=\textwidth]{fig/kalibrierung.pdf}
- \caption[Bestimmung des Kalibrierungsfaktors des Torsions-Magnetometers]{Bestimmung des Kalibrierungsfaktors des Torsions-Magnetometers. Aufgetragen sind die Ablesewerte am Gfz in Skt über die angelegte magnetische Flussdichte in nT}
+ \caption[Bestimmung des Kalibrierungsfaktors des Torsions-Magnetometers]{Bestimmung des Kalibrierungsfaktors des Torsions-Magnetometers. Aufgetragen sind die Ablesewerte am Gfz in Skt über die angelegte magnetische Flussdichte in nT.}
  \label{fig:kalibrierung}
+\end{figure}
+
+\section{Kartierung}
+
+In Abbildung \ref{fig:Kartierung} ist das Ergebnis der Kartierung abgebildet. Der Basaltgang ist deutlich als magnetische Anomalie zu sehen (in der Abbildung in rot dargestellt). Diese verläuft parallel zur Diagonalen M1-M3. Es bestätigt sich also auch nochmal die Wahl der Lage der Profile entlang von M4-M2 senkrecht zum Gang, die noch genauer untersucht wurden.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{fig/kartierung_verschwommen.png}
+ \caption[Ergebnis der Kartierung]{Ergebnis der Kartierung. M1 befindet sich in der linken oberen Ecke, M2 in der rechten oberen, M3 in der rechten unteren und M4 in der linken unteren.}
+ \label{fig:Kartierung}
 \end{figure}
 
 
