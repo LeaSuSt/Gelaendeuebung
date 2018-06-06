@@ -27,6 +27,27 @@ In Abbildung \ref{fig:Kartierung} ist das Ergebnis der Kartierung abgebildet. De
  \label{fig:Kartierung}
 \end{figure}
 
+\section{Vergleich der Messgeräte}
+
+Das Messprotokoll zum Vergleich der Messgeräte befindet sich in Abbildung \ref{fig:MPVergleich} im Anhang. Die Mittelwerte dieser Messungen stehen in Tabelle \ref{tab:VergleichErgebnis}. Es fällt auf, dass das vom neuen Gerät gemessene Magnetfeld 869\,nT bzw. 897.5\,nT von den anderen Geräten abweicht. Die beiden älteren Protonenmagnetometer weichen mit 28,5\,nT deutlich weniger voneinander ab. Solche kleinen Abweichungen könnten an ungenauen Messungen der Lamorfrequenz liegen, wenn beispielsweise die Beobachtungszeit zu gering war, also nicht genug Periode vermessen wurden. Außerdem könnte die geräteinterne Zeitskala nicht ganz korrekt gewesen sein. Auch die Stangen der Messgeräte hatten vielleicht nicht genau die selbe Länge oder die Messgeräte wurden nicht genau in Richtung Nord-Süd ausgerichtet. Diese Gründe können jedoch vermutlich nicht die größeren Abweichung vom neueren Gerät zu den anderen erklären.
+
+\begin{table}[h!]
+ \centering
+ \begin{tabular}{rl}
+ \toprule
+ Messgerät & Totalintensität an Basisstation in nT \\
+ \midrule
+ Nr. 1 & 48102 \\
+ Nr. 2 & 48073,5 \\
+ Neues Gerät & 48971 \\
+ Fluxgate &  \\
+ \bottomrule
+ \end{tabular}
+\label{tab:VergleichErgebnis}
+\end{table}
+
+Um die Messungen der verschiedenen Messgeräte miteinander vergleichen zu können, muss eines ausgewählt werden, auf das die Messungen mit den anderen korrigiert werden. Dazu verwenden wir die Messungen des Magnetfelds am BFO (siehe Abbildung \ref{})
+
 \section{Profile}
 
 Es wurden 

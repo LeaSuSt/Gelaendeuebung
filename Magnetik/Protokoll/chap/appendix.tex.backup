@@ -12,8 +12,8 @@
 \begin{figure}[h!]
  \centering
  \includegraphics[width=\textwidth]{fig/Messprotokolle/VergleichMagnetometer.png}
- \caption{Messprotokoll zum Profil zur Untersuchung der Einf}
- \label{fig:}
+ \caption{Messprotokoll zum Vergleich der Protonenmagnetometer und des Fluxgates}
+ \label{fig:MPVergleich}
 \end{figure}
 
 %Huette
@@ -24,7 +24,7 @@
  \label{fig:MPHuette}
 \end{figure}
 
-
+\section{Sonstige Abbildungen} %???Anderer Name
 
 % \begin{figure}[h!]
 %  \centering
