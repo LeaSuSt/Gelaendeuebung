@@ -1,0 +1,154 @@
+\documentclass{include/protokollclass}
+% Main File - Based on protokollclass.cls
+% Comments are mostly in English (and some in German, concerning the Praktikum)
+% ------------------------------------------------------------------------------
+% Further files in folder:
+%  - include/cmds.tex (for macros and additional commands)
+%  - include/kitlogo.pdf (for titlepage)
+%  - lit.bib (bibtex bibliography database)
+%  - include/titlepage.tex (for layout of titelpage)
+% ------------------------------------------------------------------------------
+% Useful Supplied Packages:
+% amsmath, amssymb, mathtools, bbm, upgreek, nicefrac,
+% siunitx, varioref, booktabs, graphicx, tikz, multicol
+
+\usepackage{rotating}
+\usepackage{icomma}
+\usepackage{subfig}
+\usepackage{pdfpages}
+\usepackage[onehalfspacing]{setspace}
+
+
+%% ---------------------------------------------
+%% |    Informationen über dieses Protokoll    |
+%% ---------------------------------------------
+\newcommand{\praktikum}{P1}                % P1 oder P2
+\newcommand{\semester}{WS16/17}            % z.B. "WS14/15" oder "SS15"
+
+\newcommand{\wochentag}{Di}                % Mo, Di, Mi oder Do
+\newcommand{\gruppennr}{04}                % Zweistellige Gruppennummer
+
+\newcommand{\nachnamea}{Friedrich}             % Nachname des ersten Praktikanten
+\newcommand{\vornamea}{Tabea}               % Vorname des ersten Praktikanten
+\newcommand{\nachnameb}{Stockmeier}              % Nachname des zweiten Praktikanten
+\newcommand{\vornameb}{Lea}              % Vorname des zweiten Praktikanten
+
+\newcommand{\emailadressen}{lea.stockmeier@web.de, tabea.friedrich@t-online.de}
+% optionale Angabe von Emailadresse(n) für den Kontakt mit dem Betreuer
+
+\newcommand{\versuch}{Toller Name Versuch} % Name des Versuchs
+\newcommand{\versuchsnr}{80}               % bitte die korrekte Nummer dem 
+                                           % Arbeitsplatz am Versuchstag 
+                                           % entnehmen
+\newcommand{\fehlerrechnung}{Nein}         % Ob Fehlerrechnung im Versuch 
+                                           % durchgeführt wurde oder nicht
+
+\newcommand{\betreuer}{M. Mustermann}      % Name des zuständigen Betreuers
+\newcommand{\durchgefuehrt}{01.09.16}      % Datum, an dem der Versuch 
+                                           % durchgeführt wurde
+
+
+
+
+
+%% --------------------------------------
+%% |    Settings for Word Separation    |
+%% --------------------------------------
+% Help for separation:
+% In German package the following hints are additionally available:
+% "- = Additional separation
+% "| = Suppress ligation and possible separation (e.g. Schaf"|fell)
+% "~ = Hyphenation without separation (e.g. bergauf und "~ab)
+% "= = Hyphenation with separation before and after
+% "" = Separation without a hyphenation (e.g. und/""oder)
+
+% Describe separation hints here:
+\hyphenation
+{
+    über-nom-me-nen an-ge-ge-be-nen
+    %Pro-to-koll-in-stan-zen
+    %Ma-na-ge-ment  Netz-werk-ele-men-ten
+    %Netz-werk Netz-werk-re-ser-vie-rung
+    %Netz-werk-adap-ter Fein-ju-stier-ung
+    %Da-ten-strom-spe-zi-fi-ka-tion Pa-ket-rumpf
+    %Kon-troll-in-stanz
+}
+
+
+
+
+
+% um die Titelseite per PDF-reader auszufüllen. Vorgefertigte Daten
+% können in Datei 'data.tex' modifiziert werden.
+%\setboolean{forminput}{true}
+% um die Anmerkungen zu den Textfeldern anzeigen zu lassen
+%\setboolean{showannotations}{true}
+% Erneuern der Seitenzahl in jedem Kapitel
+%\setboolean{chapResetPageNumb}{true}
+% Einbinden der Kapitelnummer in der Seitenzahl
+%\setboolean{chapWiseNumb}{true}
+% english or ngerman (new german für neue deutsche Rechtschreibung statt german)
+\SelectLanguage{ngerman}
+
+\title{Geophysikalische Geländeübungen \\ SS 2018 \\ Name Versuch}
+\subtitle{Messgebiet A59/1 (Riedheim)}
+\author{\\ Svenja Müller \\ mueller-svenja@gmx.net
+\\ \\und\\ \\
+Lea Stockmeier \\ lea.stockmeier@web.de \\ \\ \\
+Betreuer: Vorname1 Nachname1 und Vorname2 Nachname2}
+\date{\vfill\vfill\vfill \today}
+
+
+%% -----------------------
+%% |    Main Document    |
+%% -----------------------
+\begin{document}
+    % Titlepage und ToC
+    \FrontMatter
+
+    \maketitle
+
+    \begingroup \let\clearpage\relax    % in order to avoid listoffigures and
+    \tableofcontents                    % listoftables on new pages
+    \listoffigures
+    \listoftables
+    \endgroup
+    %\cleardoublepage
+
+
+
+    % Contents
+    \MainMatter
+    
+    \emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
+                                        %        in toc]{name of the chapter}
+    \pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
+                                        %        added]{name of the chapter}
+    
+    \chapter{Auswertung}
+%     \input{./chap/chapter1.tex} %\cleardoublepage
+
+    % appendix for more or less interesting calculations
+    \Appendix
+    \chapter*{\appendixname} \addcontentsline{toc}{chapter}{\appendixname}
+    % to make the appendix appear in ToC without number. \appendixname = 
+    % Appendix or Anhang (depending on chosen language)
+    \input{./chap/appendix.tex} %\cleardoublepage
+
+
+
+    % Bibliography
+    \TheBibliography
+
+    % BIBTEX
+    % use if you want citations to appear even if they are not referenced to: 
+    % \nocite{*} or maybe \nocite{Kon64,And59} for specific entries
+    %\nocite{*}
+    \bibliographystyle{babalpha}
+    \bibliography{lit.bib}
+
+    % THEBIBLIOGRAPHY
+    %\begin{thebibliography}{000}
+    %    \bibitem{ident}Entry into Bibliography.
+    %\end{thebibliography}
+\end{document}

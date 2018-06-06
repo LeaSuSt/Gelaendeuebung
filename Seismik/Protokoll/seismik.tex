@@ -121,13 +121,22 @@ Betreuer: Vorname1 Nachname1 und Vorname2 Nachname2}
     % Contents
     \MainMatter
     
-    \emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
+%     \emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
                                         %        in toc]{name of the chapter}
-    \pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
+%     \pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
                                         %        added]{name of the chapter}
+    
+    \chapter{Einleitung}
+    \input{./chap/einleitung.tex}
     
     \chapter{Theoretische Grundlagen}
     \input{./chap/theorie.tex} %\cleardoublepage
+    
+    \chapter{Versuchsdurchführung}
+    \input{./chap/beschreibung.tex}
+    
+    \chapter{Auswertung}
+    \input{./chap/auswertung.tex}
 
     % appendix for more or less interesting calculations
     \Appendix

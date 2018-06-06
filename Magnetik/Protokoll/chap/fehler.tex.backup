@@ -1,0 +1,30 @@
+\section{Einfluss äußerer Störfaktoren auf Basisstation}
+
+Um eine Einschätzung dafür zu bekommen, wie sehr das Magnetfeld an der Basisstation von äußeren Störfaktoren, wie zum Beispiel der Hütte, abhängig war, wurde ein Profil von der Basisstation aus an der Hütte vorbei gelegt. Das zugehörige Messprotokoll befindet sich im Anhang in Abbildung \ref{fig:MPHuette}.
+
+In Diagramm \ref{fig:plot_huette} sind die Messergebnisse graphisch dargestellt. Es ist zu erkennen, dass das Magnetfeld bei 19\,m, also neben der Hütte, abnimmt. In der Nähe der Basisstation wird der Messwert jedoch wieder annähernd konstant. Um jedoch sicher sagen zu können, dass der Einfluss der Hütte nur bis zu einer Entfernung von 5\,m zu messen ist, hätten wir die Messung auf der anderen Seite der Basisstation noch weiter führen müssen.
+
+\begin{figure}[h!]
+ \centering
+ \includegraphics[width=\textwidth]{fig/plot_huette.pdf}
+ \caption[Einfluss der Umgebung auf die Basismessung]{Einfluss der Umgebung auf die Basismessung. Die Totalintensität in nT ist über dem Abstand zur Basisstation in m aufgetragen. Der Tisch mit vielen Arbeitsmaterialien befindet sich bei 13,5\,m und die Hütte bei 19\,m.}
+ \label{fig:plot_huette}
+\end{figure}
+
+% \begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=\textwidth]{fig/Messprotokolle/}
+%  \caption{}
+%  \label{fig:}
+% \end{figure}
+
+\section{Einfluss eines vorbeifahrenden Traktors}
+
+Es fuhr an diesem Tag mehrmals ein kleiner Traktor an der Messwiese vorbei. Es wurden jedoch keine Messwerte aufgenommen, als sich der Traktor in unmittelbarer Nähe befand. Dennoch wurde während einer Vorbeifahrt eine Messung mit dem Gradiometer durchgeführt. Dieses wurde in einem Abstand von circa einem Meter neben dem Feldweg möglichst still gehalten. Das Diagramm dieser Messung ist in Abbildung \ref{fig:plot_traktor} zu sehen. Zur Zeit der Peaks war der Traktor dem Gradiometer am nächsten. Es ist also deutlich zu erkennen, dass der Traktor einen Einfluss auf das Magnetfeld in seiner Näheren Umgebung hat. 
+
+\begin{figure}[h!]
+ \centering
+ \includegraphics[width=\textwidth]{fig/plot_traktor.pdf}
+ \caption[Messung während einer Vorbeifahrt des Traktors]{Messung während einer Vorbeifahrt des Traktors. Der Gradient der Vertikalkomponente ist über der Zeit nach Beginn der Messung aufgetragen.}
+ \label{fig:plot_traktor}
+\end{figure}

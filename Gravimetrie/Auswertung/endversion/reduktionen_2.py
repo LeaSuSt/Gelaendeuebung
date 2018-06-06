@@ -16,6 +16,8 @@ rw = np.array(werte[:,1])
 hw = np.array(werte[:,2])
 gelred=np.array(werte[:,3])
 
+x,y,z,w=np.loadtxt('tachymeter-ergebnisse.txt', unpack=True)
+
 rwred= np.min(rw)
 rw= rw-rwred
 hwred= np.min(hw)
