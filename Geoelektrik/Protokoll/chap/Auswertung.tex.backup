@@ -1,0 +1,35 @@
+
+%Auswertung
+
+
+\section{Wenner-Kartierung}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{wennerkartierung.png}
+\caption{Tomographie Modell}
+\label{abb:fab}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Tomographie}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{Tomographie.bmp}
+\caption{Tomographie Modell}
+\label{abb:fab}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\section{Sondierung}
