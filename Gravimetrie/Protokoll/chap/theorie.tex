@@ -51,16 +51,20 @@ Die Breitenreduktion beinhaltet die räumlichen Schwereunterschiede aufgrund der
 liefert mit dem Abstand $L$ zur geographischen Breite des Referenzpunkts den Korrekturwert.
 
 % regionale Reduktion???
+Die regionale Reduktion $\q{\delta}{regio}$ beachtet den überregionalen Trend nach der Karte der Bougueranomalien von Baden-Württemberg. Sie kann aus dem Rechts- und Hochwert mit Formel
+\begin{equation}
+ \q{\delta}{regio}=\left( 0,000953\cdot \Delta\q{L}{Hoch} - 0,00055 \cdot \Delta\q{L}{Rechts} \right) \eb{}{mGal}{m}
+\end{equation}
+bestimmt werden. Der Rechtswert $\Delta\q{L}{Rechts}$ ist der Fortschritt in Ostrichtung bezüglich eines gewählten Referenzpunkts.
+Der Hochwert $\Delta\q{L}{Hoch}$ ist der Fortschritt in Nordrichtung bezüglich des gleichen Referenzpunkts. Beide Größen haben die Einheit Meter.
 
 Von einer Bougueranomalie $\q{g}{Bouguer}$ wird gesprochen, wenn all diese Reduktionen auf den Messwert $\q{g}{mess}$ angewendet wurden. Es gilt also
 % regio???
-\begin{equation}
- \q{g}{Bouguer}=\q{g}{mess}-\q{\delta}{g\,Instrumentenhoehe}-\q{\delta}{g\,Gezeiten}-\q{\delta}{g\,Drift}-\q{\delta}{g\,Gelaende}-\q{\delta}{g\,Freiluft}-\q{\delta}{g\,Breite}-\q{\delta}{g\,Bouguer}
-\end{equation}
-
-\section{Dichtebestimmung über bekannte Störkörper???}
-
-% Was machen wir dazu???
+\begin{align}
+ \q{g}{Bouguer}=\q{g}{mess}-\q{\delta}{g\,Instrumentenhoehe}-\q{\delta}{g\,Gezeiten}-\q{\delta}{g\,Drift}-\q{\delta}{g\,Gelaende} \\ \notag
+ -\q{\delta}{g\,Freiluft}-\q{\delta}{g\,Breite}-\q{\delta}{g\,Bouguer}
+ -\q{\delta}{regio}
+\end{align}
 
 \section{Messinstrumente}
 

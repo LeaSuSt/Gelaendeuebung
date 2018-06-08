@@ -153,13 +153,13 @@ beta      = 29;
 % Neigung des Gangs (abgetragen im Gegenuhrzeigersinn, in �, 90�=vertikal)
 xi        = 100; 
 % magnetische Suszeptibilitaet
-kappa     = 0.015;   
+kappa     = 0.017;   
 % Tiefe Gangoberkante (in m)
-d         = 2;    
+d         = 2.5;    
 % Tiefe Gangunterkante (in m)
 D         = 1000;     
 % Gangbreite (in m)
-b         = 5.5;
+b         = 5;
 % Verschiebung des Ursprungs des Koordinatensystems der Modellierung
 XPOS      = 8;    
 % L�nge der Stange des Protonen-Pr�zessions-Magnetometers in m 
