@@ -9,7 +9,7 @@ in das Magnetfeld umgerechnet. Der Plot der Messwerte und der linearen Regressio
  \frac{\tau}{|\vec{m}|}=\eb{253}{nT}{Skt} \fullstop
 \end{equation}
 
-\begin{figure}
+\begin{figure}[!ht]
  \centering
  \includegraphics[width=\textwidth]{fig/kalibrierung.pdf}
  \caption[Bestimmung des Kalibrierungsfaktors des Torsions-Magnetometers]{Bestimmung des Kalibrierungsfaktors des Torsions-Magnetometers. Aufgetragen sind die Ablesewerte am Gfz in Skt über die angelegte magnetische Flussdichte in nT.}
@@ -20,7 +20,7 @@ in das Magnetfeld umgerechnet. Der Plot der Messwerte und der linearen Regressio
 
 In Abbildung \ref{fig:Kartierung} ist das Ergebnis der Kartierung abgebildet. Der Basaltgang ist deutlich als magnetische Anomalie zu sehen (in der Abbildung in rot dargestellt). Diese verläuft parallel zur Diagonalen M1-M3. Es bestätigt sich also auch nochmal die Wahl der Lage der Profile entlang von M4-M2 senkrecht zum Gang, die noch genauer untersucht wurden.
 
-\begin{figure}
+\begin{figure}[!ht]
  \centering
  \includegraphics[width=\textwidth]{fig/kartierung_verschwommen.png}
  \caption[Ergebnis der Kartierung]{Ergebnis der Kartierung. M1 befindet sich in der linken oberen Ecke, M2 in der rechten oberen, M3 in der rechten unteren und M4 in der linken unteren.}
@@ -31,8 +31,9 @@ In Abbildung \ref{fig:Kartierung} ist das Ergebnis der Kartierung abgebildet. De
 
 Das Messprotokoll zum Vergleich der Messgeräte befindet sich in Abbildung \ref{fig:MPVergleich} im Anhang. Die Mittelwerte dieser Messungen stehen in Tabelle \ref{tab:VergleichErgebnis}. Es fällt auf, dass das vom neuen Gerät gemessene Magnetfeld 869\,nT bzw. 897.5\,nT von den anderen Geräten abweicht. Die beiden älteren Protonenmagnetometer weichen mit 28,5\,nT deutlich weniger voneinander ab. Solche kleinen Abweichungen könnten an ungenauen Messungen der Lamorfrequenz liegen, wenn beispielsweise die Beobachtungszeit zu gering war, also nicht genug Periode vermessen wurden. Außerdem könnte die geräteinterne Zeitskala nicht ganz korrekt gewesen sein. Auch die Stangen der Messgeräte hatten vielleicht nicht genau die selbe Länge oder die Messgeräte wurden nicht genau in Richtung Nord-Süd ausgerichtet. Diese Gründe können jedoch vermutlich nicht die größeren Abweichung vom neueren Gerät zu den anderen erklären.
 
-\begin{table}[h!]
+\begin{table}[!ht]
  \centering
+ \caption{Messergebnis des Vergleichs der Protonenmagnetometer und des Fluxgates}
  \begin{tabular}{rl}
  \toprule
  Messgerät & Totalintensität an Basisstation in nT \\
@@ -46,12 +47,24 @@ Das Messprotokoll zum Vergleich der Messgeräte befindet sich in Abbildung \ref{
 \label{tab:VergleichErgebnis}
 \end{table}
 
-Um die Messungen der verschiedenen Messgeräte miteinander vergleichen zu können, muss eines ausgewählt werden, auf das die Messungen mit den anderen korrigiert werden. Dazu verwenden wir die Messungen des Magnetfelds am BFO (siehe Abbildung \ref{})
+Um die Messungen der verschiedenen Messgeräte miteinander vergleichen zu können, muss eines ausgewählt werden, auf das die Messungen mit den anderen korrigiert werden. Dazu verwenden wir die Messungen des Magnetfelds am BFO (siehe Abbildung \ref{fig:BFO}). Aus diesem Diagramm ist abzulesen, dass die Totalintensität des Magnetfelds am BFO am Messtag, den 22.05.2018, von 12:00 Uhr bis 18:00 Uhr zwischen 48220\,nT und 48250\,nT betrug. Die Messwerte des Geräts Nr. 1 liegen am nächsten an diesen, weswegen wir alle Werte auf dieses korrigieren. Es wird also für alle folgenden Auswertungen auf alle Messungen mit Gerät Nr. 2  28,5\,nT addiert und von allen Messungen mit dem neuen Gerät werden 869\,nT subtrahiert.
 
 \section{Profile}
 
-Es wurden 
+\subsection{Profile M22-M23, M21-M2 und M24-M25}
 
+Diese Profile haben einen Abstand von 3\,m zueinander und sind nach der Kartierung zu schließen senkrecht zum Gang. Es ist also anzunehmen, dass die Messwerte normiert auf Gerät Nr. 1 sehr ähnlich verlaufen sollten. In Abbildung \ref{fig:Vergleich_Profile} ist dies zu sehen. Es fällt auf, dass die Totalintensitäten nach Süden hin zunehmen. Unter der Annahme, dass die magnetische Suszeptibilität des Gangs, sein Streichwinkel und seine Neigung gleich bleiben, würde dies dafür sprechen, dass er beim südlichsten Profil näher an der Erdoberfläche ist. Diese These wird durch das Matlab-Modellierungsskript unterstützt. Lässt man alle Parameter unverändert und verkleinert nur die Tiefe der Gangoberkante, nehmen die berechneten Totalintensitäten über der Anomalie zu.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{fig/Vergleich_nahe_Profile.pdf}
+ \caption[Vergleich der Profile M22-M23, M21-M2 und M24-M25]{Vergleich der Profile M22-M23, M21-M2 und M24-M25. Die Profilkoordinate ist jeweils vom erstgenannten Profilende aus gemessen und die Messwerte wurden bereits auf Gerät Nr. 1 normiert.}
+ \label{fig:Vergleich_Profile}
+\end{figure}
+
+\subsection{Profil M26-M27}
+
+Auch dieses Profil wurde möglich
 
 % \begin{figure}
 %  \centering

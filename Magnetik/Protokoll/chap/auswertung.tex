@@ -47,12 +47,26 @@ Das Messprotokoll zum Vergleich der Messgeräte befindet sich in Abbildung \ref{
 \label{tab:VergleichErgebnis}
 \end{table}
 
-Um die Messungen der verschiedenen Messgeräte miteinander vergleichen zu können, muss eines ausgewählt werden, auf das die Messungen mit den anderen korrigiert werden. Dazu verwenden wir die Messungen des Magnetfelds am BFO (siehe Abbildung \ref{fig:BFO}). Aus diesem Diagramm ist abzulesen, dass die Totalintensität des Magnetfelds am BFO am Messtag, den 22.05.2018, von 12:00 Uhr bis 18:00 Uhr zwischen 48220\,nT und 48250\,nT betrug. Die Messwerte des Geräts Nr. 1 liegen am nächsten an diesen, weswegen wir alle Werte auf dieses korrigieren. Es wird also für alle folgenden Auswertungen auf alle Messungen mit Gerät Nr. 2  28,5\,nT addiert und von allen Messungen mit dem neuen Gerät werden 869\,nT subtrahiert.
+Um die Messungen der verschiedenen Messgeräte miteinander vergleichen zu können, muss eines ausgewählt werden, auf das die Messungen mit den anderen korrigiert werden. Dazu verwenden wir die Messungen des Magnetfelds am BFO (siehe Abbildung \ref{fig:BFO}). Aus diesem Diagramm ist abzulesen, dass die Totalintensität des Magnetfelds am BFO am Messtag, den 22.05.2018, von 12:00 Uhr bis 18:00 Uhr zwischen 48220\,nT und 48250\,nT betrug. Die Messwerte des Geräts Nr. 1 liegen am nächsten an diesen, weswegen wir alle Werte auf dieses korrigieren. Es wird also für alle folgenden Auswertungen auf alle Messungen mit Gerät Nr. 2  28,5\,nT addiert und von allen Messungen mit dem neuen Gerät werden 869\,nT subtrahiert. In den Modellierungen mit Matlab kann dies dadurch erreicht werden, dass bei allen Geräten der Messwert des ersten Messgeräts an der Basisstation als DATASHIFT verwendet wird.
 
 \section{Profile}
 
-Es wurden 
+Im folgenden werden die vermessenen Profile ausgewertet. Sie werden qualitativ verglichen und manche werden mit dem bereitgestellten Matlab-Skript modelliert.
 
+\subsection{Profile M22-M23, M21-M2 und M24-M25}
+
+Diese Profile haben einen Abstand von 3\,m zueinander und sind nach der Kartierung zu schließen senkrecht zum Gang. Es ist also anzunehmen, dass die Messwerte normiert auf Gerät Nr. 1 sehr ähnlich verlaufen sollten. In Abbildung \ref{fig:Vergleich_Profile} ist dies zu sehen. Es fällt auf, dass die Totalintensitäten nach Süden hin zunehmen. Unter der Annahme, dass die magnetische Suszeptibilität des Gangs, sein Streichwinkel und seine Neigung gleich bleiben, würde dies dafür sprechen, dass er beim südlichsten Profil näher an der Erdoberfläche ist. Diese These wird durch das Matlab-Modellierungsskript unterstützt. Lässt man alle Parameter unverändert und verkleinert nur die Tiefe der Gangoberkante, nehmen die berechneten Totalintensitäten über der Anomalie zu.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{fig/Vergleich_nahe_Profile.pdf}
+ \caption[Vergleich der Profile M22-M23, M21-M2 und M24-M25]{Vergleich der Profile M22-M23, M21-M2 und M24-M25. Die Profilkoordinate ist jeweils vom erstgenannten Profilende aus gemessen und die Messwerte wurden bereits auf Gerät Nr. 1 normiert.}
+ \label{fig:Vergleich_Profile}
+\end{figure}
+
+\subsection{Profil M26-M27}
+
+Auch dieses Profil wurde möglich
 
 % \begin{figure}
 %  \centering
