@@ -19,8 +19,8 @@ g_abs = 980722.809                       #mgal | absoluter Schwerewert in Engen 
 
 
 #declare errors
-delta_zoll = 0.0005                      #m | Unsicherheit auf die Ablesung am Zollstock bei der Bestimmung der Gerätehöhe; bedenke Schräghaltung!
-delta_messrad = 0.003                    #skt| Fehler auf das Messrad (-> zum Drehen) 
+delta_zoll = 0.005                      #m | Unsicherheit auf die Ablesung am Zollstock bei der Bestimmung der Gerätehöhe; bedenke Schräghaltung!
+delta_messrad = 0.005                    #skt| Fehler auf das Messrad (-> zum Drehen) 
                                          #bedenke auch Paralaxenfehler zb 0.010 skt?, gerätespezifisch
 delta_gezeiten = 0.002                   #mgal| Fehler beim Ablesen der Gezeitentabelle
 delta_libelle = 0.5*1.45*10**(-4)        #rad | Fehler auf die Genauigkeit der Horizontierung mit den Libellen; 1 Teilstrich entspricht 1.45*10**(-4) rad

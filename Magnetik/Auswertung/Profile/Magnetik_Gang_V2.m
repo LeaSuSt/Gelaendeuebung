@@ -147,19 +147,19 @@ IH        = 63.75;
 % Totalintansitaet des Hintergrundfeldes (in nT)
 TH        = 48000;  
 % Offset der Messung (Messwert an der Basis)
-DATASHIFT = 48102;  
+DATASHIFT = 48102;  % Nr 1: 48102, Nr 2: 48073.5
 % Streichwinkel des Gangs (abgetragen im Uhrzeigersinn, in �, 0�=N-S-Richtung)
-beta      = 15;  
+beta      = 29;  
 % Neigung des Gangs (abgetragen im Gegenuhrzeigersinn, in �, 90�=vertikal)
-xi        = 98; 
+xi        = 101; 
 % magnetische Suszeptibilitaet
-kappa     = 0.015;   
+kappa     = 0.017;   
 % Tiefe Gangoberkante (in m)
-d         = 1.8;    
+d         = 2;    
 % Tiefe Gangunterkante (in m)
 D         = 1000;     
 % Gangbreite (in m)
-b         = 5;
+b         = 4.7;
 % Verschiebung des Ursprungs des Koordinatensystems der Modellierung
 XPOS      = 17;    
 % L�nge der Stange des Protonen-Pr�zessions-Magnetometers in m 
@@ -331,7 +331,7 @@ ylim(datarange);
 
 % ----------------------------------
 % configure and plot legend box 
-t1 = ['$I_\mathrm{H}$ = ' num2str(IH,'%3.2f') ' $^\circ$'];
+t1 = ['I_H = ' num2str(IH,'%3.2f') ' ^\circ'];
 %t1 = ['$I_\mathrm{H}$ = ' num2str(IH,'%3.2f') ' Grad'];
 lh = legend(['modellierte Anomalie (' t1 ')'], Legende_Daten);
 set(lh, 'location','southoutside', 'fontsize',fonts-2, 'orientation','horizontal');
@@ -347,7 +347,7 @@ set(lh,'position',lpos);
 t2 = {['\bf Gang: $\qquad$']...
       ['$\beta$ = ' num2str(beta,'%3.1f') ' $^\circ$']...
       ['$\xi$ = ' num2str(xi,'%3.1f') ' $^\circ$']...
-      ['$d$ = ' num2str(d,'%2.1f') ' m']...
+      ['$d$ = ' num2str(d-h_stange,'%2.1f') ' m']...
       ['$b$ = ' num2str(b,'%2.1f') ' m']...
       ['$\kappa$ =   ' num2str(kappa,'%1.5f')]};
 

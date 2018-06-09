@@ -10,3 +10,12 @@ Mit der Tachymetrie wurde die Höhe der einzelnen Messpunkte relativ zu einer To
 
 \section{Reduktionen}
 
+Nach den bereits im Feld durchgeführten Reduktionen wurde noch am Versuchstag die Driftkorrektur mit dem zur Verfügung gestellten MATLAB-Programm GDRIFT durchgeführt. Da beim zweiten Durchlauf der mit Gravimeter 156G aufgenommene Wert sehr große Abweichungen zeigte, wurde dieser bei der Interpolation nicht berücksichtigt. Er wurde dennoch korrigiert und dann weiter verwendet. Nach Abzug der Drift von den einzelnen Messwerten, wurde der Mittelwert der beiden Messreihen für jedes Gravimeter gebildet. Nun wurden die Messreihen der beiden Gravimeter zusammen geführt, um das vollständige driftkorrigierte Profil zu erhalten. Dabei wurde das Offset der beiden Gravimeter zueinander am Basispunkt G0 berücksichtigt. Da nur der relative Unterschied dieser Werte relevant ist, wird der kleinste Messwert von allen abgezogen. Diese Werte werden im folgenden mit $\Delta \q{g}{driftkorr}$ bezeichnet.
+
+An diesen Werten werden die weiteren Korrekturen mit einem python-Skript durchgeführt. Es werden jeweils die Formeln aus Kapitel \ref{sec:Reduktionen} verwendet. Die driftkorrigierten Werte, alle Reduktionen und die dafür benötigten Größen sowie die Bouguer-Anomalie sind in Tabelle ??? aufgelistet.
+
+% ??? Tabelle mit allen Reduktionen, driftkorrigierte Wetrte...
+
+\section{Modellierung mit MATLAB}
+
+Nun kann die Modellierung mit MATLAB durgeführt werden.

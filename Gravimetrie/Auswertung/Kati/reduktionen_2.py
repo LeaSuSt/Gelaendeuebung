@@ -49,6 +49,8 @@ def geol(hw,rw):
 	return 0.000953*hw-0.00055*rw
     
 
+print "Gelaendereduktion: "
+print (gelred)
 print "Bouguerreduktion: "
 print (boug(relhoehe))
 print "Niveaureduktion: "
