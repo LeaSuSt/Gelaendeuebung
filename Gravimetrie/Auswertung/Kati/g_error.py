@@ -30,14 +30,14 @@ delta_libelle = 0.5*1.45*10**(-4)        #rad | Fehler auf die Genauigkeit der H
 delta_g = vert_grad*delta_zoll+eichf*delta_messrad+delta_gezeiten+g_abs/2.*(delta_libelle)**2   #Formel: s. Hilfreiche Handreichung Nr. 3
 
 #Gerät 156: array mit den driftkorrigierten Werte
-#drift_g_1 = np.array([4413.35,4413.148,4412.973,4412.893,4412.832,4412.677,4412.456,4412.2,4411.907])
-#drift_g_2 = np.array([4413.345,4413.091,4412.973,4412.887,4412.847,4412.669,4412.45,4412.207,4411.899])
+drift_g_1 = np.array([4413.35,4413.148,4412.973,4412.893,4412.832,4412.677,4412.456,4412.2,4411.907])
+drift_g_2 = np.array([4413.345,4413.091,4412.973,4412.887,4412.847,4412.669,4412.45,4412.207,4411.899])
 #Anmerkung: letzter Wert weggelassen, da einer zu viel -> dadurch hervorgerufener Fehler egal
 
 
 #Gerät 686: array mit den driftkorrigierten Werte
-drift_g_1 = np.array([3987.071,3986.962,3986.776,3986.641,3986.597,3986.467,3986.27,3986.066,3985.743])
-drift_g_2 = np.array([3987.075,3986.945,3986.787,3986.637,3986.593,3986.475,3986.27,3986.061,3985.705])
+#drift_g_1 = np.array([3987.071,3986.962,3986.776,3986.641,3986.597,3986.467,3986.27,3986.066,3985.743])
+#drift_g_2 = np.array([3987.075,3986.945,3986.787,3986.637,3986.593,3986.475,3986.27,3986.061,3985.705])
 
 
 #Formel für den Fehler auf eine Einzelmessung der Messwerte

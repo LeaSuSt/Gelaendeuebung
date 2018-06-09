@@ -8,13 +8,49 @@ Die GPS-Daten wurden von Alexandra ausgelesen und uns als Tabelle zur Verfügung
 
 Mit der Tachymetrie wurde die Höhe der einzelnen Messpunkte relativ zu einer Totalstation vermessen. Diese werden für die Freiluft- und Bouguerreduktion benötigt.
 
+%Tachymeter-Tabelle auch hier rein?
+
 \section{Reduktionen}
 
-Nach den bereits im Feld durchgeführten Reduktionen wurde noch am Versuchstag die Driftkorrektur mit dem zur Verfügung gestellten MATLAB-Programm GDRIFT durchgeführt. Da beim zweiten Durchlauf der mit Gravimeter 156G aufgenommene Wert sehr große Abweichungen zeigte, wurde dieser bei der Interpolation nicht berücksichtigt. Er wurde dennoch korrigiert und dann weiter verwendet. Nach Abzug der Drift von den einzelnen Messwerten, wurde der Mittelwert der beiden Messreihen für jedes Gravimeter gebildet. Nun wurden die Messreihen der beiden Gravimeter zusammen geführt, um das vollständige driftkorrigierte Profil zu erhalten. Dabei wurde das Offset der beiden Gravimeter zueinander am Basispunkt G0 berücksichtigt. Da nur der relative Unterschied dieser Werte relevant ist, wird der kleinste Messwert von allen abgezogen. Diese Werte werden im folgenden mit $\Delta \q{g}{driftkorr}$ bezeichnet.
+Nach den bereits im Feld durchgeführten Reduktionen wurde noch am Versuchstag die Driftkorrektur mit dem zur Verfügung gestellten MATLAB-Programm GDRIFT durchgeführt. Da beim zweiten Durchlauf der mit Gravimeter 156G aufgenommene Wert sehr große Abweichungen zeigte, wurde dieser bei der Interpolation nicht berücksichtigt. Er wurde dennoch korrigiert und dann weiter verwendet. Nach Abzug der Drift von den einzelnen Messwerten, wurde der Mittelwert der beiden Messreihen für jedes Gravimeter gebildet. Nun wurden die Messreihen der beiden Gravimeter zusammen geführt, um das vollständige driftkorrigierte Profil zu erhalten. Dabei wurde das Offset der beiden Gravimeter zueinander am Basispunkt G0 berücksichtigt. Da nur der relative Unterschied dieser Werte relevant ist, wird der kleinste Messwert von allen abgezogen.
+%Diese Werte werden im folgenden mit $\Delta \q{g}{driftkorr}$ bezeichnet.
 
-An diesen Werten werden die weiteren Korrekturen mit einem python-Skript durchgeführt. Es werden jeweils die Formeln aus Kapitel \ref{sec:Reduktionen} verwendet. Die driftkorrigierten Werte, alle Reduktionen und die dafür benötigten Größen sowie die Bouguer-Anomalie sind in Tabelle ??? aufgelistet.
+An diesen Werten werden die weiteren Korrekturen mit einem python-Skript durchgeführt. Es werden jeweils die Formeln aus Kapitel \ref{sec:Reduktionen} verwendet. In Tabelle \ref{tab:reduktionen} sind diese Reduktionen und die daraus resultierende Bougueranomalie aufgeführt.
+
+%Höhe, Rechtswert, ... in eine Tabelle
+
+%Zwischenergebnisse (driftreduzierte, relative Werte...)
 
 % ??? Tabelle mit allen Reduktionen, driftkorrigierte Wetrte...
+\begin{landscape}
+\begin{table}[!ht]
+\centering
+\caption{Werte der durchgeführten Reduktionen und Wert der resultierenden Bougueranomalie}
+\label{tab:reduktionen}
+\begin{tabular}{llllllll}
+\toprule
+Messpunkt & Profilkoordinate in m & $\q{\delta}{g\,Bouguer}$ in mGal & $\q{\delta}{g\,Niv}$ in mGal & $\q{\delta}{g\,Breite}$ in $\upmu$Gal & $\q{\delta}{g\,geol}$ in $\upmu$Gal & $\q{\delta}{g\,Gel}$ in mGal & $\q{g}{Bouguer}$ in mGal \\
+\midrule
+G0 & 0.000 & 0.000 & 0.000 & 0.00 & 0.000 & -0.701 & 1.444 \\
+G1 & 7.952 & 0.042 & -0.136 & 3.13 & -0.200 & -0.707 & 1.415 \\
+G2 & 14.929 & 0.097 & -0.310 & 5.97 & -0.236 & -0.71 & 1.424 \\
+G3 & 20.897 & 0.141 & -0.453 & 8.32 & -0.376 & -0.711 & 1.456 \\
+G4 & 25.860 & 0.187 & -0.599 & 10.36 & -0.364 & -0.715 & 1.472 \\
+G5 & 29.780 & 0.216 & -0.693 & 11.92 & -0.444 & -0.715 & 1.475 \\
+G6 & 32.799 & 0.246 & -0.788 & 13.09 & -0.540 & -0.717 & 1.516 \\
+G7 & 34.825 & 0.270 & -0.865 & 13.91 & -0.568 & -0.717 & 1.548 \\
+G8 & 36.842 & 0.293 & -0.938 & 14.79 & -0.482 & -0.717 & 1.567 \\
+G9 & 39.792 & 0.325 & -1.042 & 15.99 & -0.489 & -0.719 & 1.543 \\
+G10 & 43.761 & 0.360 & -1.154 & 17.65 & -0.444 & -0.721 & 1.546 \\
+G11 & 48.741 & 0.404 & -1.294 & 19.64 & -0.516 & -0.722 & 1.512 \\
+G12 & 54.697 & 0.446 & -1.429 & 22.10 & -0.487 & -0.725 & 1.511 \\
+G13 & 61.658 & 0.496 & -1.587 & 24.88 & -0.611 & -0.73 & 1.502 \\
+G14 & 69.585 & 0.560 & -1.792 & 28.11 & -0.640 & -0.733 & 1.506 \\
+G15 & 78.549 & 0.643 & -2.059 & 31.73 & -0.721 & -0.738 & 1.480 \\
+G16 & 84.602 & 0.743 & -2.379 & 34.19 & -0.751 & -0.744 & 1.602 \\ \bottomrule
+\end{tabular}
+\end{table}
+\end{landscape}
 
 \section{Modellierung mit MATLAB}
 
