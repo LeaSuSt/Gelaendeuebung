@@ -92,5 +92,13 @@ ein Strom geschickt, der so groß ist, dass das äußere Feld kompensiert wird. 
 \subsection{Gradiometer}
 Das in der Geländeübung verwendete Gradiometer Grad601 der Firma Bartington Instruments enthält zwei 3-Komponenten Fluxgate-Magnetometer. Diese sind mit einem 
 Abstand von 1 m senktrecht übereinander angebracht.
+Aus der Differenz der beiden Vertiaklkomponenten der Magnetometer und deren Abstand kann der vertikale Gradient
+\begin{equation}
+ \frac{\partial B}{\partial z} \approx  \frac{B_{mathrm{u}}-B_0}{\Delta z} \fullstop
+\end{equation}
+$B_{mathrm{u}}$ bezeichnet den Messwert des unteren Sensors und $B_0$ den oberen. Die Einheit des vertikalen Gradienten ist nT/m.
+
+
+
 
 
