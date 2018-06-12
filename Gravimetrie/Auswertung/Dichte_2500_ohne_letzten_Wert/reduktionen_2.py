@@ -21,7 +21,6 @@ rw= rw-rwred
 hwred= np.min(hw)
 hw= hw-hwred
 
-print(rwred)
 
 
 # konstante Variablen
@@ -50,8 +49,6 @@ def geol(hw,rw):
 	return 0.000953*hw-0.00055*rw
     
 
-print "Gelaendereduktion: "
-print (gelred)
 print "Bouguerreduktion: "
 print (boug(relhoehe))
 print "Niveaureduktion: "
@@ -70,9 +67,9 @@ np.savetxt("g_red.csv", Korr, delimiter=",")
 np.savetxt('alle_korrekturen.txt',np.r_[gelred, boug(relhoehe), niv(relhoehe), breit(hw), geol(hw, rw), Korr], delimiter=",", header="Gelaendereduktion, Bouguerreduktion, Niveaureduktion, Breitenreduktion, geologische Reduktion, reduzierte Messwerte")
 
 x = [0, 7.952, 14.929, 20.897, 25.86, 29.78, 32.799, 34.825, 36.842, 39.792, 43.761, 48.741, 54.697, 61.658, 69.585, 78.549, 84.602 ]
-plt.plot(x, Korr, 'o', label='reduzierte Messwerte')
-plt.xlabel('Profilkoordinate in m', fontsize=16)
-plt.ylabel('$g_{\mathrm{Bouguer}}$ in mGal', fontsize=16)
-plt.legend(loc='upper left')
+plt.plot(x, Korr, 'bo', label='reduzierte Messwerte')
+plt.xlabel('Profilkoordinate / m')
+plt.ylabel('$g_B$ / mgal')
+plt.legend(loc=0)
 plt.show()
 

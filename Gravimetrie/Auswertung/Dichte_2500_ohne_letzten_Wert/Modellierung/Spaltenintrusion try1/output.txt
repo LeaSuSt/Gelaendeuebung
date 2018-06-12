@@ -1,0 +1,38 @@
+MODELL 1: Profillage des Schweremaximums (in meter):   36
+MODELL 1: Tiefe des Scheitelpunktes des St�rk�rpers (in meter):   1.5
+MODELL 1: Tiefenerstreckung des St�rk�rpers (in meter)   1000
+MODELL 1: Einfallen [Grad, W+, E-]   120
+MODELL 1: Winkel zw. Messprofil und Streichrichtung des St�rk�rpers   90
+Optional: linearen Trend schaetzen [Ja=1, Nein=0]   0
+Optional: a priori Trend abziehen [Ja=1, Nein=0]   0
+Optional: mittlerer Fehler der Beobachtungen (in mgal):   0.019
+Optional: a priori Dichteunterschied Basalt/Umgebungsmaterial (in kg/m^3);   800
+ 
+ ERGEBNISSE
+============================
+ Tiefe des St�rk�rpers (oberfl�chenn�chster Punkt):  0.39734 +/- 0.099929 m
+ Breite*Dichteunterschied Basalt/Hostrock: 3528.5033 +/- 319.7724 m*kg/m^3
+ Breite fuer Dichteunterschied 800 kg/m^3: 4.4106 +/- 0.39972 m
+ Stoermasse/m: 3528503.2683 +/- 319772.4341 kg/m
+ Varianzfaktor: 0.00019105 mgal^2
+ Chi-Quadrat normalized:   0.52921
+ 
+      x      g-obs.     g-mod.
+     [m]     [mgal]     [mgal]
+===============================
+     0.0     2.1453     2.1153
+     8.0     2.1188     2.1258
+    14.9     2.1252     2.1381
+    20.9     2.1549     2.1528
+    25.9     2.1707     2.1705
+    29.8     2.1715     2.1913
+    32.8     2.2121     2.2135
+    34.8     2.2416     2.2289
+    36.8     2.2587     2.2380
+    39.8     2.2338     2.2373
+    43.8     2.2360     2.2276
+    48.7     2.1989     2.2152
+    54.7     2.1972     2.2034
+    61.7     2.1891     2.1925
+    69.6     2.1900     2.1825
+    78.5     2.1624     2.1733

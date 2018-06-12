@@ -12,16 +12,31 @@ Mit der Tachymetrie wurde die Höhe der einzelnen Messpunkte relativ zu einer To
 
 \section{Reduktionen}
 
-Nach den bereits im Feld durchgeführten Reduktionen wurde noch am Versuchstag die Driftkorrektur mit dem zur Verfügung gestellten MATLAB-Programm GDRIFT durchgeführt. Da beim zweiten Durchlauf der mit Gravimeter 156G aufgenommene Wert sehr große Abweichungen zeigte, wurde dieser bei der Interpolation nicht berücksichtigt. Er wurde dennoch korrigiert und dann weiter verwendet. Nach Abzug der Drift von den einzelnen Messwerten, wurde der Mittelwert der beiden Messreihen für jedes Gravimeter gebildet. Nun wurden die Messreihen der beiden Gravimeter zusammen geführt, um das vollständige driftkorrigierte Profil zu erhalten. Dabei wurde das Offset der beiden Gravimeter zueinander am Basispunkt G0 berücksichtigt. Da nur der relative Unterschied dieser Werte relevant ist, wird der kleinste Messwert von allen abgezogen.
+Nach den bereits im Feld durchgeführten Reduktionen wurde noch am Versuchstag die Driftkorrektur mit dem zur Verfügung gestellten MATLAB-Programm GDRIFT durchgeführt. Da beim zweiten Durchlauf der mit Gravimeter 156G am Punkt G2 aufgenommene Wert sehr große Abweichungen zeigte, wurde dieser bei der Interpolation nicht berücksichtigt. Das gleiche war bei G15 und Gerät 686G der Fall. Beide Werte wurden dennoch korrigiert und dann weiter verwendet. Die Driftkurven sind in den Abbildungen \ref{fig:drift1} und \ref{fig:drift2} abgebildet. Nach Abzug der Drift von den einzelnen Messwerten, wurde der Mittelwert der beiden Messreihen für jedes Gravimeter gebildet. Nun wurden die Messreihen der beiden Gravimeter zusammen geführt, um das vollständige driftkorrigierte Profil zu erhalten. Dabei wurde das Offset der beiden Gravimeter zueinander am Basispunkt G0 berücksichtigt. Da nur der relative Unterschied dieser Werte relevant ist, wird der kleinste Messwert von allen abgezogen.
 %Diese Werte werden im folgenden mit $\Delta \q{g}{driftkorr}$ bezeichnet.
 
-An diesen Werten werden die weiteren Korrekturen mit einem python-Skript durchgeführt. Es werden jeweils die Formeln aus Kapitel \ref{sec:Reduktionen} verwendet. In Tabelle \ref{tab:reduktionen} sind diese Reduktionen und die daraus resultierende Bougueranomalie aufgeführt.
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=0.8\textwidth]{fig/G156drift_endgultig}
+ \caption[Gravimeterdrift des Geräts 156G]{Gravimeterdrift des Geräts 156G. Die Messwerte an Punkt G2 wurden für die Bestimmung der Driftkurve nicht verwendet, weil sie zu starke Abweichungen zeigten.}
+ \label{fig:drift1}
+\end{figure}
+
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=0.8\textwidth]{fig/G686drift_endgultig}
+ \caption[Gravimeterdrift des Geräts 686G]{Gravimeterdrift des Geräts 686G. Die Messwerte an Punkt G15 wurden für die Bestimmung der Driftkurve nicht verwendet, weil sie zu starke Abweichungen zeigten.}
+ \label{fig:drift2}
+\end{figure}
+
+An diesen Werten werden die weiteren Korrekturen mit einem python-Skript durchgeführt. Es werden jeweils die Formeln aus Kapitel \ref{sec:Reduktionen} verwendet. In Tabelle \ref{tab:reduktionen} sind diese Reduktionen und die daraus resultierende Bougueranomalie aufgeführt. Für die Bouguer-Plattenreduktion wurde eine Dichte von $\rho=\eb{2500}{kg}{m^3}$ verwendet, weil Dichten von $\eb{2400}{kg}{m^3}$ bis $\eb{2500}{kg}{m^3}$ oft bei gravimetrischen Messungen mit dem Nettleton-Verfahren im Hegau bestimmt werden. Allgemein ist dies aber ein sehr großer Wert für eine Bodendichte. Die Dichte wurde so hoch gewählt, weil dann die Verkippung der Bougueranomlie geringer wurde und so der Einfallswinkel nicht so groß gewählt werden musste.
 
 %Höhe, Rechtswert, ... in eine Tabelle
 
 %Zwischenergebnisse (driftreduzierte, relative Werte...)
 
 % ??? Tabelle mit allen Reduktionen, driftkorrigierte Wetrte...
+% Boueguer-Reduktion neu!
 \begin{landscape}
 \begin{table}[!ht]
 \centering
@@ -54,4 +69,69 @@ G16 & 84.602 & 0.743 & -2.379 & 34.19 & -0.751 & -0.744 & 1.602 \\ \bottomrule
 
 \section{Modellierung mit MATLAB}
 
-Nun kann die Modellierung mit MATLAB durgeführt werden.
+Nun kann die Modellierung mit MATLAB durchgeführt werden. In Abbildung \ref{fig:Bougueranomalie} ist die resultierende Bougueranomalie abgebildet. Es fällt auf, dass der letzte Wert sehr groß ist und nicht zu den anderen abfallenden Werten am Rand der Anomalie passt. Es wurde dann nochmal für diesen Punkt die gesamte Rechnung überprüft, um einen Auswertungsfehler ausschließen zu können. Da kein Fehler gefunden werden konnte und ein Ausreißer bei einem Profil mit so wenig Messdaten einen großen Einfluss auf das Ergebnis hat, wird der letzte Messwert bei den Modellierungen in MATLAB nicht mit verwendet. 
+
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=0.7\textwidth]{fig/Plot_Bouguer_mit_letztem_Punkt}
+ \caption{Bougueranomalie in Abhängigkeit der Profilkoordinate}
+ \label{fig:Bougueranomalie}
+\end{figure}
+
+Beim Modellierungs-Programm kann zwischen Spaltenintrusion und Basaltfluss gewählt werden und dann noch viele Parameter eingegeben werden. Deswegen können prinzipiell bei beiden Modellen unendlich viele Untergrundmodelle gefunden werden, die die Messwerte erklären würden. Im folgenden sind einige resultierende Modelle beschrieben.
+%Mit Kati und Niels zusammen
+
+Bei beiden Optionen müssen vor der Modellierung einige Parameter abgeschätzt und eingegeben werden. Der Winkel zwischen Messprofil und Streichrichtung des Störkörpers konnte mit der Magnetik-Kartierung sehr genau zu 90$^\circ$ bestimmt werden, weswegen dies für alle Profile so gewählt wurde. Außerdem muss immer der mittlere Fehler der Beobachtungen angegeben werden. Um nicht einen zu kleinen Fehler anzugeben, wurde hier für beide Messgeräte der größte Fehler benutzt, welcher in Gleichung \eqref{eq:Fehler} in Kapitel \ref{sec:Fehler} berechnet wird. Die Tiefenerstreckung des Störkörpers wurde auf 1000\,m gesetzt, weil der Riedheimer Basaltgang in einer geologischen Karte bei einem Schnitt so tief wie dieser eingezeichnet ist. Es muss auch immer die Profillage des Schweremaximums, also der Mittelpunkt der Anomalie eingegeben werden. Dieser ist aus den Werten der Magnetik-Profile zu schließen bei 37\,m, also Profilpunkt G7. Es wurde zweimal entlang genau des gleichen Profils gemessen und drei mal in einem Abstand von nur 2\,m in beide Richtungen versetzt. Wird das Schweremaximum jedoch immer auf 37\,m gesetzt, erklären die Modelle die Beobachtung häufig nicht gut. Dieser Wert wird also bis zu 3\,m in den folgenden Modellen verschoben.
+
+\subsection{Spaltenintrusion}
+
+Da die Bougueranomalie etwas gekippt aussieht, muss für die Modellierung entweder ein linearer Trend angenommen werden oder davon ausgegangen werden, dass sie schräg einfällt. Für beide Varianten wurden Modelle erstellt.
+
+\subsubsection{Modell 1}
+
+Für dieses Modell wurde der Einfallwinkel (Einfallen) als 120$^\circ$ von West nach Ost gemessen angenommen, da Modelle mit einem geringeren Einfallen die Werte noch nicht gut genug erklärten. Die Option der Schätzung eines linearen Trends wurde für dieses Modell nicht verwendet, weil dieser und der Einfallwinkel nicht unabhängig voneinander bestimmbar sind. Die Ergebnisse sind in Abbildung \ref{fig:modell1} und \ref{fig:modell1_res} dargestellt.
+
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=0.8\textwidth]{fig/modell1}
+ \caption{Bougueranomalie des ersten Modells}
+ \label{fig:modell1}
+\end{figure}
+
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=0.8\textwidth]{fig/modell1_res}
+ \caption{Schwereresiduudm des ersten Modells}
+ \label{fig:modell1_res}
+\end{figure}
+
+Der Einfallwinkel scheint mit 120$^\circ$ doch sehr groß zu sein. In der Magnetik wurde zwar auch bestimmt, dass es sich um einen schrägen Gang handeln muss, jedoch ergaben sich Winkel um die 10$^\circ$ bis 20$^\circ$ gemessen von der Senkrechten aus. Die hier angenommenen 30$^\circ$ weichen stark davon ab. Der Eingabewert des oberflächennächsten Punkts der Anomalie 1,5\,m wurde verändert und eine neue Tiefe von $\e{(0,397\pm0,010)}{m}$ berechnet.
+
+\subsubsection{Modell 2}
+
+Nun wurde der Einfallswinkel auf 90$^\circ$ gesetzt und dafür die Option des linearen Trends gewählt, weil nur so die verkippt aussehenden Messwerte modelliert werden können (Ergebnisse siehe Abbildung \ref{fig:modell2} und \ref{fig:modell2_res}). Ein großer Unterschied ist, dass die Tiefe, die wie bei Modell 1 auf 1,5\,m gesetzt wurde, im Ergebnis unverändert bleibt. Es scheint also tatsächlich die eingegebene Tiefe für die Berechnungen genommen zu werden. Sie wurde auf 1,5\,m gesetzt, weil dies der Oberkante der Anomalie im spezifischen Widerstand in der Tomographie auf dem gleichen Profil ergab.
+
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=0.8\textwidth]{fig/modell2}
+ \caption{Bougueranomalie des zweiten Modells}
+ \label{fig:modell2}
+\end{figure}
+
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=0.8\textwidth]{fig/modell2_res}
+ \caption{Schwereresiduudm des zweiten Modells}
+ \label{fig:modell2_res}
+\end{figure}
+
+\subsection{Basaltfluss}
+
+
+
+% \begin{figure}[!ht]
+%  \centering
+%  \includegraphics[width=\textwidth]{fig/}
+%  \caption{}
+%  \label{fig:}
+% \end{figure}

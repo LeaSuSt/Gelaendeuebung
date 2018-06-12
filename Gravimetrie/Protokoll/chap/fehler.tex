@@ -23,7 +23,7 @@ Mit diesen Ungenauigkeiten ist die Ungenauigkeit der Messwertablesung gegeben du
 \begin{align}
  \q{\delta}{g}&=\sum_i \left| \pdb{g}{x_i} \right|\cdot \q{\delta}{x_i} \\
  &=\eb{0.3086}{mGal}{m}\cdot \q{\delta}{\q{x}{Zollstock}} + EF_i \cdot \q{\delta}{\q{x}{Messrad}} +
- \q{delta}{\q{x}{Gezeiten}} + \frac{\q{g}{abs}}{2} \cdot \left( \q{\delta}{\q{x}{Libelle}} \right)^2 \\
+ \q{\delta}{\q{x}{Gezeiten}} + \frac{\q{g}{abs}}{2} \cdot \left( \q{\delta}{\q{x}{Libelle}} \right)^2 \\
  &= \begin{cases}
      \e{0,0114}{mGal} \quad \text{für Gerät 156G}\\
      \e{0,0112}{mGal} \quad \text{für Gerät 686G}
@@ -32,7 +32,10 @@ Mit diesen Ungenauigkeiten ist die Ungenauigkeit der Messwertablesung gegeben du
 \end{align}
 Mit $EF_i$ wird der gerätespezifische Eichfaktor bezeichnet. Es ist $\q{EF}{156G}=\eb{1,04956}{mGal}{Skt}$ und $\q{EF}{686G}=\eb{1,02391}{mGal}{Skt}$.
 
+Während der Messungen wurden bereits die beiden zeitlich direkt aufeinander folgenden Gravimeterablesungen verglichen. Ergab sich eine Abweichung dieser beiden Ablesungen zueinander von mehr als $\e{0,01}{Skt}\approx\e{0,01}{mGal}$, wurde noch ein drittes mal abgelesen und nur die beiden nahe beieinander liegenden Werte für die Auswertung verwendet. Nun wurde der Fehler bei der Wertablesung als ein größerer Wert berechnet. Unter der Annahme, dass der Ablesefehler wirklich so groß ist, ist es nicht gerechtfertigt, bereits bei einer Abweichung von $\e{0,01}{mGal}$ noch einmal zu messen, da der Wert noch in der Fehlertoleranz liegt. Es muss aber, um die Schwereanomalie im Untergrund gut detektieren zu können, so genau gemessen werden, dass Abweichungen von $\e{0,01}{mGal}$ nicht zulässig sind. Mit diesem Hintergrund sollten die angenommenen Fehler noch einmal durchgegangen werden und überlegt werden, ob sie wirklich so groß waren und wie man sie bei der Messung durch zum Beispiel noch saubereres Messen verringern könnte.
+
 \section{Doppelmessungen}
+\label{sec:Fehler}
 
 Die Standardabweichung, die sich aus der Mittelung der beiden driftkorrigierten Messwerte pro Gerät ergibt, kann mit der Formel für die Standardabweichung
 \begin{equation}
@@ -41,5 +44,8 @@ Die Standardabweichung, die sich aus der Mittelung der beiden driftkorrigierten 
    \e{0,0190}{mGal} \quad \text{für Gerät 156G}\\
      \e{0,0140}{mGal} \quad \text{für Gerät 686G}
   \end{cases}
+  \label{eq:Fehler}
 \end{equation}
 berechnet werden. In diesen Wert gehen auch Fehler bei der Aufstellung, nicht korrigierte Anteile der Gerätedrift, Temperaturschwankungen und weitere nicht qualitativ??? angebbare Fehler ein.
+
+Da der $\q{\delta}{\q{g}{STD}}$ größer als $\q{\delta}{g}$ ist, ist es ein Indiz dafür, dass 
