@@ -1,4 +1,4 @@
-Beobachtungsfehler   0.005302982    mgal		
+Beobachtungsfehler   0.019    mgal		
 %		
  x/m      h/m      g/mgal		
 Err:510		
