@@ -132,7 +132,7 @@ clear all; clc;
 
 % Input Textdatei mit 2 Spalten: 1 = Koordinate, 2 = Messwert
 
-data_file = 'M28_M29_Neu_mean.txt';
+data_file = 'M24_M25_mean.txt';
 
 % Delimiter f�r die Eingabe Datei angegeben (z.B. , oder \t [f�r Tab] usw.)
 delim     = ',';
@@ -161,7 +161,7 @@ D         = 1000;
 % Gangbreite (in m)
 b         = 4.7;
 % Verschiebung des Ursprungs des Koordinatensystems der Modellierung
-XPOS      = 16.25;    
+XPOS      = 17;    
 % L�nge der Stange des Protonen-Pr�zessions-Magnetometers in m 
 h_stange  = 2.0;      
 

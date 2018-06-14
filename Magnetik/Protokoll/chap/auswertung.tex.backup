@@ -76,9 +76,13 @@ Bei der Modellierung mit MATLAB werden einige Parameter per Hand eingegeben und 
 %%So schreiben ???:
 Dies schränkt die Möglichkeiten der Modelle zwar ein, ist aber eigentlich nicht wirklich gerechtfertigt, weil nicht genau und unbefriedigend begründet werden kann, warum die gerade aufgelisteten Parameter so gesetzt wurden.
 
+%%Modellierung mit Kati und Niels zusammen erwähnen!!!
+
 \subsection{Profile M22-M23, M21-M2 und M24-M25}
 
-Diese Profile haben einen Abstand von 2\,m zueinander und sind nach der Kartierung zu schließen senkrecht zum Gang. Es ist also anzunehmen, dass die Messwerte abzüglich der Vergleichsmessung an der Basisstation sehr ähnlich verlaufen sollten. In Abbildung \ref{fig:Vergleich_Profile} ist dies zu sehen. Es fällt auf, dass die Totalintensitäten nach Süden hin zunehmen. Unter der Annahme, dass die magnetische Suszeptibilität des Gangs, sein Streichwinkel und seine Neigung gleich bleiben, würde dies dafür sprechen, dass er beim südlichsten Profil näher an der Erdoberfläche ist. Diese These wird durch das MATLAB-Modellierungsskript unterstützt. Lässt man alle Parameter unverändert und verkleinert nur die Tiefe der Gangoberkante, nehmen die berechneten Totalintensitäten über der Anomalie zu.
+Diese Profile haben einen Abstand von 2\,m zueinander und sind nach der Kartierung zu schließen senkrecht zum Gang. Es ist also anzunehmen, dass die Messwerte abzüglich der Vergleichsmessung an der Basisstation sehr ähnlich verlaufen sollten. In Abbildung \ref{fig:Vergleich_Profile} ist dies zu sehen. Es fällt auf, dass die Totalintensitäten nach Süden hin zunehmen. Unter der Annahme, dass die magnetische Suszeptibilität des Gangs, sein Streichwinkel und seine Neigung gleich bleiben, würde dies dafür sprechen, dass er beim südlichsten Profil näher an der Erdoberfläche ist. Diese These wird durch das MATLAB-Modellierungsskript unterstützt. Lässt man alle Parameter unverändert und verkleinert nur die Tiefe der Gangoberkante, nehmen die berechneten Totalintensitäten über der Anomalie zu. Außerdem wird das Maximum nach Süden hin breiter, was vermuten lässt, dass der Gang in diese Richtung breiter wird.
+
+Im folgenden wird ein Modell beschrieben, bei dem nur wenige Parameter geändert werden müssen, um für alle drei Profile eine möglichst kleine Abweichung von den Messwerten zu erhalten.
 
 \begin{figure}
  \centering
@@ -87,9 +91,61 @@ Diese Profile haben einen Abstand von 2\,m zueinander und sind nach der Kartieru
  \label{fig:Vergleich_Profile}
 \end{figure}
 
+\subsubsection{Profil M22-M23}
+
+Eine mögliche Modellierung für dieses Profil ist in Abbildung \ref{fig:modM22} zu sehen. Es fällt auf, dass das Modell abwechselnd über und unter den Messwerten liegt. Bei der Durchführung der Modellierung fiel auf, dass dies durch eine Änderung des Streichwinkels beseitigt werden könnte. Da dieser aber der einzige Parameter ist, der durch die Kartierung genau bekannt ist, wurde dies nicht gemacht. Stattdessen wurde die Neigung des Gang geändert. Bei einem Winkel von 16$^\circ$ zur Senkrechten passte das Modell am besten zu den Messwerten. Durch diesen Parameter kann die Form der Messwerte jedoch nicht exakt wiedergegeben werden. Die Breite und Tiefe der Gangoberkante wurden so variiert, dass der Verlauf am Maximum wie bei den Messwerten aussieht.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{fig/modM22}
+ \caption{MATLAB-Modellierung des Profils M22-M23}
+ \label{fig:modM22}
+\end{figure}
+
+\subsubsection{Profil M21-M2}
+
+Die Modellierung dieses Profils ist in Abbildung \ref{fig:modM21} dargestellt. Auch bei diesem Profil hätte der Streichwinkel geändert werden müssen, um die Modellierung besser zu den Messergebissen passen lassen zu können. Die Neigung konnte im Vergleich zu Profil M22-M23 gleich bleiben und nur die Tiefe und Breite des Gang wurden verändert. Er ist an dieser Stelle vermutlich 20\,cm breiter und befindet sich 40\,cm näher an der Erdoberfläche. Dadurch können die oben genannten Vermutungen bestätigt werden.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{fig/modM21}
+ \caption{MATLAB-Modellierung des Profils M21-M2}
+ \label{fig:modM21}
+\end{figure}
+
+\subsubsection{Profil M24-M25}
+
+Die Modellierung dieses Profils ist in Abbildung \ref{fig:modM24}. Das Maximum wird noch breiter als bei den schon beschriebenen Modellen. Deswegen wurde die Gangbreite noch einmal 30\,cm vergrößert. 
+
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{fig/modM24}
+ \caption{MATLAB-Modellierung des Profils M24-M25}
+ \label{fig:modM24}
+\end{figure}
+
+
 \subsection{Profil M26-M27}
 
-Auch dieses Profil wurde möglich
+Dieses Profli ist parallel zu M24-M25 in einem Abstand von 5\,m angelegt. Da es weiter östlich beginnt, befindet es sich nicht mittig über dem Basaltgang. Wie in Abbildung \ref{fig:modM26} ist deswegen nur nur der rechte Ausläufer der Anomalie vermessen worden. Im Vergleich zu Profil M24-M25 wurde in der Modellierung nur die Neigung geändert, um die Messwerte zu beschreiben. Im Bereich des Maximums stimmen Modellierung und Beobachtung gut überein. Nur am Ausläufer ist das Modell unter den den Messwerten. Dies ist nicht sehr verwunderlich, weil die Modellierung immer 15\,m bis 20\,m neben dem Maximum bereits gegen Null geht und dies bei unseren Messungen nicht der Fall ist, weil wir als DATASHIFT den Messwert an der Basisstation verwenden und nicht den niedrigsten auf dem Profil gemessenen Wert.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{fig/modM26}
+ \caption{MATLAB-Modellierung des Profils M26-M27}
+ \label{fig:modM26}
+\end{figure}
+
+\subsection{Profil M28-M29}
+
+Dieses Profil ist nicht senkrecht zum Gang angelegt. In der Mitte des Gangs befindet es sich an der gleichen Stelle über diesem wie Profil M24-M25. Deswegen ist in Abbildung \ref{fig:modM28} die Modellierung mit genau den gleichen Parametern wie bei Profil M24-M25 durchgeführt. 
+
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{fig/modM28}
+ \caption{MATLAB-Modellierung des Profils M28-M29}
+ \label{fig:modM28}
+\end{figure}
 
 % \begin{figure}
 %  \centering
