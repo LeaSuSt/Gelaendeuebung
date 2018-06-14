@@ -1,0 +1,16 @@
+Ideen:
+- Handbreit der Pflöcke über dem Boden als zusätzliche Freiluftreduktion berücksichtigen?
+- da Abschätzen der Dichte etc. nur sehr grob -> Fehler werden vermutlich groß, aber nur schwer abschätzbar -> daher weglassen
+- Residuum = Messwerte - Modell -> Standardabweichung bestimmen, dann Vergleich mit der Standardabweichung der Messwerte: wenn in ähnlicher Größenordnung: Messwerte können nicht besser sein als Modell
+- definiere oderseite der pflöcke als "Boden" eig kann man darauf ne ungenuigkeit auf die unterschiedl höhe angeben ab s.2
+- herleitung formel fhler libelle (Taylor angeben)
+- Driftkorrektur: Programmablauf grob: unterschiedliche Steigungen, wenn man die beiden gemessenen Werte von g der zwei Durchläufe übereinander zeitlich aufträgt. Dies wird durch die Drift des Gravimeters hervorgerufen. Programm sucht beste Kurve mit geringster Krümmung (entspricht Kurve mit kleinster Norm). Diese gibt dann die Drift =dg/dt an. Wert zweiter Durchlauf G2 beim 156G nicht in Interpolation da große Abweichung, aber korrigiert und weiterverwendet.
+- Driftkorrektur manuell: durch Abzug der Drift von den einzelnen Messwerten, dann Mittelung der beiden Messreihen für jedes Gravimeter und dann Zusammenführen der zwei Gravimeter, um ein vollständiges Profil zu erhalten. Dabei wird der Offset am Basispunkt G0 angeglichen / bestimmt.
+- modell gibt form vor. ob dichte mit bekannter breite(von magnetik) aufgeschlüsselt (ausprobiert) wird oder breite mit dichte ist uns/der fragestellung überlassen
+- Idee für die Bestimmung der relativen unreduzierten Messwerte:
+driftkorrigierte Werte von jedem Gerät -> immer G0 abziehen -> dann zusammenführen und den negativsten Wert auf alle addieren
+
+
+OFFENE FRAGEN:
+- welche Datei genau wurde in das Matlab-Driftprogramm eingelesen?
+- hat programm Driftkorrektur auch einen plot ausgegeben?

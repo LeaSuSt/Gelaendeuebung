@@ -1,0 +1,33 @@
+MODELL 2: Profillage dg-Maximum (in meter):   40
+MODELL 2: Profillage dg-Halbwert (in meter):   30
+MODELL 2: Winkel zw. Messprofil und Streichrichtung der Massenlinie   90
+Optional: mittlerer Fehler der Beobachtungen (in mgal):   0.019
+Optional: a priori Dichteunterschied Basalt/Umgebungsmaterial (in kg/m^3)};   800
+ 
+ ERGEBNISSE
+============================
+ Tiefe des St�rk�rpers (Oberkante):  4.3709 +/- 0.44183 m
+ Radius^2*Dichteunterschied Basalt/Hostrock: 25349.4691 +/- 2813.8656 m*kg/m^3
+ Stoermasse/m: 79637.7061 +/- 8840.0196 kg/m
+ Varianzfaktor: 0.0002321 mgal^2
+ Chi-Quadrat normalized:   0.64294
+ 
+      x      g-obs.     g-mod.
+     [m]     [mgal]     [mgal]
+===============================
+     0.0     2.1453     2.1231
+     8.0     2.1188     2.1318
+    14.9     2.1252     2.1418
+    20.9     2.1549     2.1542
+    25.9     2.1707     2.1702
+    29.8     2.1715     2.1895
+    32.8     2.2121     2.2095
+    34.8     2.2416     2.2248
+    36.8     2.2587     2.2390
+    39.8     2.2338     2.2506
+    43.8     2.2360     2.2403
+    48.7     2.1989     2.2109
+    54.7     2.1972     2.1884
+    61.7     2.1891     2.1782
+    69.6     2.1900     2.1760
+    78.5     2.1624     2.1780

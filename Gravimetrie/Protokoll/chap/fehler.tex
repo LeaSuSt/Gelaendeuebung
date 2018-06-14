@@ -1,0 +1,55 @@
+\section{Messwertablesungen}
+
+Da der Messwert und die Korrekturwerte pro Messpunkt nur ein- bis zweimal erfasst werden, kann keine sinnvolle statistische Aussage über die Messfehler getroffen werden. Stattdessen kann ein Größtfehler abgeschätzt werden, der aus den einzelnen Ableseungenauigkeiten der Messwerte mit Größtfehlerabschätzung berechnet werden kann. Dazu muss man sich überlegen, wie genau die einzelnen Messgrößen abgelesen werden konnten und wie genau die Messgerät positioniert werden konnten.
+
+Als Unsicherheit auf die Messung der Gerätehöhe mit dem Zollstock nehmen wir eine Ungenauigkeit von
+\begin{equation}
+ \q{\delta}{\q{x}{Zollstock}}=\e{0,005}{m}
+\end{equation}
+an. Dabei wurde berücksichtigt, dass die Ableseungenauigkeit bei einer halben Skaleneinheit liegt, der Zollstock eventuell nicht ganz vertikal gehalten wurde und auch die Wasserwaage möglicherweise nicht ganz genau horizontiert wurde. Der Fehler auf das Messrad wird mit
+\begin{equation}
+ \q{\delta}{\q{x}{Messrad}}=\e{0,005}{Skt}
+\end{equation}
+angenommen, weil die dritte Nachkommastelle zwischen zwei Strichen abgeschätzt werden musste. Dies entspricht also einer halben Skaleneinheit der letzten genau abzulesenden Stelle. Der Fehler auf die Ablesung aus der Gezeitentabelle wird als
+\begin{equation}
+ \q{\delta}{\q{x}{Gezeiten}}=\e{0,002}{mGal}
+\end{equation}
+angenommen und der Fehler auf die Genauigkeiten der Horizontierung  mit den Libellen ist
+\begin{equation}
+ \q{\delta}{\q{x}{Libelle}}=\e{0,725\cdot 10^{-4}}{rad} \comma
+\end{equation}
+weil ein Teilstrich gerade $\e{1,45\cdot 10^{-4}}{rad}$ entspricht.
+Mit diesen Ungenauigkeiten ist die Ungenauigkeit der Messwertablesung gegeben durch
+\begin{align}
+ \q{\delta}{g}&=\sum_i \left| \pdb{g}{x_i} \right|\cdot \q{\delta}{x_i} \\
+ &=\eb{0.3086}{mGal}{m}\cdot \q{\delta}{\q{x}{Zollstock}} + EF_i \cdot \q{\delta}{\q{x}{Messrad}} +
+ \q{\delta}{\q{x}{Gezeiten}} + \frac{\q{g}{abs}}{2} \cdot \left( \q{\delta}{\q{x}{Libelle}} \right)^2 \\
+ &= \begin{cases}
+     \e{0,0114}{mGal} \quad \text{für Gerät 156G}\\
+     \e{0,0112}{mGal} \quad \text{für Gerät 686G}
+    \end{cases}
+ \fullstop
+\end{align}
+Mit $EF_i$ wird der gerätespezifische Eichfaktor bezeichnet. Es ist $\q{EF}{156G}=\eb{1,04956}{mGal}{Skt}$ und $\q{EF}{686G}=\eb{1,02391}{mGal}{Skt}$. Für den absoluten Schwerewert wurde
+\begin{equation}
+ \q{g}{abs}=\e{980722,809}{mGal}
+\end{equation}
+verwendet. Gemessen wurde dieser Wert an der Hauptschule von Engen und nicht genau in unserem Messgebiet.
+
+Während der Messungen wurden bereits die beiden zeitlich direkt aufeinander folgenden Gravimeterablesungen verglichen. Ergab sich eine Abweichung dieser beiden Ablesungen zueinander von mehr als $\e{0,01}{Skt}\approx\e{0,01}{mGal}$, wurde noch ein drittes mal abgelesen und nur die beiden nahe beieinander liegenden Werte für die Auswertung verwendet. Nun wurde der Fehler bei der Wertablesung als ein größerer Wert berechnet. Unter der Annahme, dass der Ablesefehler wirklich so groß ist, ist es nicht gerechtfertigt, bereits bei einer Abweichung von $\e{0,01}{mGal}$ noch einmal zu messen, da der Wert noch in der Fehlertoleranz liegt. Es muss aber, um die Schwereanomalie im Untergrund gut detektieren zu können, so genau gemessen werden, dass Abweichungen von $\e{0,01}{mGal}$ nicht zulässig sind. Mit diesem Hintergrund sollten die angenommenen Fehler noch einmal durchgegangen werden und überlegt werden, ob sie wirklich so groß waren und wie man sie bei der Messung durch zum Beispiel noch saubereres Messen verringern könnte.
+
+\section{Doppelmessungen}
+\label{sec:Fehler}
+
+Die Standardabweichung, die sich aus der Mittelung der beiden driftkorrigierten Messwerte pro Gerät ergibt, kann mit der Formel für die Standardabweichung
+\begin{equation}
+ \q{\delta}{\q{g}{STD}}=\sqrt{\frac{\sum_i (\Delta g_i - \overline{\Delta g})^2}{n-1}}
+ =\begin{cases}
+   \e{0,0190}{mGal} \quad \text{für Gerät 156G}\\
+     \e{0,0140}{mGal} \quad \text{für Gerät 686G}
+  \end{cases}
+  \label{eq:Fehler}
+\end{equation}
+berechnet werden. In diesen Wert gehen auch Fehler bei der Aufstellung, nicht korrigierte Anteile der Gerätedrift, Temperaturschwankungen und weitere nicht qualitativ??? angebbare Fehler ein.
+
+Da der $\q{\delta}{\q{g}{STD}}$ größer als $\q{\delta}{g}$ ist, ist es ein Indiz dafür, dass 

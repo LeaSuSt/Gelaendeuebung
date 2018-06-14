@@ -23,20 +23,22 @@ Die SI-Einheit der Schwerebeschleunigung ist $\left[g\right]=\eb{1}{m}{s^2}$, wo
 \end{equation}
 
 \section{Reduktionen}
+\label{sec:Reduktionen}
 
 Meist möchte man durch die gemessenen Schwereunterschiede auf einen unbekannten Dichteunterschied im Untergrund schließen. Dazu müssen jedoch die bekannten Schwereunterschiede aus den Messwerten eliminiert werden. Es wird von Reduktion der Schwerewerte gesprochen.
 
-Die Freiluftreduktion (oder auch Niveaureduktion) berücksichtigt, dass die Schwere mit zunehmender Höhe $H$ abnimmt. Es gilt dabei
+Die Freiluftreduktion (oder auch Niveaureduktion) $\q{\delta}{g\,Niv}$ berücksichtigt, dass die Schwere mit zunehmender Höhe $H$ abnimmt. Es gilt dabei
 \begin{equation}
- \q{\delta}{g\,Freiluft}=\eb{-0,3086\cdot H}{mGal}{m} \fullstop
+ \q{\delta}{g\,Niv}=\eb{-0,3086\cdot H}{mGal}{m} \fullstop
+ \label{eq:Freiluft}
 \end{equation}
 Den gleichen Effekt muss man bei der Instrumentenhöhe beachten, was zu $\q{\delta}{g\,Instrumentenhoehe}$ führt. Die Instrumentenhöhe wird jedoch direkt bei der Messung aus den Messwerten eliminiert, weil dies eine von der Geometrie der Messung unabhängige Auswertung ermöglicht.
 
-Bei der Gezeitenreduktion $\q{\delta}{g\,Gezeiten}$ wird die Gravitationswirkung anderer Planeten berücksichtigt, die sich mit der Zeit verändert.
+Bei der Gezeitenreduktion $\q{\delta}{g\,Gez}$ wird die Gravitationswirkung anderer Planeten berücksichtigt, die sich mit der Zeit verändert.
 
 Die Driftreduktion $\q{\delta}{g\,Drift}$ muss durchgeführt werden, weil sich die Eigenschaften der Bauteile des Gravimeters mit der Zeit ändern können. Um diese Änderung erfassen zu können, wird an allen Messpunkten mindestens zweimal gemessen. Dadurch kann eine Funktion interpoliert bestimmt werde, die die Drift im Laufe der Zeit darstellt. Diese Korrektur muss auf jeden Fall nach der Gezeitenkorrektur durchgeführt werden, damit alle anderen zeitlichen Veränderungen schon aus der Messung eliminiert sind.
 
-Die Geländereduktion $\q{\delta}{g\,Gelaende}$ berücksichtigt die Verringerung des Schwerewerts durch zum Beispiel Berge und Täler in der Nähe des Messorts. Nach der Korrektur ist der Messwert also vergrößert.
+Die Geländereduktion $\q{\delta}{g\,Gel}$ berücksichtigt die Verringerung des Schwerewerts durch zum Beispiel Berge und Täler in der Nähe des Messorts. Nach der Korrektur ist der Messwert also vergrößert.
 
 Die Bouguerreduktion berücksichtigt den Effekt, dass eine Gesteinsschicht zwischen Referenzfläche und Messpunkt den gemessenen Wert der Schwere vergrößert. Es wird angenommen, dass diese Gesteinsschicht aus homogenem Material der Dichte $\rho$ besteht. Dies führt zur Gleichung
 \begin{equation}
@@ -50,17 +52,21 @@ Die Breitenreduktion beinhaltet die räumlichen Schwereunterschiede aufgrund der
 \end{equation}
 liefert mit dem Abstand $L$ zur geographischen Breite des Referenzpunkts den Korrekturwert.
 
-% regionale Reduktion???
+% regionale Reduktion das gleiche???
+Die geologische Reduktion $\q{\delta}{g\, geol}$ beachtet den überregionalen Trend nach der Karte der Bougueranomalien von Baden-Württemberg. Sie kann aus dem Rechts- und Hochwert mit Formel
+\begin{equation}
+ \q{\delta}{g\, geol}=\left( 0,000953\cdot \Delta\q{L}{Hoch} - 0,00055 \cdot \Delta\q{L}{Rechts} \right) \eb{}{mGal}{m}
+\end{equation}
+bestimmt werden. Der Rechtswert $\Delta\q{L}{Rechts}$ ist der Fortschritt in Ostrichtung bezüglich eines gewählten Referenzpunkts.
+Der Hochwert $\Delta\q{L}{Hoch}$ ist der Fortschritt in Nordrichtung bezüglich des gleichen Referenzpunkts. Beide Größen haben die Einheit Meter.
 
 Von einer Bougueranomalie $\q{g}{Bouguer}$ wird gesprochen, wenn all diese Reduktionen auf den Messwert $\q{g}{mess}$ angewendet wurden. Es gilt also
 % regio???
-\begin{equation}
- \q{g}{Bouguer}=\q{g}{mess}-\q{\delta}{g\,Instrumentenhoehe}-\q{\delta}{g\,Gezeiten}-\q{\delta}{g\,Drift}-\q{\delta}{g\,Gelaende}-\q{\delta}{g\,Freiluft}-\q{\delta}{g\,Breite}-\q{\delta}{g\,Bouguer}
-\end{equation}
-
-\section{Dichtebestimmung über bekannte Störkörper???}
-
-% Was machen wir dazu???
+\begin{align}
+ \q{g}{Bouguer}=\q{g}{mess}-\q{\delta}{g\,Instrumentenhoehe}-\q{\delta}{g\,Gez}-\q{\delta}{g\,Drift}-\q{\delta}{g\,Gel} \\ \notag
+ -\q{\delta}{g\,Niv}-\q{\delta}{g\,Breite}-\q{\delta}{g\,Bouguer}
+ -\q{\delta}{regio}
+\end{align}
 
 \section{Messinstrumente}
 
@@ -70,7 +76,7 @@ Im Versuch werden LaCoste-Romberg G-Gravimeter benutzt. Der Aufbau eines solchen
 
 \begin{figure}
     \centering
-   \includegraphics[width=\textwidth]{fig/gravimeter}
+   \includegraphics[width=0.7\textwidth]{fig/gravimeter}
  \caption[Aufbau eines LaCoste-Romberg G-Gravimeters]{Aufbau eines LaCoste-Romberg G-Gravimeters \cite{skript}}
  \label{fig:grav}
 \end{figure}
@@ -99,5 +105,6 @@ bestimmt werden.
 
 \subsection{Global Navigation Satellite System (GNSS)}
 
+Mit GNSS werden Höhenmessungen durchgeführt und die während der Messungen markierten Pflöcke eingemessen. Das Prinzip beruht darauf, dass 
 
-% GPS???
+% differentielles GPS soll hier beschrieben werden!!!
