@@ -4,6 +4,45 @@ Die Messwerte der Kalibrierungsmessung sind in Abbildung \ref{fig:MPKalibrierung
 \begin{equation}
  B=s\cdot I=I\cdot \eb{26,5}{nT}{mA} 
 \end{equation}
+<<<<<<< HEAD
+in das Magnetfeld umgerechnet. Der Plot der Messwerte und der linearen Regression ist in Abbildung \ref{fig:kalibrierung} zu sehen. Bei der Regression ergab sich eine Steigung von $\eb{-0.0039}{Skt}{nT}$. Der negative Kehrwert dieser Steigung liefert den Kalibrierungsfaktor
+\begin{equation}
+ \frac{\tau}{|\vec{m}|}=\eb{253}{nT}{Skt} \fullstop
+\end{equation}
+
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{fig/kalibrierung.pdf}
+ \caption[Bestimmung des Kalibrierungsfaktors des Torsions-Magnetometers]{Bestimmung des Kalibrierungsfaktors des Torsions-Magnetometers. Aufgetragen sind die Ablesewerte am Gfz in Skt über die angelegte magnetische Flussdichte in nT.}
+ \label{fig:kalibrierung}
+\end{figure}
+
+\section{Kartierung}
+
+In Abbildung \ref{fig:Kartierung} ist das Ergebnis der Kartierung abgebildet. Der Basaltgang ist deutlich als magnetische Anomalie zu sehen (in der Abbildung in rot dargestellt). Diese verläuft parallel zur Diagonalen M1-M3. Es bestätigt sich also auch nochmal die Wahl der Lage der Profile entlang von M4-M2 senkrecht zum Gang, die noch genauer untersucht wurden.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{fig/kartierung_verschwommen.png}
+ \caption[Ergebnis der Kartierung]{Ergebnis der Kartierung. M1 befindet sich in der linken oberen Ecke, M2 in der rechten oberen, M3 in der rechten unteren und M4 in der linken unteren.}
+ \label{fig:Kartierung}
+\end{figure}
+
+\section{Vergleich der Messgeräte}
+
+Das Messprotokoll zum Vergleich der Messgeräte befindet sich in Abbildung \ref{fig:MPVergleich} im Anhang. Die Mittelwerte dieser Messungen stehen in Tabelle \ref{tab:VergleichErgebnis}. Es fällt auf, dass das vom neuen Gerät gemessene Magnetfeld 869\,nT bzw. 897.5\,nT von den anderen Geräten abweicht. Die beiden älteren Protonenmagnetometer weichen mit 28,5\,nT deutlich weniger voneinander ab. Solche kleinen Abweichungen könnten an ungenauen Messungen der Lamorfrequenz liegen, wenn beispielsweise die Beobachtungszeit zu gering war, also nicht genug Periode vermessen wurden. Außerdem könnte die geräteinterne Zeitskala nicht ganz korrekt gewesen sein. Auch die Stangen der Messgeräte hatten vielleicht nicht genau die selbe Länge oder die Messgeräte wurden nicht genau in Richtung Nord-Süd ausgerichtet. Diese Gründe können jedoch vermutlich nicht die größeren Abweichung vom neueren Gerät zu den anderen erklären.
+
+\begin{table}[h!]
+ \centering
+ \begin{tabular}{rl}
+ \toprule
+ Messgerät & Totalintensität an Basisstation in nT \\
+ \midrule
+ Nr. 1 & 48102 \\
+ Nr. 2 & 48073,5 \\
+ Neues Gerät & 48971 \\
+ Fluxgate &  \\
+=======
 in die Magnetfeldstärke umgerechnet. Der Fehler auf den Strom wird als $\q{\delta}{I}=\e{0,1}{mA}$ angenommen, weil der Wert nur so genau abgelesen werden konnte. Mit Fehlerfortpflanzung ergibt sich daraus der Fehler $\q{\delta}{B}=\e{2,65}{nT}$ auf das Magnetfeld. Der Fehler auf den Ablesewert am Torsions-Magnetometer wird zu $\q{\delta}{\alpha}=\e{0,03}{Skt}$ abgeschätzt, was sich auch aus der Ableseungenauigkeit am Messgerät ergibt. Der Plot der Messwerte mit den eben genannten Fehlern als Fehlerbalken und der linearen Regression ist in Abbildung \ref{fig:kalibrierung} zu sehen. Bei der Regression ergab sich eine Steigung von $\eb{(394,9\pm5,7)\cdot 10^{-5}}{Skt}{nT}$. Der negative Kehrwert dieser Steigung liefert den Kalibrierungsfaktor $k$
 \begin{equation}
  k=\frac{\tau}{|\vec{m}|}=\eb{(253\pm3,7)}{nT}{Skt} \comma
@@ -57,10 +96,19 @@ Das Messprotokoll zum Vergleich der Messgeräte befindet sich in Abbildung \ref{
  Nr. 2 & 48073,5 & 48073,5\\
  Neues Gerät & 48971 & 48102\\
  Fluxgate & 616,535 & 616,535\\
+
  \bottomrule
  \end{tabular}
 \label{tab:VergleichErgebnis}
 \end{table}
+
+
+Um die Messungen der verschiedenen Messgeräte miteinander vergleichen zu können, muss eines ausgewählt werden, auf das die Messungen mit den anderen korrigiert werden. Dazu verwenden wir die Messungen des Magnetfelds am BFO (siehe Abbildung \ref{})
+
+\section{Profile}
+
+Es wurden 
+
 
 Um die Messungen der verschiedenen Messgeräte miteinander vergleichen zu können, müssen die Messwerte um ihren jeweiligen Messwert an der Basisstation korrigiert werden. Dies kann im zur Modellierung bereitgestellten MATLAB-Skript im DATASHIFT realisiert werden. Bei den anderen Plots, die noch folgen, wurde diese Korrektur auch durchgeführt. Für das neue Messgerät wurde der gleiche DATASHIFT wie für Nr. 1 verwendet, weil die sonstigen Messwerte dieser beiden Geräte am nächsten aneinander liegen und die Messung an der Basisstation vom neuen Gerät aufgrund ihrer Falschheit nicht verwendet werden kann.
 
@@ -146,6 +194,7 @@ Dieses Profil ist nicht senkrecht zum Gang angelegt. In der Mitte des Gangs befi
  \caption{MATLAB-Modellierung des Profils M28-M29}
  \label{fig:modM28}
 \end{figure}
+
 
 % \begin{figure}
 %  \centering

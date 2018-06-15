@@ -20,5 +20,9 @@ plt.xlabel(r'$B_z$ in nT')
 plt.ylabel(r'Ablesewert in Skt')
 plt.legend()
 
+#plt.show()
+plt.savefig('kalibrierung.pdf')
+
+
 plt.show()
 #plt.savefig('kalibrierung.pdf')

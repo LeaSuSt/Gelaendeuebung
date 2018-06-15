@@ -11,5 +11,11 @@ import matplotlib.pyplot as plt
 #import
 data = np.genfromtxt('wennerkartierung.txt')
 
-plt.plot(data[:,0], data[:,1])
+plt.plot(data[:,0], data[:,1], 'o')
+
+plt.xlabel('Abstand in m')
+plt.ylabel('spezifischer elektrischer Widerstand in Ohm m')
+plt.legend()
+plt.title('Wenner-Kartierung')
+plt.grid(True)
 plt.show()

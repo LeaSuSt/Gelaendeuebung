@@ -1,13 +1,19 @@
 \section{Messprotokolle}
 
 %Kalibrierung
+
+\begin{figure}[h!]
 \begin{figure}[!ht]
+
  \centering
  \includegraphics[width=0.8\textwidth]{fig/Messprotokolle/Kalibrierung.png}
  \caption{Messprotokoll zur Kalibrierungsmessung}
  \label{fig:MPKalibrierung}
 \end{figure}
 
+
+%Vergleich
+\begin{figure}[h!]
 %Basismessung
 \begin{figure}[!ht]
  \centering
@@ -18,6 +24,7 @@
 
 %Vergleich
 \begin{figure}[!ht]
+
  \centering
  \includegraphics[width=\textwidth]{fig/Messprotokolle/VergleichMagnetometer.png}
  \caption{Messprotokoll zum Vergleich der Protonenmagnetometer und des Fluxgates}
@@ -25,13 +32,21 @@
 \end{figure}
 
 %Huette
+
+\begin{figure}[h!]
+
 \begin{figure}[!ht]
+
  \centering
  \includegraphics[width=\textwidth]{fig/Messprotokolle/EinflussHuette.png}
  \caption{Messprotokoll zum Profil zur Untersuchung der Einflüsse äußerer Störfaktoren auf die Basismessung}
  \label{fig:MPHuette}
 \end{figure}
 
+
+\section{Sonstige Abbildungen} %???Anderer Name
+
+% \begin{figure}[h!]
 % Profile
 \begin{figure}[!ht]
  \centering
@@ -143,6 +158,7 @@
 % \end{figure}
 
 % \begin{figure}[!ht]
+
 %  \centering
 %  \includegraphics[width=\textwidth]{fig/Messprotokolle/}
 %  \caption{}
