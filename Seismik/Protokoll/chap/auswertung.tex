@@ -6,17 +6,103 @@ Am Abend nach dem Versuch erhielten wir ausgedruckt alle Seismogramme. Die mit H
 
 \section{Schichtbestimmung}
 
-\subsection{Profil S31-S32}
-
-Das Laufzeitdiagramm mit eingetragenem Hin- und Rückschuss dieses Profils ist achsensymmetrisch um $x=20$. Daraus lässt sich schließen, dass keine geneigten Schichtgrenzen vorliegen. Aus den 
-
 
 % Verfahren der Verzögerungszeiten wenn sinnvoll???
 
 \subsection{Profil S21-S22 }
 
-Dieses Profil liegt über dem Basaltgang. Vergleicht man das Diagramm der Messung über und neben dem Basaltgang, stellt man fest, dass die Werte des Profils S31-S32 wesentlich weniger Schwankungen haben als die des Profils S21-S22.
-Wir vermuten, das diese Schwankungen von Basaltgang verursacht werden. Bei der Refraktionsseismik geht man von unendlichen geraden Platten aus. Wie wir in der Geoelektrik herausgefunden haben ist der 
+Dieses Profil liegt über dem Basaltgang. Da unsere Fragestellung ist, ob sich diese Messmethode überhaupt für das Vermessen des Basaltgangs eignet, betrachten wir zunächst nur den Hinschuss. Vergleicht man das Diagramm der Messung über und neben dem Basaltgang, stellt man fest, dass die Werte des Profils S31-S32 wesentlich weniger Schwankungen haben als die des Profils S21-S22.
+Wir vermuten, das diese Schwankungen von Basaltgang verursacht werden. Bei der Refraktionsseismik geht man von unendlichen geraden Platten aus. Wie wir in der Geoelektrik herausgefunden haben ist der Basaltgang selbst stark verwittert und kann in keiner Weise als gerade Fläche angenommen werden.\\
+
+
+Wie im Abschnitt Theorie beschrieben wurde, werden nun die Seismischen Geschwindigkeiten, relevante Winkel und Schichtmächtigkeit bestimmt.\\
+Die Rechnungen wurden mit Python durchgeführt.\\
+
+Die Geschwindigkeiten 
+
+\begin{align}
+ v_1 &= \SI{181.82}{m/s} \\
+ v_2 &= \SI{615.38}{m/s} \\
+ v_3 &= \SI{1818.18}{m/s}
+\end{align}
+werden aus den Geradensteigungen bestimmt.
+
+Daraus werden die Winkel 
+
+\begin{align}
+ \vartheta_1 &= \SI{0.2999}{rad} \\
+ \vartheta_2 &= \SI{0.3453}{rad} \\
+ \vartheta_12 &= \SI{0.1002}{rad}
+\end{align}
+
+berechnet.
+Die Schichtmächtigkeit der ersten Schicht ist $d_1 =\SI{0.95}{m}$ und für die Schichtmächtigkeit der zweiten Schicht ergibt sich $d2 = \SI{2.50}{m}$.\\
+
+\subsubsection{Fehlerbetrachtung}
+
+Für die Fehlerbetrachtung haben wir neue, etwas abweichende aber plausible , Geraden durch die Messpunkte gelegt. Mit den neuen Werten wird die Berechnung wiederholt. Die Differenz der neuen Größen und zuvor beechneten optimalen Größen ist der Fehler auf die Werte.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[!ht]
+\centering
+\caption{Teil 1 der Ergebnisse der GPS-Vermessung}
+\label{tab:gps1}
+\begin{tabular}{lllllll}
+\toprule
+Größe   & Optimalwert   & Toleranzwert   & Fehler \\
+\midrule
+$v_1$ in m/s & 181.82 & 214.29 & 32.47 \\
+$v_2$ in m/s & 615.38 & 754.72 & 139.34 \\
+$v_3$ in m/s & 1818.18 & 1858.41 & 40.23 \\
+$\vartheta_1$ in rad & 0.2999 & 0.2879 & 0.0100 \\
+$\vartheta_2$ in rad & 0.3453 & 0.4182 & 0.0732 \\
+$\vartheta_{12}$ in rad & 0.1002 & 0.1156 & 0.0154 \\
+$d_1$ in m & 0.95 & 1.15 & 0.20 \\
+$d_2$ in m & 2.50 & 2.64 & 0.14 \\
+
+\bottomrule
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Die Schichtgrenze in $\SI{0.95 \pm 0.20}{m}$  Tiefe deutet darauf hin, dass hier der Basaltgang anfängt. Allerdings haben wir in $\SI{2.50 \pm 0.14}{m}$ Tiefe schon die nächste Schichtgrenze. Leider passen die berechneten Geschwindigkeiten nicht zu den seismischen Geschwindigkeiten von Basalt. Die Seismische Geschwindigkeit von Basalt sind $\SI{4000}{m/s}$ und unsere höchste gemessene Geschwindigkeit ist $\SI{1818.18 \pm 40.23}{m/s}$.\\
+Die Refraktionsseismik eignet sich wie vermutet wahrscheinlich einfach nicht zum bestimmen der Tiefe des Basaltgangs. 
+
+
+\subsection{Profil S31-S32}
+
+Das Laufzeitdiagramm mit eingetragenem Hin- und Rückschuss dieses Profils ist achsensymmetrisch um $x=20$. Daraus lässt sich schließen, dass keine geneigten Schichtgrenzen vorliegen. Aus den 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[!ht]
+\centering
+\caption{Teil 1 der Ergebnisse der GPS-Vermessung}
+\label{tab:gps1}
+\begin{tabular}{lllllll}
+\toprule
+Größe   & Optimalwert   & Toleranzwert   & Fehler \\
+\midrule
+$v_1$ in m/s & 114.29 & 240.00 &  125.71\\
+$v_2$ in m/s & 824.74 & 1030.93 & 206.19 \\
+$v_3$ in m/s & 2210.53 & 2270.27 & 60. \\
+$\vartheta_1$ in rad & 0.139 & 0.235 & 0.096  \\
+$\vartheta_2$ in rad & 0.382 & 0.471 & 0.089 \\
+$\vartheta_{12}$ in rad & 0.052 & 0.106 & 0.054 \\
+$d_1$ in m & 0.49 & 1.05 & 0.56 \\
+$d_2$ in m & 3.08 & 3.93 & 0.85 \\
+
+\bottomrule
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 
 
 

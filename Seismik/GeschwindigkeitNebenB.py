@@ -9,22 +9,22 @@ import numpy as np
 
 #t3 Kopfewlle an zweiter Schichtgrenze
 
-v1 = 2./ 0.011
+v1 = 2./0.0175
 
 print ("Geschindigkeit v1 ist:") 
 print v1
 
 
-t2 = 0.0215-0.015
-x= 4.
-ti2= 0.00995
+t2 = 0.0182-0.0085
+x= 8.
+ti2= 0.0085
 v2 = x/t2
 print "Geschindigkeit v2 ist:" 
 print v2 
 
-t3 =0.0325- 0.027
-ti3 = 0.018
-x = 10.
+t3 =0.0345- 0.0155
+ti3 = 0.0155
+x = 42.
 v3 = x/t3
 print "Geschindigkeit v3 ist:" 
 print v3
