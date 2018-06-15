@@ -19,7 +19,7 @@ wobei der Fehler aus dem Fehler auf die Steigung mit Fehlerfortpflanzung hervorg
 
 \section{Basismessung}
 
-Mit dem Kalibrierungsfaktor können die Werte der Basismessung (siehe Abbildung \ref{fig:MPBasis}) mit Gleichung \eqref{eq:Umrechnung_Torsion} in Einheiten der magnetischen Flussdichte umgerechnet werden. Da die Ruhelage $\alpha_0$ nicht bekannt ist, wird der niedrigste gemessene Wert auf null gesetzt. Man erhält damit also nur Informationen über die zeitliche Änderung des Magnetfelds. 
+Mit dem Kalibrierungsfaktor können die Werte der Basismessung (siehe Abbildung \ref{fig:MPBasis}) mit Gleichung \eqref{eq:Umrechnung_Torsion} in Einheiten der magnetischen Flussdichte umgerechnet werden. Da die Ruhelage $\alpha_0$ nicht bekannt ist, wird der niedrigste gemessene Wert auf null gesetzt. Man erhält damit also nur Informationen über die zeitliche Änderung des Magnetfelds. Diese ist inklusive Fehlerbalken in Abbildung \ref{} geplottet. Die Fehler w
 % Werte mit Fehlerbalken plotten. 
 % Auf Laptop schon alle Werte abgetippt?
 % tägliche Varianz so gering, dass die Messwerte nicht danach korrigiert werden müssen.
@@ -138,7 +138,7 @@ Dieses Profli ist parallel zu M24-M25 in einem Abstand von 5\,m angelegt. Da es 
 
 \subsection{Profil M28-M29}
 
-Dieses Profil ist nicht senkrecht zum Gang angelegt. In der Mitte des Gangs befindet es sich an der gleichen Stelle über diesem wie Profil M24-M25. Deswegen ist in Abbildung \ref{fig:modM28} die Modellierung mit genau den gleichen Parametern wie bei Profil M24-M25 durchgeführt. 
+Dieses Profil ist nicht senkrecht zum Gang angelegt. In der Mitte des Gangs befindet es sich an der gleichen Stelle über diesem wie Profil M24-M25. Deswegen ist in Abbildung \ref{fig:modM28} die Modellierung mit genau den gleichen Parametern wie bei Profil M24-M25 durchgeführt. Diese Modellierung erklärt die Messergebnisse nicht gut, weil durch die schräge Lage das Maximum viel breiter ist als bei den anderen Profilen. Um diese breite Kurve modellieren zu können, müsste zum Beispiel die magnetische Suszeptibilität sehr viel größer gewählt werden.
 
 \begin{figure}
  \centering

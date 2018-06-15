@@ -34,8 +34,27 @@ Eine Welle, die im kritischen Winkel auf die Grenzfläche auftritt, läuft mit d
 
 % Basalt: $\q{v}{P}>\eb{4000}{m}{s}$
 Im Seismogramm werden die Einsätze der Wellen abgelesen. Dann können die Laufzeiten $t$ gegen die Geophondistanz $x$ vom Schussort aufgetragen werden. Die erhaltene Kurve heißt Laufzeitdiagramm. Die weitere Auswertung erfolgt aus diesen Diagrammen, wobei nur die Ersteinsätze ausgewertet werden. Zuerst wird der Ersteinsatz durch die direkte Welle (Kompressionswelle, die an Erdoberfläche entlang läuft) gebildet und ab einer bestimmten Geophondistanz überholt die refraktierte Welle die direkte Welle, so dass der Ersteinsatz nun durch diese erfolgt. Dies ist auch in Abbildung ??? zu sehen.
-% Laufzeitkurve für eine Schicht über dem homogenen Halbraum???
 % Auswertung (eine Schicht, zwei Schichten, geneigte Schichten, Verfahren der Verzögerungszeiten) ???
+
+\section{Auswertung bei zwei schichten über dem Halbraum}
+???Muss noch geschrieben werden???
+
+Der Strahlengang und das Laufzeitdiagramm für diesen Fall sind in Abbildung \ref{zweiSchichten} zu sehen. Hin- und Rückschuss haben von ihrem Nullpunkt aus gesehen den gleichen Verlauf. Aus der ersten Geraden folgt die Laufzeit der direkten Welle
+\begin{equation}
+ t_1=\frac{x}{v_1} \fullstop
+\end{equation}
+Aus der zweiten Gerade folgt die Laufzeit
+\begin{equation}
+ t_2=\frac{x}{v_2}+\frac{2d_1\cos(\vartheta_1)}{v_1}
+\end{equation}
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{fig/zweischichten}
+ \caption[Strahlengang und Laufzeitdiagramm für den Fall von zwei homogenen Schichten über einem homogenen Halbraum]{Strahlengang und Laufzeitdiagramm für den Fall von zwei homogenen Schichten über einem homogenen Halbraum \cite{skript}}
+ \label{fig:zweiSchichten}
+\end{figure}
 
 \section{Messinsrumente}
 
@@ -44,3 +63,10 @@ Der Messaufbau dieser Seismik-Versuche ist in Abbildung ??? dargestellt. Als Sig
 Der Trigger gibt der Software auf dem Laptop das Startsignal zur Aufzeichnung der Messung. Dies geschieht genau dann, wenn die Quelle ausgelöst wird. Er ist an der Quelle angebracht und an einer Diode angeschlossen, die das Triggersignal an andere Geoden und die Software weiterleitet.  
 
 Wird die Hammerschlagseismik verwendet, werden pro Schusspunkt oft mehrere Schläge durchgeführt und die Seismogramme danach aufsummiert. Die Signale werden dadurch deutlicher, weil sich die Nutzsignale konstruktiv addieren, was jedoch für die Störsignale (Rauschen) nicht der Fall ist. Dieses Prinzip wird Stapelung genannt. Bei längeren Messprofilen wird die Verpuffungsquelle S.I.S.Sy verwendet, weil sie eine höherer Energie als der Hammerschlag aufweist und so ein Schuss ausreicht.
+
+% \begin{figure}
+%  \centering
+%  \includegraphics[width=\textwidth]{fig/}
+%  \caption{}
+%  \label{fig:}
+% \end{figure}

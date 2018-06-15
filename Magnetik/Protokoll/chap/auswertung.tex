@@ -19,10 +19,18 @@ wobei der Fehler aus dem Fehler auf die Steigung mit Fehlerfortpflanzung hervorg
 
 \section{Basismessung}
 
-Mit dem Kalibrierungsfaktor können die Werte der Basismessung (siehe Abbildung \ref{fig:MPBasis}) mit Gleichung \eqref{eq:Umrechnung_Torsion} in Einheiten der magnetischen Flussdichte umgerechnet werden. Da die Ruhelage $\alpha_0$ nicht bekannt ist, wird der niedrigste gemessene Wert auf null gesetzt. Man erhält damit also nur Informationen über die zeitliche Änderung des Magnetfelds. 
-% Werte mit Fehlerbalken plotten. 
-% Auf Laptop schon alle Werte abgetippt?
-% tägliche Varianz so gering, dass die Messwerte nicht danach korrigiert werden müssen.
+Mit dem Kalibrierungsfaktor können die Werte der Basismessung (siehe Abbildung \ref{fig:MPBasis}) mit Gleichung \eqref{eq:Umrechnung_Torsion} in Einheiten der magnetischen Flussdichte umgerechnet werden. Da die Ruhelage $\alpha_0$ nicht bekannt ist, wird der niedrigste gemessene Wert auf null gesetzt. Man erhält damit also nur Informationen über die zeitliche Änderung des Magnetfelds, jedoch nicht über den Absolutwert an der Basisstation. Diese ist inklusive Fehlerbalken in Abbildung \ref{fig:tagesgang} geplottet. Die Fehler wurden min Fehlerfortpflanzung
+\begin{equation}
+ \q{\delta}{B}=\sqrt{\left(\alpha\cdot\q{\delta}{k}\right)^2+\left(k\cdot\q{\delta}{\alpha}\right)^2}
+\end{equation}
+berechnet. Es ist zu sehen, dass sich die Werte des Magnetfelds mit der Zeit nur sehr wenig ändern und deswegen der Tagesgang im Messgebiet nicht weiter in der Auswertung berücksichtigt werden muss.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.7\textwidth]{fig/tagesgang}
+ \caption{Tagesgang an der Basisstation}
+ \label{fig:tagesgang}
+\end{figure}
 
 \section{Kartierung}
 
