@@ -39,15 +39,7 @@ Im Seismogramm werden die Einsätze der Wellen abgelesen. Dann können die Laufz
 \section{Auswertung bei zwei schichten über dem Halbraum}
 ???Muss noch geschrieben werden???
 
-Der Strahlengang und das Laufzeitdiagramm für diesen Fall sind in Abbildung \ref{zweiSchichten} zu sehen. Hin- und Rückschuss haben von ihrem Nullpunkt aus gesehen den gleichen Verlauf. Aus der ersten Geraden folgt die Laufzeit der direkten Welle
-\begin{equation}
- t_1=\frac{x}{v_1} \fullstop
-\end{equation}
-Aus der zweiten Gerade folgt die Laufzeit
-\begin{equation}
- t_2=\frac{x}{v_2}+\frac{2d_1\cos(\vartheta_1)}{v_1}
-\end{equation}
-
+Der Strahlengang und das Laufzeitdiagramm für diesen Fall sind in Abbildung \ref{zweiSchichten} zu sehen.
 
 \begin{figure}
  \centering
@@ -55,6 +47,51 @@ Aus der zweiten Gerade folgt die Laufzeit
  \caption[Strahlengang und Laufzeitdiagramm für den Fall von zwei homogenen Schichten über einem homogenen Halbraum]{Strahlengang und Laufzeitdiagramm für den Fall von zwei homogenen Schichten über einem homogenen Halbraum \cite{skript}}
  \label{fig:zweiSchichten}
 \end{figure}
+
+Bei der Beschreibung der Formel wird die Notation des Skripts \cite{skript} verwendet. Hin- und Rückschuss haben von ihrem Nullpunkt aus gesehen den gleichen Verlauf. Aus der ersten Geraden folgt die Laufzeit der direkten Welle
+\begin{equation}
+ t_1=\frac{x}{v_1} \fullstop
+\end{equation}
+Aus der zweiten Gerade folgt die Laufzeit
+\begin{equation}
+ t_2=\frac{x}{v_2}+\frac{2d_1\cos(\vartheta_1)}{v_1}=\frac{x}{v_2}+t_{i2}
+\end{equation}
+der ersten refraktierten Welle. Die Intercept-Zeit
+\begin{equation}
+\label{eq:ti2}
+ t_{i2}=\frac{2d_1\cos(\vartheta_1)}{v_1}
+\end{equation}
+ist die theoretische Ersteinsatz-Zeit der refraktierten Welle. Der dritte Abschnitt ist dann die Laufzeitgerade der am Halbraum refraktierten Welle
+\begin{equation}
+ t_3=\frac{x}{v_3}+\frac{2d_1}{v_1}\cos(\vartheta_{12})+\frac{2d_2}{v_2}\cos(\vartheta_2)=\frac{x}{v_3}+t_{i3} \fullstop
+\end{equation}
+Mit der Intercept-Zeit
+\begin{equation}
+\label{eq:ti3}
+ t_{i3}=\frac{2d_1}{v_1}\cos(\vartheta_{12})+\frac{2d_2}{v_2}\cos(\vartheta_2)\comma
+\end{equation}
+dem kritischen Winkel 
+\begin{equation}
+ \sin(\vartheta_2)=\frac{v_2}{v_3}
+\end{equation}
+für die zweite Schichtgrenze und dem Ausfallswinkel
+\begin{equation}
+ \sin(\vartheta_{12})=\frac{v_1}{v_2}\sin(\vartheta_2)=\frac{v_1}{v_3}
+\end{equation}
+an der ersten Schichtgrenze eines von unten nach oben laufenden Strahls, der die zweite Schichtgrenze unter dem Winkel $\vartheta_2$ verlassen hat.
+
+Die Ersteinsatz-Laufzeitkurven können dann folgendermaßen ausgewertet werden: Die Geschwindigkeiten $v_1$, $v_2$ und $v_3$ werden aus den Steigungen der drei geraden Abschnitte der Laufzeitkurven bestimmt. Sie entsprechen dem Kehrwert der Steigungen. Die Intercept-Zeiten sind die $t$-Achsenabschnitte der zweiten bzw. dritten Geraden. Sie können aus dem Laufzeitdiagramm abgelesen werden. Die relevanten Winkel
+\begin{align}
+ \vartheta_1=\arcsin\left(\frac{v_1}{v_2}\right) \\
+ \vartheta_2=\arcsin\left(\frac{v_2}{v_3}\right) \\
+ \vartheta_{12}=\arcsin\left(\frac{v_1}{v_3}\right)
+\end{align}
+werden aus den Geschwindigkeiten berechnet. Die Schichtmächtigkeiten $d_i$ werden dann letztlich durch Umstellen der Gleichungen \eqref{eq:ti2} und \eqref{eq:ti3} zu
+\begin{align}
+ d_1&=\frac{t_{i2}v_1}{2\cos(\vartheta_1)} \\
+ d_2&=\frac{v_2}{2\cos(\vartheta_2)}\left(t_{i3}-\frac{2d_1}{v_1}\cos(\vartheta_{12})\right)
+\end{align}
+berechnet.
 
 \section{Messinsrumente}
 
