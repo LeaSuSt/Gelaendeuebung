@@ -15,9 +15,9 @@ print ("Geschindigkeit v1 ist:")
 print v1
 
 
-t2 = 0.0182-0.0085
+t2 = 0.0192-0.008
 x= 8.
-ti2= 0.0085
+ti2= 0.008
 v2 = x/t2
 print "Geschindigkeit v2 ist:" 
 print v2 
