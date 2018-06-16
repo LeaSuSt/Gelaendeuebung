@@ -20,8 +20,8 @@ x = [1.5, 2.5, 3.5, 4.5, 6.5, 8.5, 10.5, 12.5, 14.5, 16.5, 18.5, 20.5, 22.5, 24.
 #umgedrehte Koordinaten (fuer den Rueckschuss)
 reversed_x=x[::-1]
 
-def func(xx, a, b):
-    return a*xx+b
+def func(z, a, b):
+    return a*z+b
 
 def ursprung(z,a):
   return a*z
@@ -50,19 +50,28 @@ for i in range(0,len(y2)):
 
 plt.plot(x, y2, color='black', linewidth=1, label='2. refraktierte Welle')
 
-print func(0,popt2[0],popt2[1])                           #y-achsenabschnitt 2.gerade
+#Ergebisse ausgeben
+v1hin=1./popt1[0]
+v2hin=1./popt2[0]
+tihin=func(0,popt2[0],popt2[1])        #y-achsenabschnitt 2.gerade, Interceptzeit
+d1hin=tihin*np.sqrt(v1hin**2*v2hin**2/(v2hin**2-v1hin**2))/2.
+print "Ergebnisse vom Hinschuss:"
+print "Geschwindigkeit 1: "+str(v1hin)
+print "Geschwindigkeit 2: "+str(v2hin)
+print "Interceptzeit: "+str(tihin)
+print "Schichtdicke: "+str(d1hin)
 
 ############################################################
 #Geradenfits fuer Fehlerrechnung Hinschuss
-grenzef=10
+grenzef=4
 
-popt1f, pcov1f= curve_fit(ursprung,x[0:grenze],thin[0:grenze])
+popt1f, pcov1f= curve_fit(ursprung,x[0:grenzef],thin[0:grenzef])
 
-y1f=np.empty(grenzef)
-for i in range(0,grenzef):
+y1f=np.empty(6)
+for i in range(0,6):
   y1f[i]=ursprung(x[i],popt1f[0])
 
-plt.plot(x[0:grenzef], y1f, color='black', linewidth=1, label='1. refraktierte Welle')
+plt.plot(x[0:6], y1f,'--', color='black', linewidth=1, label='1. Toleranzgerade')
 
 
 popt2f, pcov2f= curve_fit(func,x[grenzef:len(x)],thin[grenzef:len(x)])
@@ -71,7 +80,18 @@ y2f=np.empty(len(x))
 for i in range(0,len(y2f)):
   y2f[i]=func(x[i],popt2f[0],popt2f[1])
 
-plt.plot(x, y2f,'--', color='black', linewidth=1, label='2. refraktierte Welle')
+plt.plot(x, y2f,'--', color='black', linewidth=1, label='2. Toleranzgerade')
+
+#Ergebisse Hinschuss Fehlerbetrachtung
+v1hinf=1./popt1f[0]
+v2hinf=1./popt2f[0]
+tihinf=func(0,popt2f[0],popt2f[1])        #y-achsenabschnitt 2.gerade, Interceptzeit
+d1hinf=tihinf*np.sqrt(v1hinf**2*v2hinf**2/(v2hinf**2-v1hinf**2))/2.
+print "Ergebnisse vom Hinschuss Fehlerbetrachtung:"
+print "Geschwindigkeit 1: "+str(v1hinf)
+print "Geschwindigkeit 2: "+str(v2hinf)
+print "Interceptzeit: "+str(tihinf)
+print "Schichtdicke: "+str(d1hinf)
 
 
 #Plot Ruechschuss
@@ -99,11 +119,98 @@ for i in range(0,len(y4)):
 
 plt.plot(reversed_x, y4, color='black', linewidth=2, label='2. refraktierte Welle')
 
+#Ergebnisse ausgeben
+v1rueck=1./popt3[0]
+v2rueck=1./popt4[0]
+tirueck=func(139.,popt4[0],popt4[1])        #y-achsenabschnitt 2.gerade, Interceptzeit
+d1rueck=tirueck*np.sqrt(v1rueck**2*v2rueck**2/(v2rueck**2-v1rueck**2))/2.
+print "Ergebnisse vom Rueckschuss:"
+print "Geschwindigkeit 1: "+str(v1rueck)
+print "Geschwindigkeit 2: "+str(v2rueck)
+print "Interceptzeit: "+str(tirueck)
+print "Schichtdicke: "+str(d1rueck)
+
+##########################################################
+#Geradenfits Fehlerbetrachtung Rueckschuss
+
+grenze2f=3
+popt3f, pcov3f= curve_fit(ursprung2,reversed_x[0:grenze2f],trueck[0:grenze2f])
+
+y3f=np.empty(5)
+for i in range(0,5):
+  y3f[i]=ursprung2(reversed_x[i],popt3f[0])
+
+plt.plot(reversed_x[0:5], y3f, '--', color='black', linewidth=2, label='1. Toleranzgerade')
+
+popt4f, pcov4f= curve_fit(func,reversed_x[grenze2f:len(x)],trueck[grenze2f:len(x)])
+
+y4f=np.empty(len(x))
+for i in range(0,len(y4f)):
+  y4f[i]=func(reversed_x[i],popt4f[0],popt4f[1])
+
+plt.plot(reversed_x, y4f, '--', color='black', linewidth=2, label='2. Toleranzgerade')
+
+#Ergebnisse Rueckschus Fehlerbetrachtung
+v1rueckf=1./popt3f[0]
+v2rueckf=1./popt4f[0]
+tirueckf=func(139.,popt4f[0],popt4f[1])        #y-achsenabschnitt 2.gerade, Interceptzeit
+d1rueckf=tirueckf*np.sqrt(v1rueckf**2*v2rueckf**2/(v2rueckf**2-v1rueckf**2))/2.
+print "Ergebnisse vom Rueckschuss Fehlerbetrachtung:"
+print "Geschwindigkeit 1: "+str(v1rueckf)
+print "Geschwindigkeit 2: "+str(v2rueckf)
+print "Interceptzeit: "+str(tirueckf)
+print "Schichtdicke: "+str(d1rueckf)
+
 
 #########################################################
-#Ausgabe des Plots
+#Ausgabe und Verschoenerung des Plots
 plt.xlabel("Abstand zu S11 in Richtung S12 in m", fontsize=14)
 plt.ylabel("Zeit nach Zuendung in s", fontsize=14)
 plt.legend(loc="lower center", fontsize=14)
 plt.grid()
+
+
+##########################################################
+#Geneigte Schichtgrenzen:
+v1mean=(v1hin-v1rueck)/2.
+thetarad=(np.arcsin(v1mean/v2hin)+np.arcsin(v1mean/-(v2rueck)))/2.
+theta=thetarad*360/(2*np.pi)
+alpharad=np.arcsin(v1mean/(-v2rueck))-thetarad
+alpha=alpharad*360/(2*np.pi)
+vtats=v1mean/np.sin(thetarad)
+dhin=tihin*v1mean/(2.*np.cos(thetarad))
+drueck=tirueck*v1mean/(2.*np.cos(thetarad))
+kontrolle=dhin-139.*np.sin(alpharad)
+
+print "-----------------------------------------"
+print "Auswertung mit geneigter Schichtgrenze: "
+print "Geschwindigkeit Mittel: "+str(v1mean)
+print "kritischer Winkel: "+str(theta)
+print "Neigung Schicht: "+str(alpha)
+print "tatsaechliche Geschwindigkeit Halbraum: "+str(vtats)
+print "Schichtdicke Hinschuss: "+str(dhin)
+print "Schichtdicke Rueckschuss: "+str(drueck)
+print "Kontrolle: "+str(kontrolle)
+print "-----------------------------------------"
+
+v1meanf=(v1hinf-v1rueckf)/2.
+thetaradf=(np.arcsin(v1meanf/v2hinf)+np.arcsin(v1meanf/-(v2rueckf)))/2.
+thetaf=thetaradf*360/(2*np.pi)
+alpharadf=np.arcsin(v1meanf/(-v2rueckf))-thetaradf
+alphaf=alpharadf*360/(2*np.pi)
+vtatsf=v1meanf/np.sin(thetaradf)
+dhinf=tihinf*v1meanf/(2.*np.cos(thetaradf))
+drueckf=tirueckf*v1meanf/(2.*np.cos(thetaradf))
+kontrollef=dhinf-139.*np.sin(alpharadf)
+
+print "Auswertung mit geneigter Schichtgrenze Fehlerbetrachtung: "
+print "Geschwindigkeit Mittel: "+str(v1meanf)
+print "kritischer Winkel: "+str(thetaf)
+print "Neigung Schicht: "+str(alphaf)
+print "tatsaechliche Geschwindigkeit Halbraum: "+str(vtatsf)
+print "Schichtdicke Hinschuss: "+str(dhinf)
+print "Schichtdicke Rueckschuss: "+str(drueckf)
+print "Kontrolle: "+str(kontrollef)
+print "------------------------------------------"
+
 plt.show()
