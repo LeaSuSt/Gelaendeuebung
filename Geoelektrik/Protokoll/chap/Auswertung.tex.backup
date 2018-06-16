@@ -128,7 +128,14 @@ Etwa $\SI{2}{m}$ entfernt von der stärksten Anomalie, bei  $\SI{14}{m}$ beginnt
 Beim Vergleich mit den Ergebnissen der Wennerkartierung finden wir größe Ähnlichkeiten. Die Tomographie deutet ebenso wie die Wennerkartierung darauf hin, das der Basaltgang an der gemessenen Stelle grob in drei Teile unterteilt werden kann. 
 Diese können wir jetzt aber besser lokalisieren.\\
 Dort, wo im Tomographie-Modell der größte spezifische Widerstand zu sehen ist, ist auch das globale Maximum der bei der Wenner-Kartierung. Die beiden Nebenmaxima in Abbildung \ref{abb:Wenner}
-sind etwa an der gleichen Stelle  wie die zwei kleineren Anomalien der Tomographie. 
+sind etwa an der gleichen Stelle wie die zwei kleineren Anomalien der Tomographie. \\ 
+Allerdings sollte hier noch beachtet werden, dass die Wennerkartierung in einer Tiefe von $\SI{5}{m}$ vorgenommen wurde. Die Tomographie an ihrem tiefsten Punkt aber nur $\SI{5}{m}$ in die Tiefe geht.
+In der Tomographie sehen wir aber dass, die Differenz der stärksten Anomalie und den Nebenmaxima fast $\SI{200}{\Ohm m}$ beträgt, was bei einer Skala von $\SI{0}{\Ohm m}- \SI{300}{\Ohm m}$ sehr viel ist. 
+Daher gehen wir davon aus, dass diese Anomalie die Messung der Wennerkartierung stark beeinflusst und dem Maximum in Abbildung \ref{abb:Wenner} entspricht.\\
+Diese Annahme wurde überprüft, indem man die Ortsangaben der beiden Diagramme verglichen haben. Leider passt die Wennerkartierung hier nicht mehr gut zur Tomographie. Vermmutlich haben die Anomalien in den oberen Schichten wirklich kaum Einfluss auf die Wennerkartierung. Da wir diese in 5\,m Tiefe durchgeführt haben, und das Tomographie-Model eben hier aufhört können wir die beiden Methoden eigentlich nicht vergleichen.
+
+
+Wir gehen davon aus, dass alle erhöhungen des spezifische Widerstands verursacht werden. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -140,7 +147,17 @@ sind etwa an der gleichen Stelle  wie die zwei kleineren Anomalien der Tomograph
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+Die Tomographie ist von 28\,m  bis 51,5\,m positioniert. Die bedeuted, dass der Mittelpunkt der Tomographie, 12\,m, gerade dem Punkt  
 
 
 \section{Sondierung}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{Tomographie.bmp}
+\caption{Tomographie Modell. Als Anfangspunkt der Messung wurde das obere Ende der Profillinie gewählt.}
+\label{abb:Tomographie}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
