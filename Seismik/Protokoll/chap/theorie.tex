@@ -36,10 +36,10 @@ Eine Welle, die im kritischen Winkel auf die Grenzfläche auftritt, läuft mit d
 Im Seismogramm werden die Einsätze der Wellen abgelesen. Dann können die Laufzeiten $t$ gegen die Geophondistanz $x$ vom Schussort aufgetragen werden. Die erhaltene Kurve heißt Laufzeitdiagramm. Die weitere Auswertung erfolgt aus diesen Diagrammen, wobei nur die Ersteinsätze ausgewertet werden. Zuerst wird der Ersteinsatz durch die direkte Welle (Kompressionswelle, die an Erdoberfläche entlang läuft) gebildet und ab einer bestimmten Geophondistanz überholt die refraktierte Welle die direkte Welle, so dass der Ersteinsatz nun durch diese erfolgt. Dies ist auch in Abbildung ??? zu sehen.
 % Auswertung (eine Schicht, zwei Schichten, geneigte Schichten, Verfahren der Verzögerungszeiten) ???
 
-\section{Auswertung bei zwei schichten über dem Halbraum}
-???Muss noch geschrieben werden???
+\section{Auswertung bei zwei Schichten über dem Halbraum}
+\label{sec:zweiSchichten}
 
-Der Strahlengang und das Laufzeitdiagramm für diesen Fall sind in Abbildung \ref{zweiSchichten} zu sehen.
+Der Strahlengang und das Laufzeitdiagramm für diesen Fall sind in Abbildung \ref{fig:zweiSchichten} zu sehen.
 
 \begin{figure}
  \centering
@@ -92,6 +92,73 @@ werden aus den Geschwindigkeiten berechnet. Die Schichtmächtigkeiten $d_i$ werd
  d_2&=\frac{v_2}{2\cos(\vartheta_2)}\left(t_{i3}-\frac{2d_1}{v_1}\cos(\vartheta_{12})\right)
 \end{align}
 berechnet.
+
+\section{Auswertung bei einer geneigten Schicht über dem Halbraum}
+\label{sec:geneigteSchicht}
+
+Handelt es sich um eine Schicht über einem homogenen Halbraum bei der die Grenze zu diesem bezüglich des Erdbodens geneigt ist, sieht das Laufzeitdiagramm wie in Abbildung \ref{fig:genLauf} aus. Dies liegt daran, dass die refraktierten Wellen je nach Schichtmächtigkeit am Aufstiegspunkt unterschiedlich lang benötigen, um wieder die Erdoberfläche zu erreichen. Deutlich wird dies am Strahlengang (siehe Abbildung \ref{fig:genStr}) für diesen Fall des Untergrunds. Für die Berechnungen werden die in Tabelle \ref{tab:groessen} erklärten Größen benötigt. Dies Bezeichnungen sind die gleichen wie im Skript \ref{skript} verwendeten.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{fig/geneigtLaufzeit}
+ \caption[Laufzeitdiagramm für eine Schicht über einem Halbraum mit geneigtem Refraktor]{Laufzeitdiagramm für eine Schicht über einem Halbraum mit geneigtem Refraktor \cite{skript}}
+ \label{fig:genLauf}
+\end{figure}
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{fig/geneigtStrahlen}
+ \caption[Strahlengang für eine Schicht über einem Halbraum mit geneigtem Refraktor]{Strahlengang für eine Schicht über einem Halbraum mit geneigtem Refraktor \cite{skript}}
+ \label{fig:genStr}
+\end{figure}
+
+\begin{table}[!ht]
+\centering
+\caption{Größen zur Berechnung bei einer geneigten Schichtgrenze}
+\label{tab:groessen}
+\begin{tabular}{ll}
+\toprule
+Formelzeichen   & Erklärung  \\
+\midrule
+$v_1$ & Geschwindigkeit der direkten Welle \\
+$v_{2+}$  &  Scheingeschwindigkeit der die untere Schicht hinauflaufende Welle\\
+$v_{2-}$  &  Scheingeschwindigkeit der die untere Schicht hinablaufende Welle\\
+$v_2$ & Tatsächliche Geschwindigkeit des Halbraums \\
+$\vartheta$  &  Kritischer Winkel\\
+$\alpha$  &  Neigung der Schichtgrenze \\
+$d$  & Tiefe der Schichtgrenze unter dem jeweiligen Schusspunkt \\
+$t_i$  &  Intercept-Zeit\\
+$s$ & Abstand der Schusspunkte\\
+Index $+$  & Beobachtung ins Steigen der Grenzfläche \\
+Index $-$  & Beobachtung ins Fallen der Grenzfläche \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Ob die vom Hin- oder Rückschuss ausgesendete Welle die Schichtgrenze hinab oder hinauf läuft, lässt sich an den Intercept-Zeiten ablesen. Es gilt $t_{i+}>t_{i-}$. Die Geschwindigkeiten $v_1$, $v_{2+}$ und $v_{2-}$ werden aus den reziproken Geradensteigungen im Laufzeitdiagramm bestimmt. Für die beiden Winkel gelten die Zusammenhänge
+\begin{align}
+ \sin(\vartheta-\alpha)&=\frac{v_1}{v_{2+}} \\
+ \sin(\vartheta+\alpha)&=\frac{v_1}{v_{2-}} \fullstop
+\end{align}
+Sie können also durch die Formeln
+\begin{align}
+ \vartheta&=\frac{1}{2}\left(\arcsin\left(\frac{v_1}{v_{2+}}\right)+\arcsin\left(\frac{v_1}{v_{2-}}\right)\right) \\
+ \alpha&=\arcsin\left(\frac{v_1}{v_{2-}}\right)-\vartheta
+\end{align}
+aus den Geschwindigkeiten berechnet werden. Für die tatsächliche Geschwindigkeit des Halbraums gilt der Zusammenhang
+\begin{equation}
+ v_2=\frac{v_1}{\sin(\vartheta)} \fullstop
+\end{equation}
+Schließlich können die Mächtigkeiten unter den Schusspunkten
+\begin{align}
+ d_+&=\frac{t_{i+}v_1}{2\cos(\vartheta)} \\
+ d_-&=\frac{t_{i-}v_1}{2\cos(\vartheta)}
+\end{align}
+bestimmt werden. Um die Rechnung zu kontrollieren, kann Gleichungen
+\begin{equation}
+ d_-=d_+-s\sin(\alpha)
+\end{equation}
+überprüft werden. Sie sollte für richtige Ergebnisse gelten.
 
 \section{Messinsrumente}
 

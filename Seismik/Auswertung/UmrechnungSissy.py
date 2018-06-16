@@ -55,11 +55,14 @@ v1hin=1./popt1[0]
 v2hin=1./popt2[0]
 tihin=func(0,popt2[0],popt2[1])        #y-achsenabschnitt 2.gerade, Interceptzeit
 d1hin=tihin*np.sqrt(v1hin**2*v2hin**2/(v2hin**2-v1hin**2))/2.
+print "-----------------------------------------"
 print "Ergebnisse vom Hinschuss:"
 print "Geschwindigkeit 1: "+str(v1hin)
 print "Geschwindigkeit 2: "+str(v2hin)
 print "Interceptzeit: "+str(tihin)
 print "Schichtdicke: "+str(d1hin)
+print "-----------------------------------------"
+
 
 ############################################################
 #Geradenfits fuer Fehlerrechnung Hinschuss
@@ -92,6 +95,7 @@ print "Geschwindigkeit 1: "+str(v1hinf)
 print "Geschwindigkeit 2: "+str(v2hinf)
 print "Interceptzeit: "+str(tihinf)
 print "Schichtdicke: "+str(d1hinf)
+print "-----------------------------------------"
 
 
 #Plot Ruechschuss
@@ -129,6 +133,8 @@ print "Geschwindigkeit 1: "+str(v1rueck)
 print "Geschwindigkeit 2: "+str(v2rueck)
 print "Interceptzeit: "+str(tirueck)
 print "Schichtdicke: "+str(d1rueck)
+print "-----------------------------------------"
+
 
 ##########################################################
 #Geradenfits Fehlerbetrachtung Rueckschuss
@@ -160,7 +166,7 @@ print "Geschwindigkeit 1: "+str(v1rueckf)
 print "Geschwindigkeit 2: "+str(v2rueckf)
 print "Interceptzeit: "+str(tirueckf)
 print "Schichtdicke: "+str(d1rueckf)
-
+print "-----------------------------------------"
 
 #########################################################
 #Ausgabe und Verschoenerung des Plots
@@ -213,4 +219,20 @@ print "Schichtdicke Rueckschuss: "+str(drueckf)
 print "Kontrolle: "+str(kontrollef)
 print "------------------------------------------"
 
-plt.show()
+print "Fehler: "
+print "v1hin   "+str(v1hin-v1hinf)
+print "v1rueck "+str(v1rueck-v1rueckf)
+print "v1mean  "+str(v1mean-v1meanf)
+print "v2plus  "+str(v2hin-v2hinf)
+print "v2minus "+str(v2rueck-v2rueckf)
+print "v2      "+str(vtats-vtatsf)
+print "theta   "+str(theta-thetaf)
+print "alpha   "+str(alpha-alphaf)
+print "dplus   "+str(dhin-dhinf)
+print "dminus  "+str(drueck-drueckf)
+print "tiplus  "+str(tihin-tihinf)
+print "timinus "+str(tirueck-tirueckf)
+print "s       "+str(kontrolle-kontrollef)
+print "------------------------------------------"
+
+#plt.show()
