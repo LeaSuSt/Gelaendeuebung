@@ -84,6 +84,7 @@ Um die Messungen der verschiedenen Messgeräte jedoch miteinander vergleichen zu
 % Um die Messungen der verschiedenen Messgeräte miteinander vergleichen zu können, muss eines ausgewählt werden, auf das die Messungen mit den anderen korrigiert werden. Dazu verwenden wir die Messungen des Magnetfelds am BFO (siehe Abbildung \ref{fig:BFO}). Aus diesem Diagramm ist abzulesen, dass die Totalintensität des Magnetfelds am BFO am Messtag, den 22.05.2018, von 12:00 Uhr bis 18:00 Uhr zwischen 48220\,nT und 48250\,nT betrug. Die Messwerte des Geräts Nr. 1 liegen am nächsten an diesen, weswegen wir alle Werte auf dieses korrigieren. Es wird also für alle folgenden Auswertungen auf alle Messungen mit Gerät Nr. 2  28,5\,nT addiert und von allen Messungen mit dem neuen Gerät werden 869\,nT subtrahiert. In den Modellierungen mit Matlab kann dies dadurch erreicht werden, dass bei allen Geräten der Messwert des ersten Messgeräts an der Basisstation als DATASHIFT verwendet wird.
 
 \section{Profile}
+\label{sec:profile}
 
 Im folgenden werden die vermessenen Profile ausgewertet. Die Messprotokolle befinden sich im Anhang in den Abbildungen \ref{fig:MPProfil_erstes} bis \ref{fig:MPProfil_letztes}. Sie werden qualitativ verglichen und manche werden mit dem bereitgestellten MATLAB-Skript modelliert.
 
