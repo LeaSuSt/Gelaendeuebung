@@ -1,5 +1,4 @@
-\section{Einführung}
-
+% \section{Einführung}
 Mit diesem Verfahren kann die Magnetisierung und magnetische Suszebilität von Objekten im Untergrund untersucht werden, sowie Variationen des Erdmagnetfelds. Es kann sowohl die räumliche als auch die zeitliche Variation 
 betrachtet werden.
 
@@ -8,19 +7,21 @@ Das gesamte gemessene Magnetfeld setzt sich aus dem Hintergrundfeld und Anomalie
 
 Die Messgröße die in diesem Versuch gemessen wird ist die \textbf{magnetische Flussdichte} $\vec{B}$, sie gibt die Stärke des Magnetfeldes an.
 
-Eine andere wichtige Größe ist \textbf{Magnetisierung} $\vec{M}$ eines Materials, sie hängt sowohl von der Stärke des Magnetfelds als auch den Materialeigenschaften ab.\\
+Eine andere wichtige Größe ist \textbf{Magnetisierung} $\vec{M}$ eines Materials, sie hängt sowohl von der Stärke des Magnetfelds als auch den Materialeigenschaften ab.
 
 \section{Induzierte und remantente Magnetisierung}
 Gesteine oder sonstige Störkörper können remanent oder induziert magnetisiert sein. Induzierte Magnetisierung ist Magnetisierung, die nur solange ein äußeres Magnetfeld angelegt ist, vorhanden ist. Remanent magnetisierte 
-Materialien sind dauerhaft magnetisch, auch ohne äußeres Magnetfeld.\\
-Dia- und paramagnetische Materialien weisen nur induzierte Magnetisierung auf. Ferro-, ferri- und antiferromagnetische Materialien können auch remanent magnetisiert sein. \\
+Materialien sind dauerhaft magnetisch, auch ohne äußeres Magnetfeld.
+
+Dia- und paramagnetische Materialien weisen nur induzierte Magnetisierung auf. Ferro-, ferri- und antiferromagnetische Materialien können auch remanent magnetisiert sein.
+
 Daneben gibt es noch die thermoremanente Magnetisierung, hierbei entsteht die Magnetisierung während Gesteine in einem äußeren Magnetfeld (z.B. dem Erdmagnetfeld) abkühlen.
 
 
 \section{Magnetisches Moment}
 Das magnetische Moment $\vec{m}$  wird über das Integral
 \begin{equation}
-\vec{m}  = \int_V \vec{M}(\vec{x}) dV
+\vec{m}  = \int_V \vec{M}(\vec{x}) \text{d}V
 \end{equation}
 berechnet.
 Ist die Magnetisierung homogen, so ist das magnetische Moment
@@ -31,11 +32,11 @@ Ist die Magnetisierung homogen, so ist das magnetische Moment
 Auf einen magnetisierten Körper in einem Magnetfeld wirkt eine Kraft, die zu dem Drehmoment $\vec{D} = \vec{m} \times \vec{B}$ führt. Die Einheit dieses Drehmoments ist [$\vec{D}$]= 1 Nm.
 
 \section{Das Magnetfeld der Erde}
-Um Anomalien des Magnetfeldes erkennen zu können, muss man das Magnetfeld der Erde gut kennen.\\
+Um Anomalien des Magnetfeldes erkennen zu können, muss man das Magnetfeld der Erde gut kennen.
 Das Erdmagnetfeld entspricht in erster Näherung einem Dipol mit einem magnetischen Moment von $\SI{8 e22}{Am^2}$, der seinen Ursprung im Erdkern hat. Es gibt eine Abweichung der Achse dieses Dipols und der 
 Rotationsachse der Erde, dies wird als \textbf{Deklination} $D$ bezeichnet. 
-Der Einfallswinkel der magnetischen Feldlinien wird \textbf{Inklination} $I$ genannt. \\
-Betrachtet man nur das Magnetfeld, dass im Erdkern entsteht, so weicht es trotzdem von dem eines Dipols ab. \\ 94 \% des Erdmagnetfeld entsteht im Erdinneren. Hier sind die Quellen neben dem Kern auch magnetisierte Gesteine 
+Der Einfallswinkel der magnetischen Feldlinien wird \textbf{Inklination} $I$ genannt.
+Betrachtet man nur das Magnetfeld, dass im Erdkern entsteht, so weicht es trotzdem von dem eines Dipols ab. 94\,\% des Erdmagnetfeld entsteht im Erdinneren. Hier sind die Quellen neben dem Kern auch magnetisierte Gesteine 
 
 \section{Messinstrumente}
 
@@ -48,9 +49,9 @@ Beim Torsions-Magnetometer ist ein kleiner Stabmagnet zwischen zwei Torsionsfäd
 berechnet werden. Für die Komponente der magnetischen Flussdichte $\vec{B}$, die senkrecht zu $\vec{m}$ und der Torsionsachse steht, folgt der Zusammenhang
 \begin{equation}
  B=\frac{\tau(\alpha-\alpha_0)}{|\vec{m}|} \fullstop
+ \label{eq:Umrechnung_Torsion}
 \end{equation}
 Im Versuch wird ein Gfz-Instrument verwendet, das so ausgerichtet ist, dass die Vertikalkomponente $Z$ der magnetischen Flussdichte gemessen wird. Es wird dazu genutzt, die Vertikalkomponente an einem Ort im Laufe des Messtags zu messen, um zeitliche Variationen zu bemerken. Dies ist nötig, um die räumlichen Anomalien von diesen trennen zu können.
-% noch nichts zur Kalibrierung geschrieben. Vllt bei der Versuchsdurchführung???
 % Temperaturabhängigkeit
 
 \subsection{Protonen-Präzessions-Magnetometer}
@@ -77,7 +78,7 @@ Daraus ergibt sich das konstante gyromagnetische Verhältnis der Protonen
 \begin{equation}
  \gamma=\frac{\q{g}{I}\q{\mu}{K}}{\hbar}=\eb{2,67522205}{1}{Ts} \fullstop
 \end{equation}
-Aus der Lamorfrequenz kann also die magnetische Flussdichte bestimmt werden, die vom Protonenmagnometer direkt in nT ausgegeben wird.
+Aus der Lamorfrequenz kann also die magnetische Flussdichte bestimmt werden, die vom Protonenmagnetometer direkt in nT ausgegeben wird.
 
 Die Messgenauigkeit liegt im Bereich von $\e{1}{nt}$ bis $\pm\e{0,1}{nT}$. Protonenmagnetometer sind bei starken Wechselfeldern und großen räumlichen Gradienten des Magnetfeldes ungeeignet.
 
@@ -85,13 +86,14 @@ Die Messgenauigkeit liegt im Bereich von $\e{1}{nt}$ bis $\pm\e{0,1}{nT}$. Proto
 Mit Hilfe dieses Messinstruments wird die Vektorkomponente des Magnetfelds, die parallel zu der magnetischen Achse ist, gemessen.
 Die Sonde ist Aufgebaut aus zwei Weicheisenkernen und vier parallel angeordneten Spulen. Jeweils zwei Spulen befinden sich auf den Weicheisenkernen und sind 
 von Wechselstrom durchflossen. Liegt kein äußeres Magnetfeld an, so erreichen beide Kerne die Sättigung gleichzeitig. Ist dies nicht gegeben befinden sich 
-die Kerne nicht gleich lang in der Sättigungsperiode.\\
+die Kerne nicht gleich lang in der Sättigungsperiode.
+
 In eine dritte Spule, die Sensorspule, wird durch die beiden ersten Spulen eine Spannung induziert. Durch die vierte Spule, der Rückkopplungsspule wird immer
 ein Strom geschickt, der so groß ist, dass das äußere Feld kompensiert wird. Durch diesen Strom kann man Rückschlüsse auf das äußere Gleichfeld machen. 
 
 \subsection{Gradiometer}
 Das in der Geländeübung verwendete Gradiometer Grad601 der Firma Bartington Instruments enthält zwei 3-Komponenten Fluxgate-Magnetometer. Diese sind mit einem 
-Abstand von 1 m senktrecht übereinander angebracht.
+Abstand von 1 m senkrecht übereinander angebracht.
 Aus der Differenz der beiden Vertiaklkomponenten der Magnetometer und deren Abstand kann der vertikale Gradient
 \begin{equation}
  \frac{\partial B}{\partial z} \approx  \frac{B_{mathrm{u}}-B_0}{\Delta z} \fullstop
