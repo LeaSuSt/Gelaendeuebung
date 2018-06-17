@@ -1,5 +1,4 @@
-\section{Einführung}
-
+% \section{Einführung}
 Mit diesem Verfahren kann die Magnetisierung und magnetische Suszebilität von Objekten im Untergrund untersucht werden, sowie Variationen des Erdmagnetfelds. Es kann sowohl die räumliche als auch die zeitliche Variation 
 betrachtet werden.
 
@@ -22,7 +21,7 @@ Daneben gibt es noch die thermoremanente Magnetisierung, hierbei entsteht die Ma
 \section{Magnetisches Moment}
 Das magnetische Moment $\vec{m}$  wird über das Integral
 \begin{equation}
-\vec{m}  = \int_V \vec{M}(\vec{x}) dV
+\vec{m}  = \int_V \vec{M}(\vec{x}) \text{d}V
 \end{equation}
 berechnet.
 Ist die Magnetisierung homogen, so ist das magnetische Moment
@@ -30,14 +29,14 @@ Ist die Magnetisierung homogen, so ist das magnetische Moment
 \vec{m}  = \vec{M} \,V.
 \end{equation}
 
-Auf einen magnetisierten Körper in einem Magnetfeld wirkt eine Kraft, die zu dem Drehmoment $\vec{D} = \vec{m} \times \vec{B}$ führt. Die Einheit dieses Drehmoments ist [$\vec{D}$]= 1 Nm.
+Auf einen magnetisierten Körper in einem Magnetfeld wirkt eine Kraft, die zu dem Drehmoment $\vec{D} = \vec{m} \times \vec{B}$ führt. Die Einheit dieses Drehmoments ist [$\vec{D}$]= 1\,Nm.
 
 \section{Das Magnetfeld der Erde}
 Um Anomalien des Magnetfeldes erkennen zu können, muss man das Magnetfeld der Erde gut kennen.
 Das Erdmagnetfeld entspricht in erster Näherung einem Dipol mit einem magnetischen Moment von $\SI{8 e22}{Am^2}$, der seinen Ursprung im Erdkern hat. Es gibt eine Abweichung der Achse dieses Dipols und der 
 Rotationsachse der Erde, dies wird als \textbf{Deklination} $D$ bezeichnet. 
 Der Einfallswinkel der magnetischen Feldlinien wird \textbf{Inklination} $I$ genannt.
-Betrachtet man nur das Magnetfeld, dass im Erdkern entsteht, so weicht es trotzdem von dem eines Dipols ab. 94\,\% des Erdmagnetfeld entsteht im Erdinneren. Hier sind die Quellen neben dem Kern auch magnetisierte Gesteine 
+Betrachtet man nur das Magnetfeld, das im Erdkern entsteht, weicht es trotzdem von dem eines Dipols ab. 94\,\% des Erdmagnetfelds entstehen im Erdinneren. Hier sind die Quellen neben dem Kern auch magnetisierte Gesteine 
 
 \section{Messinstrumente}
 
@@ -59,7 +58,7 @@ Im Versuch wird ein Gfz-Instrument verwendet, das so ausgerichtet ist, dass die 
 
 Mit Protonen-Präzessions-Magnetometern (kurz: Protonenmagnetometer) wird die Totalintensität $T$ gemessen. In die Messungen gehen nur atomphysikalische Konstanten und eine Zeitmessung ein, sodass die Messung unabhängig von Temperatureffekten ist.
 
-In einem Behälter befindet sich Petroleum oder eine andere wasserstoffreiche Flüssigkeit. Dieser ist umgeben von einer Spule. Es muss eine wasserstoffreiche Flüssigkeit verwendet werden, weil die Präzession der Spins der Protonen in den Wasserstoff-Kernen beobachtet wird. In die Spulen wird ein Gleichstrom eingespeist , der ein Magnetfeld erzeugt. Die Spins der Protonen richten sich entlang des resultierenden Magnetfelds aus, das sich aus dem Erdmagnetfeld und dem durch die Spulen erzeugten Magnetfeld zusammen setzt. Das Feld der Spulen ist sehr viel größer als das Erdmagnetfeld. Die Ausrichtung der Spins ist also nahezu entlang des angelegten Feldes. Nach ein paar Sekunden wird das künstliche Feld schnell ausgeschaltet und die Spins präzedieren nun um die Richtung des Erdmagnetfelds, wodurch ein makroskopisches Wechselfeld entsteht. Dieses induziert eine Wechselspannung in der Spule, an der die Präzessionsfrequenz (Lamorfrequenz) $\q{\omega}{L}$ gemessen werden kann. Diese ist proportional zur magnetischen Flussdichte
+In einem Behälter befindet sich Petroleum oder eine andere wasserstoffreiche Flüssigkeit. Dieser ist umgeben von einer Spule. Es muss eine wasserstoffreiche Flüssigkeit verwendet werden, weil die Präzession der Spins der Protonen in den Wasserstoff-Kernen beobachtet wird. In die Spulen wird ein Gleichstrom eingespeist, der ein Magnetfeld erzeugt. Die Spins der Protonen richten sich entlang des resultierenden Magnetfelds aus, das sich aus dem Erdmagnetfeld und dem durch die Spulen erzeugten Magnetfeld zusammen setzt. Das Feld der Spulen ist sehr viel größer als das Erdmagnetfeld. Die Ausrichtung der Spins ist also nahezu entlang des angelegten Feldes. Nach ein paar Sekunden wird das künstliche Feld schnell ausgeschaltet und die Spins präzedieren nun um die Richtung des Erdmagnetfelds, wodurch ein makroskopisches Wechselfeld entsteht. Dieses induziert eine Wechselspannung in der Spule, an der die Präzessionsfrequenz (Lamorfrequenz) $\q{\omega}{L}$ gemessen werden kann. Diese ist proportional zur magnetischen Flussdichte
 \begin{equation}
  \q{\omega}{L}=\frac{\q{g}{I}\q{\mu}{K}}{\hbar}|\vec{B}|=\gamma |\vec{B}| \fullstop
 \end{equation}
@@ -81,25 +80,25 @@ Daraus ergibt sich das konstante gyromagnetische Verhältnis der Protonen
 \end{equation}
 Aus der Lamorfrequenz kann also die magnetische Flussdichte bestimmt werden, die vom Protonenmagnetometer direkt in nT ausgegeben wird.
 
-Die Messgenauigkeit liegt im Bereich von $\e{1}{nt}$ bis $\pm\e{0,1}{nT}$. Protonenmagnetometer sind bei starken Wechselfeldern und großen räumlichen Gradienten des Magnetfeldes ungeeignet.
+Die Messgenauigkeit liegt im Bereich von $\e{1}{nT}$ bis $\pm\e{0,1}{nT}$. Protonenmagnetometer sind bei starken Wechselfeldern und großen räumlichen Gradienten des Magnetfeldes ungeeignet.
 
 \subsection{Fluxgate-Magnetometer}
 Mit Hilfe dieses Messinstruments wird die Vektorkomponente des Magnetfelds, die parallel zu der magnetischen Achse ist, gemessen.
-Die Sonde ist Aufgebaut aus zwei Weicheisenkernen und vier parallel angeordneten Spulen. Jeweils zwei Spulen befinden sich auf den Weicheisenkernen und sind 
+Die Sonde ist aufgebaut aus zwei Weicheisenkernen und vier parallel angeordneten Spulen. Jeweils zwei Spulen befinden sich auf den Weicheisenkernen und sind 
 von Wechselstrom durchflossen. Liegt kein äußeres Magnetfeld an, so erreichen beide Kerne die Sättigung gleichzeitig. Ist dies nicht gegeben befinden sich 
 die Kerne nicht gleich lang in der Sättigungsperiode.
 
-In eine dritte Spule, die Sensorspule, wird durch die beiden ersten Spulen eine Spannung induziert. Durch die vierte Spule, der Rückkopplungsspule wird immer
+In eine dritte Spule, die Sensorspule, wird durch die beiden ersten Spulen eine Spannung induziert. Durch die vierte Spule, der Rückkopplungsspule, wird immer
 ein Strom geschickt, der so groß ist, dass das äußere Feld kompensiert wird. Durch diesen Strom kann man Rückschlüsse auf das äußere Gleichfeld machen. 
 
 \subsection{Gradiometer}
-Das in der Geländeübung verwendete Gradiometer Grad601 der Firma Bartington Instruments enthält zwei 3-Komponenten Fluxgate-Magnetometer. Diese sind mit einem 
-Abstand von 1 m senkrecht übereinander angebracht.
+Das in der Geländeübung verwendete Gradiometer Grad601 der Firma Bartington Instruments enthält zwei 3-Komponenten Fluxgate-Magnetometer. Diese sind in einem 
+Abstand von 1\,m senkrecht übereinander angebracht.
 Aus der Differenz der beiden Vertiaklkomponenten der Magnetometer und deren Abstand kann der vertikale Gradient
 \begin{equation}
- \frac{\partial B}{\partial z} \approx  \frac{B_{mathrm{u}}-B_0}{\Delta z} \fullstop
+ \frac{\partial B}{\partial z} \approx  \frac{B_{\mathrm{u}}-B_0}{\Delta z} \comma
 \end{equation}
-$B_{mathrm{u}}$ bezeichnet den Messwert des unteren Sensors und $B_0$ den oberen. Die Einheit des vertikalen Gradienten ist nT/m.
+gemessen werden. $B_{\mathrm{u}}$ bezeichnet den Messwert des unteren Sensors und $B_0$ den oberen. Die Einheit des vertikalen Gradienten ist nT/m.
 
 
 

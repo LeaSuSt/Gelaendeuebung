@@ -1,37 +1,10 @@
 \section{Kalibrierung des Torsions-Magnetometers}
+\label{sec:kalibrierung}
 
 Die Messwerte der Kalibrierungsmessung sind in Abbildung \ref{fig:MPKalibrierung} zu sehen. Zur Auswertung wird zunächst der durch die Spulen fließende Strom mit dem Spulenkennwert $s$ und der Formel
 \begin{equation}
  B=s\cdot I=I\cdot \eb{26,5}{nT}{mA} 
 \end{equation}
-
-in das Magnetfeld umgerechnet. Der Plot der Messwerte und der linearen Regression ist in Abbildung \ref{fig:kalibrierung} zu sehen. Bei der Regression ergab sich eine Steigung von $\eb{-0.0039}{Skt}{nT}$. Der negative Kehrwert dieser Steigung liefert den Kalibrierungsfaktor
-\begin{equation}
- \frac{\tau}{|\vec{m}|}=\eb{253}{nT}{Skt} \fullstop
-\end{equation}
-
-\begin{figure}[!ht]
- \centering
- \includegraphics[width=\textwidth]{fig/kalibrierung.pdf}
- \caption[Bestimmung des Kalibrierungsfaktors des Torsions-Magnetometers]{Bestimmung des Kalibrierungsfaktors des Torsions-Magnetometers. Aufgetragen sind die Ablesewerte am Gfz in Skt über die angelegte magnetische Flussdichte in nT.}
- \label{fig:kalibrierung}
-\end{figure}
-
-\section{Kartierung}
-
-In Abbildung \ref{fig:Kartierung} ist das Ergebnis der Kartierung abgebildet. Der Basaltgang ist deutlich als magnetische Anomalie zu sehen (in der Abbildung in rot dargestellt). Diese verläuft parallel zur Diagonalen M1-M3. Es bestätigt sich also auch nochmal die Wahl der Lage der Profile entlang von M4-M2 senkrecht zum Gang, die noch genauer untersucht wurden.
-
-\begin{figure}[!ht]
- \centering
- \includegraphics[width=\textwidth]{fig/kartierung_verschwommen.png}
- \caption[Ergebnis der Kartierung]{Ergebnis der Kartierung. M1 befindet sich in der linken oberen Ecke, M2 in der rechten oberen, M3 in der rechten unteren und M4 in der linken unteren.}
- \label{fig:Kartierung}
-\end{figure}
-
-\section{Vergleich der Messgeräte}
-
-Das Messprotokoll zum Vergleich der Messgeräte befindet sich in Abbildung \ref{fig:MPVergleich} im Anhang. Die Mittelwerte dieser Messungen stehen in Tabelle \ref{tab:VergleichErgebnis}. Es fällt auf, dass das vom neuen Gerät gemessene Magnetfeld 869\,nT bzw. 897.5\,nT von den anderen Geräten abweicht. Die beiden älteren Protonenmagnetometer weichen mit 28,5\,nT deutlich weniger voneinander ab. Solche kleinen Abweichungen könnten an ungenauen Messungen der Lamorfrequenz liegen, wenn beispielsweise die Beobachtungszeit zu gering war, also nicht genug Periode vermessen wurden. Außerdem könnte die geräteinterne Zeitskala nicht ganz korrekt gewesen sein. Auch die Stangen der Messgeräte hatten vielleicht nicht genau die selbe Länge oder die Messgeräte wurden nicht genau in Richtung Nord-Süd ausgerichtet. Diese Gründe können jedoch vermutlich nicht die größeren Abweichung vom neueren Gerät zu den anderen erklären.
-
 in die Magnetfeldstärke umgerechnet. Der Fehler auf den Strom wird als $\q{\delta}{I}=\e{0,1}{mA}$ angenommen, weil der Wert nur so genau abgelesen werden konnte. Mit Fehlerfortpflanzung ergibt sich daraus der Fehler $\q{\delta}{B}=\e{2,65}{nT}$ auf das Magnetfeld. Der Fehler auf den Ablesewert am Torsions-Magnetometer wird zu $\q{\delta}{\alpha}=\e{0,03}{Skt}$ abgeschätzt, was sich auch aus der Ableseungenauigkeit am Messgerät ergibt. Der Plot der Messwerte mit den eben genannten Fehlern als Fehlerbalken und der linearen Regression ist in Abbildung \ref{fig:kalibrierung} zu sehen. Bei der Regression ergab sich eine Steigung von $\eb{(394,9\pm5,7)\cdot 10^{-5}}{Skt}{nT}$. Der negative Kehrwert dieser Steigung liefert den Kalibrierungsfaktor $k$
 \begin{equation}
  k=\frac{\tau}{|\vec{m}|}=\eb{(253\pm3,7)}{nT}{Skt} \comma
@@ -40,14 +13,20 @@ wobei der Fehler aus dem Fehler auf die Steigung mit Fehlerfortpflanzung hervorg
 
 \begin{figure}[!ht]
  \centering
- \includegraphics[width=0.8\textwidth]{fig/kalibrierung}
+ \includegraphics[width=0.8\textwidth]{fig/kalibrierung.png}
  \caption[Bestimmung des Kalibrierungsfaktors des Torsions-Magnetometers]{Bestimmung des Kalibrierungsfaktors des Torsions-Magnetometers. Aufgetragen sind die Ablesewerte am Gfz in Skt über die angelegte magnetische Flussdichte in nT. Die Fehler sind als Fehlerbalken aufgetragen.}
  \label{fig:kalibrierung}
 \end{figure}
 
-\section{Basismessung}
+% \section{Vergleich der Messgeräte}
+% 
+% Das Messprotokoll zum Vergleich der Messgeräte befindet sich in Abbildung \ref{fig:MPVergleich} im Anhang. Die Mittelwerte dieser Messungen stehen in Tabelle \ref{tab:VergleichErgebnis}. Es fällt auf, dass das vom neuen Gerät gemessene Magnetfeld 869\,nT bzw. 897.5\,nT von den anderen Geräten abweicht. Die beiden älteren Protonenmagnetometer weichen mit 28,5\,nT deutlich weniger voneinander ab. Solche kleinen Abweichungen könnten an ungenauen Messungen der Lamorfrequenz liegen, wenn beispielsweise die Beobachtungszeit zu gering war, also nicht genug Periode vermessen wurden. Außerdem könnte die geräteinterne Zeitskala nicht ganz korrekt gewesen sein. Auch die Stangen der Messgeräte hatten vielleicht nicht genau die selbe Länge oder die Messgeräte wurden nicht genau in Richtung Nord-Süd ausgerichtet. Diese Gründe können jedoch vermutlich nicht die größeren Abweichung vom neueren Gerät zu den anderen erklären.
 
-Mit dem Kalibrierungsfaktor können die Werte der Basismessung (siehe Abbildung \ref{fig:MPBasis}) mit Gleichung \eqref{eq:Umrechnung_Torsion} in Einheiten der magnetischen Flussdichte umgerechnet werden. Da die Ruhelage $\alpha_0$ nicht bekannt ist, wird der niedrigste gemessene Wert auf null gesetzt. Man erhält damit also nur Informationen über die zeitliche Änderung des Magnetfelds, jedoch nicht über den Absolutwert an der Basisstation. Diese ist inklusive Fehlerbalken in Abbildung \ref{fig:tagesgang} geplottet. Die Fehler wurden min Fehlerfortpflanzung
+
+\section{Basismessung}
+\label{sec:basismessung}
+
+Mit dem Kalibrierungsfaktor können die Werte der Basismessung (siehe Abbildung~\ref{fig:MPBasis}) mit Gleichung \eqref{eq:Umrechnung_Torsion} in Einheiten der magnetischen Flussdichte umgerechnet werden. Da die Ruhelage $\alpha_0$ nicht bekannt ist, wird der niedrigste gemessene Wert auf null gesetzt. Man erhält damit also nur Informationen über die zeitliche Änderung des Magnetfelds, jedoch nicht über den Absolutwert an der Basisstation. Diese ist inklusive Fehlerbalken in Abbildung \ref{fig:tagesgang} geplottet. Die Fehler wurden mit Fehlerfortpflanzung
 \begin{equation}
  \q{\delta}{B}=\sqrt{\left(\alpha\cdot\q{\delta}{k}\right)^2+\left(k\cdot\q{\delta}{\alpha}\right)^2}
 \end{equation}
@@ -55,7 +34,7 @@ berechnet. Es ist zu sehen, dass sich die Werte des Magnetfelds mit der Zeit nur
 
 \begin{figure}
  \centering
- \includegraphics[width=0.7\textwidth]{fig/tagesgang}
+ \includegraphics[width=0.5\textwidth]{fig/tagesgang}
  \caption{Tagesgang an der Basisstation}
  \label{fig:tagesgang}
 \end{figure}
@@ -66,14 +45,14 @@ In Abbildung \ref{fig:Kartierung} ist das Ergebnis der Kartierung abgebildet. De
 
 \begin{figure}[!ht]
  \centering
- \includegraphics[width=0.8\textwidth]{fig/kartierung_verschwommen.png}
+ \includegraphics[width=0.5\textwidth]{fig/kartierung_verschwommen.png}
  \caption[Ergebnis der Kartierung]{Ergebnis der Kartierung. Von oben links aus sind die Eckpunkte im Uhrzeigersinn M1, M2, M3 und M4.}
  \label{fig:Kartierung}
 \end{figure}
 
 \begin{figure}[!ht]
  \centering
- \includegraphics[width=0.8\textwidth]{fig/MagnetikGesamtueberblick}
+ \includegraphics[width=0.7\textwidth]{fig/MagnetikGesamtueberblick}
  \caption[Ergebnis der Kartierung und Lage der der Profile]{Ergebnis der Kartierung und Lage der der Profile. Es ist zu erkennen, dass die drei Profile direkt nebeneinander senkrecht zum Gang verlaufen. M26-M27 ist nicht ganz so gut senkrecht. Die Graphik wurde von Rebekka Kirchgässner und Luisa Rank übernommen.}
  \label{fig:MagnetikGesamtueberblick}
 \end{figure}
@@ -86,16 +65,6 @@ Das Messprotokoll zum Vergleich der Messgeräte befindet sich in Abbildung \ref{
 \begin{table}[!ht]
  \centering
  \caption{Messergebnis des Vergleichs der Protonenmagnetometer und des Fluxgates}
-
- \begin{tabular}{rl}
- \toprule
- Messgerät & Totalintensität an Basisstation in nT \\
- \midrule
- Nr. 1 & 48102 \\
- Nr. 2 & 48073,5 \\
- Neues Gerät & 48971 \\
- Fluxgate &  \\
-
  \begin{tabular}{rll}
  \toprule
  Messgerät & Totalintensität an Basisstation in nT & DATASHIFT in nT \\
@@ -104,48 +73,41 @@ Das Messprotokoll zum Vergleich der Messgeräte befindet sich in Abbildung \ref{
  Nr. 2 & 48073,5 & 48073,5\\
  Neues Gerät & 48971 & 48102\\
  Fluxgate & 616,535 & 616,535\\
-
  \bottomrule
  \end{tabular}
 \label{tab:VergleichErgebnis}
 \end{table}
 
-
-Um die Messungen der verschiedenen Messgeräte miteinander vergleichen zu können, muss eines ausgewählt werden, auf das die Messungen mit den anderen korrigiert werden. Dazu verwenden wir die Messungen des Magnetfelds am BFO (siehe Abbildung \ref{fig:BFO}). Aus diesem Diagramm ist abzulesen, dass die Totalintensität des Magnetfelds am BFO am Messtag, den 22.05.2018, von 12:00 Uhr bis 18:00 Uhr zwischen 48220\,nT und 48250\,nT betrug. Die Messwerte des Geräts Nr. 1 liegen am nächsten an diesen, weswegen wir alle Werte auf dieses korrigieren. Es wird also für alle folgenden Auswertungen auf alle Messungen mit Gerät Nr. 2  28,5\,nT addiert und von allen Messungen mit dem neuen Gerät werden 869\,nT subtrahiert.
-
-\section{Profile}
-
-Es wurden 
-
-
-Um die Messungen der verschiedenen Messgeräte miteinander vergleichen zu können, müssen die Messwerte um ihren jeweiligen Messwert an der Basisstation korrigiert werden. Dies kann im zur Modellierung bereitgestellten MATLAB-Skript im DATASHIFT realisiert werden. Bei den anderen Plots, die noch folgen, wurde diese Korrektur auch durchgeführt. Für das neue Messgerät wurde der gleiche DATASHIFT wie für Nr. 1 verwendet, weil die sonstigen Messwerte dieser beiden Geräte am nächsten aneinander liegen und die Messung an der Basisstation vom neuen Gerät aufgrund ihrer Falschheit nicht verwendet werden kann.
+Um die Messungen der verschiedenen Messgeräte jedoch miteinander vergleichen zu können, müssen die Messwerte um ihren jeweiligen Messwert an der Basisstation korrigiert werden. Dies kann im zur Modellierung bereitgestellten MATLAB-Skript im DATASHIFT realisiert werden. Bei den anderen Plots, die noch folgen, wurde diese Korrektur auch durchgeführt. Für das neue Messgerät wurde der gleiche DATASHIFT wie für Nr. 1 verwendet, weil die sonstigen Messwerte dieser beiden Geräte am nächsten aneinander liegen und die Messung an der Basisstation vom neuen Gerät aufgrund ihrer Falschheit nicht verwendet werden kann. In Tabelle \ref{tab:VergleichErgebnis} ist auch der im folgenden verwendete DATASHIFT aufgelistet.
 
 % Fehlerhaft und alt:
 % Um die Messungen der verschiedenen Messgeräte miteinander vergleichen zu können, muss eines ausgewählt werden, auf das die Messungen mit den anderen korrigiert werden. Dazu verwenden wir die Messungen des Magnetfelds am BFO (siehe Abbildung \ref{fig:BFO}). Aus diesem Diagramm ist abzulesen, dass die Totalintensität des Magnetfelds am BFO am Messtag, den 22.05.2018, von 12:00 Uhr bis 18:00 Uhr zwischen 48220\,nT und 48250\,nT betrug. Die Messwerte des Geräts Nr. 1 liegen am nächsten an diesen, weswegen wir alle Werte auf dieses korrigieren. Es wird also für alle folgenden Auswertungen auf alle Messungen mit Gerät Nr. 2  28,5\,nT addiert und von allen Messungen mit dem neuen Gerät werden 869\,nT subtrahiert. In den Modellierungen mit Matlab kann dies dadurch erreicht werden, dass bei allen Geräten der Messwert des ersten Messgeräts an der Basisstation als DATASHIFT verwendet wird.
 
 \section{Profile}
+\label{sec:profile}
 
 Im folgenden werden die vermessenen Profile ausgewertet. Die Messprotokolle befinden sich im Anhang in den Abbildungen \ref{fig:MPProfil_erstes} bis \ref{fig:MPProfil_letztes}. Sie werden qualitativ verglichen und manche werden mit dem bereitgestellten MATLAB-Skript modelliert.
 
 %Erklärung Parameter Modellierung
-Bei der Modellierung mit MATLAB werden einige Parameter per Hand eingegeben und dann die Anomalie mit diesen Parametern berechnet. Die Messwerte und berechneten Werten können dann verglichen werden und ein möglichst gut die Werte erklärendes Modell gefunden werden. Die Inklination $\q{I}{H}=63,75^\circ$ und Totalintensität $\q{T}{H}=\e{48000}{nT}$ des Hintergrundfelds waren bereits gesetzt und wurden auch nicht verändert, da sie in der kurzen Zeitskala der Versuche gleich bleiben. Der DATASHIFT wurde wie oben beschrieben geräteabhängig eingestellt. Der Streichwinkel das Gangs wurde mit Grafik \ref{fig:MagnetikGesamtueberblick} aus der Kartierung bestimmt. Dies ist der Einkel abgetragen im Gegenuhrzeigersinn zwischen Nord-Süd-Richtung und Gang. Er wurde mit einem Geodreieck als 29$^\circ$ gemessen. Die magnetische Suszeptibilität von Basalt scheint in einem sehr großen Bereich zu liegen, was es schwierig machte, diese festzulegen. Der Default-Wert 0,015 wurde zu 0,017 geändert, weil so die Modellierungen allgemein etwas besser wurden. Die Tiefe der Gangunterkante wurde mit 1000\,m sehr tief gesetzt, weil der Gang als magnetische Anomalie in einer uns zur Verfügung gestellten geologischen Karte eingezeichnet war. Er verlief auch durch einen Schnitt und reichte bezüglich der Tiefe durch den ganzen Schnitt hindurch. Die Position des Maximums der gemessenen Werte wurde profilabhängig anhand der Messdaten eingestellt und und die Länge der Stange der Protonenmagnetometer ist bei allen drei 2\,m. Da diese Werte bei allen Modellierungen so gesetzt wurden, kann nur noch die Neigung des Gangs, die Tiefe der Gangoberkante und die Gangbreite verändert werden.
+Bei der Modellierung mit MATLAB werden einige Parameter per Hand eingegeben und dann die Anomalie mit diesen Parametern berechnet. Die Messwerte und berechneten Werten können dann verglichen werden und ein möglichst gut die Werte erklärendes Modell gefunden werden. Die Inklination $\q{I}{H}=63,75^\circ$ und Totalintensität $\q{T}{H}=\e{48000}{nT}$ des Hintergrundfelds waren bereits gesetzt und wurden auch nicht verändert, da sie in der kurzen Zeitskala der Versuche gleich bleiben. Der DATASHIFT wurde wie oben beschrieben geräteabhängig eingestellt. Der Streichwinkel das Gangs wurde mit Grafik \ref{fig:MagnetikGesamtueberblick} aus der Kartierung bestimmt. Dies ist der Winkel abgetragen im Gegenuhrzeigersinn zwischen Nord-Süd-Richtung und Gang. Er wurde mit einem Geodreieck als 29$^\circ$ gemessen. Die magnetische Suszeptibilität von Basalt scheint in einem sehr großen Bereich zu liegen, was es schwierig machte, diese festzulegen. Der Default-Wert 0,015 wurde zu 0,017 geändert, weil so die Modellierungen allgemein etwas besser wurden. Die Tiefe der Gangunterkante wurde mit 1000\,m sehr tief gesetzt, weil der Gang als magnetische Anomalie in einer uns zur Verfügung gestellten geologischen Karte eingezeichnet war. Er verlief auch durch einen Schnitt und reichte bezüglich der Tiefe durch den ganzen Schnitt hindurch. Die Position des Maximums der gemessenen Werte wurde profilabhängig anhand der Messdaten eingestellt und und die Länge der Stange der Protonenmagnetometer ist bei allen drei Messgeräten 2\,m. Da diese Werte bei allen Modellierungen so gesetzt wurden, kann nur noch die Neigung des Gangs, die Tiefe der Gangoberkante und die Gangbreite verändert werden.
 %%So schreiben ???:
 Dies schränkt die Möglichkeiten der Modelle zwar ein, ist aber eigentlich nicht wirklich gerechtfertigt, weil nicht genau und unbefriedigend begründet werden kann, warum die gerade aufgelisteten Parameter so gesetzt wurden.
 
-%%Modellierung mit Kati und Niels zusammen erwähnen!!!
+Die Modellierungen wurden gemeinsam mit Katharina Adrion und Niels Gieseler durchgeführt. Die Diagramme sind dennoch nicht immer die genau gleichen.
 
 \subsection{Profile M22-M23, M21-M2 und M24-M25}
 
 Diese Profile haben einen Abstand von 2\,m zueinander und sind nach der Kartierung zu schließen senkrecht zum Gang. Es ist also anzunehmen, dass die Messwerte abzüglich der Vergleichsmessung an der Basisstation sehr ähnlich verlaufen sollten. In Abbildung \ref{fig:Vergleich_Profile} ist dies zu sehen. Es fällt auf, dass die Totalintensitäten nach Süden hin zunehmen. Unter der Annahme, dass die magnetische Suszeptibilität des Gangs, sein Streichwinkel und seine Neigung gleich bleiben, würde dies dafür sprechen, dass er beim südlichsten Profil näher an der Erdoberfläche ist. Diese These wird durch das MATLAB-Modellierungsskript unterstützt. Lässt man alle Parameter unverändert und verkleinert nur die Tiefe der Gangoberkante, nehmen die berechneten Totalintensitäten über der Anomalie zu. Außerdem wird das Maximum nach Süden hin breiter, was vermuten lässt, dass der Gang in diese Richtung breiter wird.
 
-Im folgenden wird ein Modell beschrieben, bei dem nur wenige Parameter geändert werden müssen, um für alle drei Profile eine möglichst kleine Abweichung von den Messwerten zu erhalten.
 
 \begin{figure}
  \centering
- \includegraphics[width=\textwidth]{fig/Vergleich_nahe_Profile.pdf}
+ \includegraphics[width=0.9\textwidth]{fig/Vergleich_nahe_Profile.pdf}
  \caption[Vergleich der Profile M22-M23, M21-M2 und M24-M25]{Vergleich der Profile M22-M23, M21-M2 und M24-M25. Die Profilkoordinate ist jeweils vom erstgenannten Profilende aus gemessen und die Messwerte wurden bereits mit der Vergleichsmessung normiert.}
  \label{fig:Vergleich_Profile}
 \end{figure}
+
+Im folgenden wird ein Modell beschrieben, bei dem nur wenige Parameter geändert werden müssen, um für alle drei Profile eine möglichst kleine Abweichung von den Messwerten zu erhalten.
 
 \subsubsection{Profil M22-M23}
 
@@ -153,7 +115,7 @@ Eine mögliche Modellierung für dieses Profil ist in Abbildung \ref{fig:modM22}
 
 \begin{figure}
  \centering
- \includegraphics[width=\textwidth]{fig/modM22}
+ \includegraphics[width=0.9\textwidth]{fig/modM22}
  \caption{MATLAB-Modellierung des Profils M22-M23}
  \label{fig:modM22}
 \end{figure}
@@ -164,7 +126,7 @@ Die Modellierung dieses Profils ist in Abbildung \ref{fig:modM21} dargestellt. A
 
 \begin{figure}
  \centering
- \includegraphics[width=\textwidth]{fig/modM21}
+ \includegraphics[width=0.9\textwidth]{fig/modM21}
  \caption{MATLAB-Modellierung des Profils M21-M2}
  \label{fig:modM21}
 \end{figure}
@@ -175,7 +137,7 @@ Die Modellierung dieses Profils ist in Abbildung \ref{fig:modM24}. Das Maximum w
 
 \begin{figure}
  \centering
- \includegraphics[width=\textwidth]{fig/modM24}
+ \includegraphics[width=0.9\textwidth]{fig/modM24}
  \caption{MATLAB-Modellierung des Profils M24-M25}
  \label{fig:modM24}
 \end{figure}
@@ -183,22 +145,22 @@ Die Modellierung dieses Profils ist in Abbildung \ref{fig:modM24}. Das Maximum w
 
 \subsection{Profil M26-M27}
 
-Dieses Profli ist parallel zu M24-M25 in einem Abstand von 5\,m angelegt. Da es weiter östlich beginnt, befindet es sich nicht mittig über dem Basaltgang. Wie in Abbildung \ref{fig:modM26} ist deswegen nur nur der rechte Ausläufer der Anomalie vermessen worden. Im Vergleich zu Profil M24-M25 wurde in der Modellierung nur die Neigung geändert, um die Messwerte zu beschreiben. Im Bereich des Maximums stimmen Modellierung und Beobachtung gut überein. Nur am Ausläufer ist das Modell unter den den Messwerten. Dies ist nicht sehr verwunderlich, weil die Modellierung immer 15\,m bis 20\,m neben dem Maximum bereits gegen Null geht und dies bei unseren Messungen nicht der Fall ist, weil wir als DATASHIFT den Messwert an der Basisstation verwenden und nicht den niedrigsten auf dem Profil gemessenen Wert.
+Dieses Profil ist parallel zu M24-M25 in einem Abstand von 5\,m angelegt. Da es weiter östlich beginnt, befindet es sich nicht mittig über dem Basaltgang. Wie in Abbildung~\ref{fig:modM26} zu sehen, ist deswegen nur der rechte Ausläufer der Anomalie vermessen worden. Im Vergleich zu Profil M24-M25 wurde in der Modellierung nur die Neigung geändert, um die Messwerte zu beschreiben. Im Bereich des Maximums stimmen Modellierung und Beobachtung gut überein. Nur am Ausläufer ist das Modell unter den den Messwerten. Dies ist nicht sehr verwunderlich, weil die Modellierung immer 15\,m bis 20\,m neben dem Maximum bereits gegen Null geht und dies bei unseren Messungen nicht der Fall ist, weil wir als DATASHIFT den Messwert an der Basisstation verwenden und nicht den niedrigsten auf dem Profil gemessenen Wert.
 
 \begin{figure}
  \centering
- \includegraphics[width=\textwidth]{fig/modM26}
+ \includegraphics[width=0.9\textwidth]{fig/modM26}
  \caption{MATLAB-Modellierung des Profils M26-M27}
  \label{fig:modM26}
 \end{figure}
 
 \subsection{Profil M28-M29}
 
-Dieses Profil ist nicht senkrecht zum Gang angelegt. In der Mitte des Gangs befindet es sich an der gleichen Stelle über diesem wie Profil M24-M25. Deswegen ist in Abbildung \ref{fig:modM28} die Modellierung mit genau den gleichen Parametern wie bei Profil M24-M25 durchgeführt. Diese Modellierung erklärt die Messergebnisse nicht gut, weil durch die schräge Lage das Maximum viel breiter ist als bei den anderen Profilen. Um diese breite Kurve modellieren zu können, müsste zum Beispiel die magnetische Suszeptibilität sehr viel größer gewählt werden.
+Dieses Profil ist nicht senkrecht zum Gang angelegt. In der Mitte des Gangs befindet es sich an der gleichen Stelle über diesem wie Profil M24-M25. Deswegen ist in Abbildung \ref{fig:modM28} die Modellierung mit genau den gleichen Parametern wie bei Profil M24-M25 durchgeführt. Diese Modellierung erklärt die Messergebnisse nicht gut, weil durch die schräge Lage das Maximum viel breiter ist als bei den anderen Profilen. Um diese breite Kurve modellieren zu können, müsste zum Beispiel die magnetische Suszeptibilität sehr viel größer gewählt werden. Es ist aber ein Unterschied zu den anderen Profilen zu erkennen. Die Fragestellung, ob eine andere Lage zum Gang erkannt werden kann, kann also bejaht werden. Allein aus der Vermessung der Profile kann jedoch aufgrund der vielen freien Parameter nicht auf eine schräge oder senkrechte Lage zum Gang des Profils geschlossen werden.
 
 \begin{figure}
  \centering
- \includegraphics[width=\textwidth]{fig/modM28}
+ \includegraphics[width=0.9\textwidth]{fig/modM28}
  \caption{MATLAB-Modellierung des Profils M28-M29}
  \label{fig:modM28}
 \end{figure}
