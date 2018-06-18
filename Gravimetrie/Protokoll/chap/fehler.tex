@@ -19,7 +19,7 @@ angenommen und der Fehler auf die Genauigkeiten der Horizontierung  mit den Libe
  \q{\delta}{\q{x}{Libelle}}=\e{0,725\cdot 10^{-4}}{rad} \comma
 \end{equation}
 weil ein Teilstrich gerade $\e{1,45\cdot 10^{-4}}{rad}$ entspricht.
-Mit diesen Ungenauigkeiten ist die Ungenauigkeit der Messwertablesung gegeben durch
+Mit diesen Ungenauigkeiten ist die Ungenauigkeit der Messwertablesung mit Größtfehlerabschätzung gegeben durch
 \begin{align}
  \q{\delta}{g}&=\sum_i \left| \pdb{g}{x_i} \right|\cdot \q{\delta}{x_i} \\
  &=\eb{0.3086}{mGal}{m}\cdot \q{\delta}{\q{x}{Zollstock}} + EF_i \cdot \q{\delta}{\q{x}{Messrad}} +
@@ -36,7 +36,7 @@ Mit $EF_i$ wird der gerätespezifische Eichfaktor bezeichnet. Es ist $\q{EF}{156
 \end{equation}
 verwendet. Gemessen wurde dieser Wert an der Hauptschule von Engen und nicht genau in unserem Messgebiet.
 
-Während der Messungen wurden bereits die beiden zeitlich direkt aufeinander folgenden Gravimeterablesungen verglichen. Ergab sich eine Abweichung dieser beiden Ablesungen zueinander von mehr als $\e{0,01}{Skt}\approx\e{0,01}{mGal}$, wurde noch ein drittes mal abgelesen und nur die beiden nahe beieinander liegenden Werte für die Auswertung verwendet. Nun wurde der Fehler bei der Wertablesung als ein größerer Wert berechnet. Unter der Annahme, dass der Ablesefehler wirklich so groß ist, ist es nicht gerechtfertigt, bereits bei einer Abweichung von $\e{0,01}{mGal}$ noch einmal zu messen, da der Wert noch in der Fehlertoleranz liegt. Es muss aber, um die Schwereanomalie im Untergrund gut detektieren zu können, so genau gemessen werden, dass Abweichungen von $\e{0,01}{mGal}$ nicht zulässig sind. Mit diesem Hintergrund sollten die angenommenen Fehler noch einmal durchgegangen werden und überlegt werden, ob sie wirklich so groß waren und wie man sie bei der Messung durch zum Beispiel noch saubereres Messen verringern könnte.
+Während der Messungen wurden bereits die beiden zeitlich direkt aufeinander folgenden Gravimeterablesungen verglichen. Ergab sich eine Abweichung dieser beiden Ablesungen zueinander von mehr als $\e{0,01}{Skt}\approx\e{0,01}{mGal}$, wurde noch ein drittes mal abgelesen und nur die beiden nahe beieinander liegenden Werte für die Auswertung verwendet. Nun wurde der Fehler bei der Wertablesung als ein größerer Wert berechnet. Unter der Annahme, dass der Ablesefehler wirklich so groß ist, ist es nicht gerechtfertigt, bereits bei einer Abweichung von $\e{0,01}{mGal}$ noch einmal zu messen, da der Wert noch in der Fehlertoleranz liegt. Es muss aber, um die Schwereanomalie im Untergrund gut detektieren zu können, so genau gemessen werden, dass Abweichungen von $\e{0,01}{mGal}$ nicht zulässig sind. Mit diesem Hintergrund sollten die angenommenen Fehler noch einmal durchgegangen werden und überlegt werden, ob sie wirklich so groß waren und wie man sie bei der Messung durch zum Beispiel noch saubereres Messen verringern könnte. Auf jeden Fall wurde durch diese Rechnung deutlich, weswegen bei der Messung so sorgfältig und genau vorgegangen werden musste.
 
 \section{Doppelmessungen}
 \label{sec:Fehler}
@@ -50,6 +50,8 @@ Die Standardabweichung, die sich aus der Mittelung der beiden driftkorrigierten 
   \end{cases}
   \label{eq:Fehler}
 \end{equation}
-berechnet werden. In diesen Wert gehen auch Fehler bei der Aufstellung, nicht korrigierte Anteile der Gerätedrift, Temperaturschwankungen und weitere nicht qualitativ??? angebbare Fehler ein.
+berechnet werden. In diesen Wert gehen auch Fehler bei der Aufstellung, nicht korrigierte Anteile der Gerätedrift, Temperaturschwankungen und weitere nicht qualitativ angebbare Fehler ein. Deswegen ist dieser Wert wie zu erwarten größer als der Fehler durch Messwertablesungen.
 
-Da der $\q{\delta}{\q{g}{STD}}$ größer als $\q{\delta}{g}$ ist, ist es ein Indiz dafür, dass 
+\section{Modellierungen}
+
+Der Fehler der Modellierungen ist durch das Schwereresiduum gegeben. Dieses gibt für jeden Messwert die Abweichung von der modellierten Kurve an. Bei den in Kapitel \ref{sec:ModMAT} vorgestellten Modellen, ist die maximale Abweichung zwischen Modell und Messung 0,03\,mGal. Die normalisierte Chi-Quadrat-Variable $\chi^2$ vergleicht die Streuung des Residuums mit der Streuung der Messungen. Bei $\chi^2=1$ ist die optimale Anpassung erreicht. Also ist die Abweichung des Modells genauso groß wie die Messfehler. Genauer kann die Anpassung gar nicht durchgeführt werden. Bei unseren Modellierungen ist $\chi^2$ im Bereich von 0,529 bei Modell 1 mit Spaltenintrusion und 0,818 bei Modell 2 mit Spaltenintrusion.  Die Anpassung ist also bei dem Modell ohne Neigung besser. Dies steht etwas im Widerspruch zur Magnetik. Dort konnte eine Neigung von 16$^\circ$ des Gangs bei diesem Profil festgestellt werden. Die Neigung aus der Gravimetrie ist mit 30$^\circ$ jedoch um einiges größer.
