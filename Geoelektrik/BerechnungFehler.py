@@ -20,3 +20,8 @@ Fehler = np.sqrt((fa*0.2)**2+(fb*0.4)**2+(fc*0.2)**2+(fd*0.4)**2)
 print f
 print Fehler
 
+
+print "Wiederstand"
+print 237.593/220.13*f
+print "roh Fehler"
+print 237.593/220.13*Fehler

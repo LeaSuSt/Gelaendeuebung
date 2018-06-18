@@ -5,14 +5,14 @@
 Die Wenner-Kartierung wurde auf einem 46\,m langen Profil, E11-E12, senkrecht zum Basaltgang durchgeführt. In Tabelle \ref{tab:wenner} sind die gemessenen Werte des spezifischen Widerstands mit dem Entsprechenden festgelegten Abstand zu sehen. Die Abstanände
 der Messpunkte sind in der Mitte den Profils kleiner gewählt als Außen, da wir dort den Basaltgang vermuten. Aus den Messergebnissen der Magnetik-Messung könnte schon sehr genau abgeschätzt werden wo der Basaltgang liegt.\\
 \\
-In Abbildung \ref{abb:Wenner} sind die Messergebnisse graphisch dargestellt. Wir gehen davon aus, dass der Basalt eine andere Leitfähigkeit hat als das Umgebungsmaterial und sich also die Magnetischen-Eigenschaften und elektrische Leitfähigkeit 
+In Abbildung \ref{abb:Wenner} sind die Messergebnisse graphisch dargestellt. Wir gehen davon aus, dass der Basalt eine andere Leitfähigkeit hat als das Umgebungsmaterial und sich die Magnetischen-Eigenschaften und elektrische Leitfähigkeit 
 gleichzeitig ändern. Das ist die Vorraussetzung, dass wir mit Hilfe unserer Ergebnisse aus der Magnetik unser Profil für die Geoelektrik festlegen können und in beiden Versuchen ähnliche Ergebnisse erhalten.\\
+Die in Tabelle \ref{tab:wenner} dargestellten Werte sind in Diagramm \ref{abb:Wenner} garphisch dargestellt. Die Werte in Tablle \ref{tab:wenner} sind bereits die spezifischen Widerstände, die wir mit Hilfe der Formel \ref{eq:rho} aus Kapitel 1 und den Werten der Tabellen \ref{abb:Wenner1} und \ref{abb:Wenner2} berechnet haben.
 Deutlich zu sehen ist ein Maximum des spezifischen Widerstands in der Mitte des Diagramms \ref{abb:Wenner}.
 Dies weist darauf hin, dass der Basaltgang wie vermutet in der Mitte unseres Profils liegt. \\
 Rechts und Links von dem großen Maximum sind weitere kleinere Nebenmaxima zu erkennen. Da wir den Untergrund nicht genau kennen, können wir nicht mit Sicherheit sagen, um was es sich dabei handelt. Wir vermuten, dass der Basaltgang etwas verwittert 
 ist, sich z.B. durch Wasser Risse im Gestein gebildet haben. Hat sich nun zwischen dem Abgespalteten Basalt leitfähiges Material eingelagert, wir an diesen Stellen ein geringerer spezifischer Widerstand gemessen.\\
-Da die Nebenmaxima nicht die gleiche höhe haben wie das Maxima in der Mitte ist es auch wahrscheinlich dass der Baslatgang nicht nur durch Risse unterteilt ist. Wir gehen davon aus, dass das Basalt an den Rändern sehr stank verwittert ist und eventuell
-nur noch in kleinen Stücken vorliegt.???\\
+Da die Nebenmaxima nicht die gleiche höhe haben wie das Maxima in der Mitte ist es auch wahrscheinlich dass der Baslatgang nicht nur durch Risse unterteilt ist. Wir gehen davon aus, dass das Basalt an den Rändern sehr stank verwittert
 \\
 Grob stimmen unsere Erkenntnisse mit denen der Magnetik überein.
 
@@ -23,7 +23,7 @@ Grob stimmen unsere Erkenntnisse mit denen der Magnetik überein.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{fig/wennerkartierung.png}
-\caption{Diagramm unserer Ergebnisse der Wenner-Kartierung. Der gemessene spezifische Widerstand ist gegen den Abstand zu unserem gewählten Null-Punkt aufgetragen.}
+\caption{Diagramm unserer Ergebnisse der Wenner-Kartierung. Der gemessene spezifische Widerstand ist gegen den Abstand zu unserem gewählten Null-Punkt aufgetragen. Der Nullpunkt wurde so gewählt, das er mit dem Nullpunkt der Tomographie übereinstimmt}
 \label{abb:Wenner}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,15 +89,7 @@ Abstand in m  & Widerstand in Ohm m &  Abstand in m & Widerstand in Ohm m \\
 32	&	22,442	\\
 32.5	&	22,334	\\
 33	&	21,789	\\
-	\\
-	\\
-	\\
-	\\
-	\\
-	\\
-	\\
-	\\
-	\\
+
 
 \end{tabular}
 \caption{Abstände von alles gefundenen Stufen in den Plots aus Abb. \ref{abb:GoldPlt}}
@@ -116,7 +108,7 @@ Die beiden oberen Diagramme sind sehr ähnlich, fast identisch. Das bedeutet das
 Bei dem Abstand 13 m ist eine sehr starke Anomalie von ca.$ \SI{ 300}{\Omega m}$. Die Anomalie ist jedoch sehr klein und oberflächennah. Links davon ist eine zweite sehr deutliche Anomalie zu sehen, die, in dem gemessenen Bereich,
 mit zunehmender Tiefe größer wird. Der spezifische Widerstand ist hier aber nur maximal etwa $\SI{100}{\Omega m}$. \\
 Etwa $\SI{2}{m}$ entfernt von der stärksten Anomalie, bei  $\SI{14}{m}$ beginnt eine dritte, oberflächennahe Anomalie. \\
-Beim Vergleich mit den Ergebnissen der Wennerkartierung finden wir größe Ähnlichkeiten. Die Tomographie deutet ebenso wie die Wennerkartierung darauf hin, das der Basaltgang an der gemessenen Stelle grob in drei Teile unterteilt werden kann. 
+Beim Vergleich mit den Ergebnissen der Wennerkartierung finden wir große Ähnlichkeiten. Die Tomographie deutet ebenso wie die Wennerkartierung darauf hin, das der Basaltgang an der gemessenen Stelle grob in drei Teile unterteilt werden kann. 
 Diese können wir jetzt aber besser lokalisieren.\\
 Dort, wo im Tomographie-Modell der größte spezifische Widerstand zu sehen ist, ist auch das globale Maximum der bei der Wenner-Kartierung. Die beiden Nebenmaxima in Abbildung \ref{abb:Wenner}
 sind etwa an der gleichen Stelle wie die zwei kleineren Anomalien der Tomographie. \\ 
@@ -126,7 +118,7 @@ Daher gehen wir davon aus, dass diese Anomalie die Messung der Wennerkartierung 
 Diese Annahme wurde überprüft, indem man die Ortsangaben der beiden Diagramme verglichen haben. Leider passt die Wennerkartierung hier nicht mehr gut zur Tomographie. Vermutlich haben die Anomalien in den oberen Schichten wirklich kaum Einfluss auf die Wennerkartierung. Da wir diese in 5\,m Tiefe durchgeführt haben, und das Tomographie-Model eben hier aufhört können wir die beiden Methoden eigentlich nicht vergleichen.
 
 
-Wir gehen davon aus, dass alle Erhöhungen des spezifische Widerstands verursacht werden. 
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -143,7 +135,7 @@ Die Tomographie ist von 28\,m  bis 51,5\,m positioniert. Die bedeuted, dass der 
 
 \section{Sondierung}
 Die Sondierung wurde auf dem Profil E21-E22 durchgeführt. Die Messwerte sind im Anhang zu sehen. Aus ihnen werden mit Hilfe von dem Inversionsprogramm Ipi2win Modelle für die Schichten im Untergrund erstellt. In Abbildung \ref{abb:Schlum1} und \ref{abb:Schlum2} sind die Ergebnisse zu sehen. Die schwarze Kurve ist die Fitkurve durch unsere Messpunkte, in blau ist das Modell des spezifische Widerstands des Untergrunds dargestellt. Die rote Kurve ist der scheinbare spezifische Widerstand, der sich aus diesem Modell ergibt.\\
-Als erstes haben wir ein möglichst genauen Model erstellt, mit der Annahme das wir drei Schichten gegeben haben. Das Ergebnis ist in Abbildung \ref{abb:Schlum1} zu sehen. Der Fehler dieses Models lag bei unter 2\%. In Abbildung \ref{abb:SchlumTab1} ist die dazugehörige Tabelle mit dem berechneten spezifischen Widerstand $\rho$, der Dicke $h$ und Tiefe $d$ der jeweiligen Schichten.  Alle drei Werte nehmen mit der Tiefe zu, was sehr plausibel ist. Die erste Schichtgrenze ist in etwa $\SI{5}{cm}$ Tiefe und die zweite schon bei $\SI{43}{cm}$, die dritte erst bei etwa $\SI{8}{m}$. Diese Ergebnisse lassen sich leider nicht mit denen der Seismik vergleichen. 
+Als erstes haben wir ein möglichst genauen Model erstellt, mit der Annahme das wir drei Schichten gegeben haben. Es müssen mindestens drei Schichten sein, da die schwarze Kurve in Abbildung \ref{abb:Schlum1} am linken Ende nach unten geht. Das Ergebnis ist in Abbildung \ref{abb:Schlum1} zu sehen. Der Fehler dieses Models lag bei unter 2\%. In Abbildung \ref{abb:SchlumTab1} ist die dazugehörige Tabelle mit dem berechneten spezifischen Widerstand $\rho$, der Dicke $h$ und Tiefe $d$ der jeweiligen Schichten.  Alle drei Werte nehmen mit der Tiefe zu, was sehr plausibel ist. Die erste Schichtgrenze ist in etwa $\SI{5}{cm}$ Tiefe und die zweite schon bei $\SI{43}{cm}$, die dritte erst bei etwa $\SI{8}{m}$. Diese Ergebnisse lassen sich leider nicht mit denen der Seismik vergleichen. 
 
 
 
