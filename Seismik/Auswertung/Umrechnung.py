@@ -15,5 +15,12 @@ print (xs)
 y = [1, 2, 3, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 39, 40, 41]
 print (len(y))
 
+
+plt.legend(loc='best', numpoints = 1)
+plt.title(Laser für Messung bei sichtbarem Licht, size=20) 
+plt.xlabel(x_name, size=15)
+plt.ylabel(y_name, size=15)
+plt.grid(True)
+   
 plt.plot(y, xs, "o")
 plt.show()

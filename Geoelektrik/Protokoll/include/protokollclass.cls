@@ -87,6 +87,8 @@
 \usepackage{varioref}                           % Intelligent page 
                                                 % references. Provides \vref 
                                                 % and \vpageref
+                                                
+
 
 \usepackage{booktabs}
 \usepackage[table]{xcolor}                      % used for some coloring 
