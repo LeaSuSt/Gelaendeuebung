@@ -32,11 +32,11 @@ Die Freiluftreduktion (oder auch Niveaureduktion) $\q{\delta}{g\,Niv}$ berücksi
  \q{\delta}{g\,Niv}=\eb{-0,3086\cdot H}{mGal}{m} \fullstop
  \label{eq:Freiluft}
 \end{equation}
-Den gleichen Effekt muss man bei der Instrumentenhöhe beachten, was zu $\q{\delta}{g\,Instrumentenhoehe}$ führt. Die Instrumentenhöhe wird jedoch direkt bei der Messung aus den Messwerten eliminiert, weil dies eine von der Geometrie der Messung unabhängige Auswertung ermöglicht.
+Den gleichen Effekt muss man bei der Instrumentenhöhe beachten, was zu $\q{\delta}{g\,Instr.hoehe}$ führt. Die Instrumentenhöhe wird jedoch direkt bei der Messung aus den Messwerten eliminiert, weil dies eine von der Geometrie der Messung unabhängige Auswertung und einen direkten Vergleich der Ergebnisse im Feld ermöglicht.
 
-Bei der Gezeitenreduktion $\q{\delta}{g\,Gez}$ wird die Gravitationswirkung anderer Planeten berücksichtigt, die sich mit der Zeit verändert.
+Bei der Gezeitenreduktion $\q{\delta}{g\,Gez}$ wird die Gravitationswirkung anderer Planeten berücksichtigt, die sich mit der Zeit verändert. Im Praktikum gibt es dazu ein Diagramm, aus dem sie für alle Uhrzeiten abgelesen werden kann.
 
-Die Driftreduktion $\q{\delta}{g\,Drift}$ muss durchgeführt werden, weil sich die Eigenschaften der Bauteile des Gravimeters mit der Zeit ändern können. Um diese Änderung erfassen zu können, wird an allen Messpunkten mindestens zweimal gemessen. Dadurch kann eine Funktion interpoliert bestimmt werde, die die Drift im Laufe der Zeit darstellt. Diese Korrektur muss auf jeden Fall nach der Gezeitenkorrektur durchgeführt werden, damit alle anderen zeitlichen Veränderungen schon aus der Messung eliminiert sind.
+Die Driftreduktion $\q{\delta}{g\,Drift}$ muss durchgeführt werden, weil sich die Eigenschaften der Bauteile des Gravimeters mit der Zeit ändern können. Um diese Änderung erfassen zu können, wird an allen Messpunkten mindestens zweimal gemessen. Dadurch kann eine Funktion interpoliert werden, die die Drift im Laufe der Zeit darstellt. Diese Korrektur muss auf jeden Fall nach der Gezeitenkorrektur durchgeführt werden, damit alle anderen zeitlichen Veränderungen schon aus der Messung eliminiert sind.
 
 Die Geländereduktion $\q{\delta}{g\,Gel}$ berücksichtigt die Verringerung des Schwerewerts durch zum Beispiel Berge und Täler in der Nähe des Messorts. Nach der Korrektur ist der Messwert also vergrößert.
 
@@ -63,8 +63,8 @@ Der Hochwert $\Delta\q{L}{Hoch}$ ist der Fortschritt in Nordrichtung bezüglich 
 Von einer Bougueranomalie $\q{g}{Bouguer}$ wird gesprochen, wenn all diese Reduktionen auf den Messwert $\q{g}{mess}$ angewendet wurden. Es gilt also
 % regio???
 \begin{align}
- \q{g}{Bouguer}=\q{g}{mess}-\q{\delta}{g\,Instrumentenhoehe}-\q{\delta}{g\,Gez}-\q{\delta}{g\,Drift}-\q{\delta}{g\,Gel} \\ \notag
- -\q{\delta}{g\,Niv}-\q{\delta}{g\,Breite}-\q{\delta}{g\,Bouguer}
+ \q{g}{Bouguer}=\q{g}{mess}&-\q{\delta}{g\,Instr.hoehe}-\q{\delta}{g\,Gez}-\q{\delta}{g\,Drift}-\q{\delta}{g\,Gel} \\ \notag
+ &-\q{\delta}{g\,Niv}-\q{\delta}{g\,Breite}-\q{\delta}{g\,Bouguer}
  -\q{\delta}{regio}
 \end{align}
 
@@ -86,13 +86,12 @@ In der Ruhelage befindet sich der Schwingarm mit Gravimetermasse in der Horizont
  \Delta g= U\cdot p
 \end{equation}
 mit einem geräteabhängigen Proportionalitätsfaktor $p$.
-% Andere Buchstaben???
 
 Ein Gravimeter hat eine Messempfindlichkeit von $\e{0,01}{mGal}$, weswegen das Gerät sehr gut gegen physikalische Nebeneffekte geschützt werden muss. Es ist zum Beispiel mit einem Thermostat auf ein Hundertstel Grad temperaturstabilisiert, druckdicht gebaut und magnetisch abgeschirmt. Trotzdem ist eine sehr sorgfältige Messung wichtig, um brauchbare Ergebnisse zu erhalten. 
 
 \subsection{Tachymeter}
 
-Obwohl die Höhenbestimmung beim Nivellement genauer ist, wird in diesem Versuch die Höhe mit einer Totalstation bestimmt. Es handelt sich dabei um eine Kombination aus einem Tachymeter und einem elektronischen Entfernungsmesser. Mit einem Fernrohr wird der Punkt anvisiert, dessen Höhe gegenüber der Totalstation gemessen werden soll. Dadurch ist der Winkel $\alpha$ gegenüber der Horizontalen bekannt (siehe Abbildung ???). Außerdem wird am zu vermessenden Punkt ein Reflektor angebracht. Dadurch wird ein vom elektronischen Entfernungsmesser ausgehender Laserstrahl zurück geschickt und mit der Laufzeit $t$ und der Lichtgeschwindigkeit $c$ kann mit der Formel
+Obwohl die Höhenbestimmung beim Nivellement genauer ist, wird in diesem Versuch die Höhe mit einer Totalstation bestimmt. Es handelt sich dabei um eine Kombination aus einem Tachymeter und einem elektronischen Entfernungsmesser. Mit einem Fernrohr wird der Punkt anvisiert, dessen Höhe gegenüber der Totalstation gemessen werden soll. Dadurch ist der Winkel $\alpha$ gegenüber der Horizontalen bekannt. Außerdem wird am zu vermessenden Punkt ein Reflektor angebracht. Dadurch wird ein vom elektronischen Entfernungsmesser ausgehender Laserstrahl zurück geschickt und mit der Laufzeit $t$ und der Lichtgeschwindigkeit $c$ kann mit der Formel
 \begin{equation}
  s=c\cdot \frac{t}{2}
 \end{equation}
@@ -105,6 +104,7 @@ bestimmt werden.
 
 \subsection{Global Navigation Satellite System (GNSS)}
 
-Mit GNSS werden Höhenmessungen durchgeführt und die während der Messungen markierten Pflöcke eingemessen. Das Prinzip beruht darauf, dass 
-
+Mit GNSS werden Höhenmessungen durchgeführt und die während der Messungen markierten Pflöcke eingemessen. Das Prinzip beruht darauf, dass viele Satelliten Signale Richtung Erde schicken. Diese werden vom Rover, der von Profilpunkt zu Profilpunkt bewegt wird, Empfangen und die Laufzeit gemessen. Um atmosphärische Einflüsse der Laufzeit möglichst gering zu halten, gibt es fest installierte Referenzstationen, durch die Korrekturwerte in Echtzeit bestimmt werden können, die die Laufzeit der Signale der Satelliten korrigieren. 
+Da die Genauigkeit der Höhenmessung für die Gravimetrie nicht ausreicht, wird die Höhe im Versuch mit einem Tachymeter bestimmt und nur die Lage der Pflöcke mit differentiellem GPS vermessen. 
+% noch genauer???!!!
 % differentielles GPS soll hier beschrieben werden!!!

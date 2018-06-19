@@ -1,0 +1,82 @@
+
+Mit geoelektrischen Messungen werden Materialeigenschaften wie die Ionenkonzentration, Grad der Wassersättigung und der Permeabilität untersucht. 
+Das bedeutet dass mit Hilfe dieses Verfahrens z.B der Grundwasserspiegel bestimmt werden kann. \\
+
+
+
+Während der Geländeübung werden die Messungen mit dem Wechselstromverfahren durchgeführt. Dabei wird an zwei Elektroden Wechselstrom angelegt,
+über zwei Sonden an der Oberfläche wird die Spannung gemessen. Mit diesem Verfahren wird also die Materialeigenschaft elektrischen Strom zu leiten untersucht. \\
+Hierbei unterscheidet man zwischen elektrischer Leitfähigkeit, wenn Elektronen bewegt werden, und ionischer Leitfähigkeit, dem Transport von Ionen. 
+Aufgrund der elektrischen Leitfähigkeit können z.B Metallrohre im Boden lokalisiert werden. Ionische Leitfähigkeit tritt in Gesteinen und Lockersedimenten auf,die einen entsprechenden Wassergehalt haben. \\
+\\
+Als Materialeigenschaft wird der spezifischen Widerstands $$[\rho] = \SI{1}{\Omega m}$$ bestimmt, er ist der Kehrwert der Leitfähigkeit $\sigma$. Je nach Material und Wassergehalt variieren diese Werte. Während der Geländeübung wird ein Basaltgang untersucht. Basalt hat einen relativ hohen spezifischen Widerstand, so das er durch ein Ansteigen  von $ \rho$ lokalisiert werden kann.
+
+\section{Schlumberger-Anordnung}
+Die Schlumberger-Anordnung wird in der Geländeübung zur Sondierung verwendet. Es wird die Änderung des spezifischen Widerstands in den verschiedenen Schichten den Untergrunds unter einem bestimmten Punkt bestimmt. In Abbildung \ref{abb:Schlumberger} ist die Schlumberger-Anordung schematisch dargestellt. Der Ort an dem gemessen wird ist der Mittelpunkt der Anordnung. Um in verschieden Tiefen Messwerte zu erhalten wird der Anstand zwischen den Elektroden und den Sonden jeweils symmetrisch erhöht. Sinnvoll ist es den Abstand exponentiell zu erhöhen und ein Profil mit möglichst wenig Topographie zu wählen.\\
+Beim Stecken der Stromelektroden ist es wichtig eine möglichst große Kontaktfläche zu haben, da es an diesen zu Kontaktwiderstand kommt. Eine große Kontaktfläche erreicht man indem man die Stromelektroden möglichst tief in die Erde steckt. 
+Das gleiche gilt natürlich für die Wenner-Kartierung.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{Schlumberger.png}
+\caption{Schematische Darstellung der Schlumberger-Anordnung}
+\label{abb:Schlumberger}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Wenner-Kartierung}
+In Abbildung \ref{abb:Wenner} ist der schematische Aufbau der Wenner-Anordnung zu sehen. Bei \textbf{A} und \textbf{B} sind die Elektroden und bei \textbf{M}, \textbf{N} die Sonden zur Spannungsmessung.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{Wenner.png}
+\caption{Schematische Darstellung der Schlumberger-Anordnung}
+\label{abb:Wenner}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bei der Wenner-Kartierung werden die Abstände zwischen den Elektroden konstant gehalten und die ganze Anordnung wird über den Boden verschoben. Somit wird in einer Tiefe an verschieden, horizontal versetzten, Punkten im Untergrund gemessen. Der Abstand $a$ der Elektroden entspricht auch der Tiefe in der die Messung durchgeführt wird. \\
+Hierbei muss aber bedacht werden, dass oben leigende, sehr gut leitende Schichten den Strom bündeln kann und somit zu einem verfälschten Messergebnis führen können.
+
+\section{Geoelektrische Tomographie}
+Die Tomographie ist eine Mischung aus der Wenner-Karierung und Schlumberger-Sondierung. Die Wenner-Karierung wird praktisch in verschiedenen Tiefen durchgeführt und über eine Profil bewegt, dadurch wird ein zweidimensionales Bild des Untergrunds erstellt.
+Mit Hilfe eines Comuterprogramms kann durch Inversion der gemessenen Werte ein Modell für die Verteilung des spezifischen Widerstands im Untergrund erstellt werden.
+
+
+
+\section{Spezifischer Widerstand und Geometriefaktor}
+
+Die Potentialdifferenz bei einem Angelegten Strom I ist
+\begin{equation}
+V = \rho \, I \, \frac{1}{2 \pi} \big(\frac{1}{r_{\mathrm{AM}}} - \frac{1}{r_{\mathrm{MB}}} + \frac{1}{r_{\mathrm{NB}}} - \frac{1}{r_{\mathrm{AN}}} \big) \, ,
+\end{equation}
+wobei mit $r_{\mathrm{AM}}$ usw. jeweils die Abstände zwischen den Sonden und Elektroden, wie in Abbildung \ref{abb:Wenner} zu sehen, bezeichnet werden.
+Um den spezifischen Widerstand leichter berechnen zu können wird der Geometriefaktor $F$ eingeführt,
+$$F = \frac{2 \pi}{\frac{1}{r_{\mathrm{AM}}} - \frac{1}{r_{\mathrm{MB}}} + \frac{1}{r_{\mathrm{NB}}} - \frac{1}{r_{\mathrm{AN}}}}\,.$$
+Damit lässt sich $\rho$ berechnen mit 
+\begin{equation}
+\rho = \frac{V}{I} \, F.
+\end{equation} \label{eq:roh}
+
+\textbf{Scheinbarer spezifischer Widerstand}
+
+Ist der Untergrund nicht homogen, dann wird der Wert der Formel \ref{eq:roh} als scheinbarer spezifischer Widerstand bezeichnet. Der Geometriefaktor hängt nur von der geometrischen Anordnung ab und nicht von der 
+Leitfähigkeit des Untergrunds, weshalb der scheinbare spezifische Widerstand $q_a$ nur im Falle eines homogenen Untergrunds gleich dem spezifischen Widerstands ist.\\
+Im Falle der Wenner-Anordnung wird  der scheinbare spezifische Widerstand mit der Formel
+$$ \rho_a = 2 \pi \frac{V}{I} a $$
+berechnet.
+Bei einer Messung wird versucht durch Interpretation der gemessenen scheinbaren Widerstände den spezifischen Widerstand zu finden.
+
+
+
+
+
+
+
+
+
+
+
