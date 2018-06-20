@@ -21,20 +21,23 @@ Auf Messgebiet 2 wurde nur mit Geoelektrik und Seismik gemessen.
 gemessen.
 \begin{figure}
  \centering
- \includegraphics[width=0.9\textwidth]{fig/Vergleich_nahe_Profile.pdf}
+ \includegraphics[width=0.9\textwidth]{fig/Messgebiete.pdf}
  \caption[Messgebiete]{Messgebiete auf denen unsere Messungen durchgeführt wurden. Unter Messgebiet 1 ist der Basaltgang.}
  \label{abb:Messgebiete}
 \end{figure}
 
 Aberhalb den Messgebiets 1 ist eine Steinbruch in dem Basalt frei gelegt ist. Der Aufschluss dieses Basaltgangs ist etwa 5 Meter hoch und 16 Meter breit. 
 Es ist zu erkennen, dass der Basalt nicht im ganzen Aufschuss in gleichem Zustand vorliegt. In der Mitte sieht er wesentlich kompakter aus als an den Rändern.
-Dieser Basaltgang geht unterirdisch weiter und läuft schräg durch das Messgebiet 1. Bei den meisten unserer Messungen wurde der Basaltgang untersucht.
+Dieser Basaltgang geht unterirdisch weiter und läuft schräg durch das Messgebiet 1.
 
 \begin{figure}
  \centering
  \includegraphics[width=0.9\textwidth]{fig/Uebersichtskarte der Messgebiete.pdf}
  \caption[Messgebiete]{Messgebiete auf denen die Geländeübung durchgeführt wurde. Unser Messgebiet Riedheim ist unten links (A59/1) eingezeichnet.}
  \label{abb:Messgebiete}
+<<<<<<< HEAD
+\end{figure}
+=======
 \end{figure}
 
 In Abbildung \ref{abb:Geolog} ist eine Geologische Karte unseres Messgebiets zu sehen. In der Mitte ist in schwarz der Basaltgang oberhalb des Steinbruchs zu sehen, denn dort wurde er sicher nachgewiesen.
@@ -50,3 +53,4 @@ Unterhalb des Steinbruchs ist die Lage des Basaltgangs durch zwei gestrichelte L
 \end{figure}
 
 
+>>>>>>> d0ea8881a3c938a2c47a0a3fbea97a2dc90b3a2a
