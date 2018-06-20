@@ -1,0 +1,38 @@
+%Geammtübersicht Messgebiet
+
+\section{Das Hegau}
+Das Hegau ist eine Gebiet dass grob zwischen dem Bodensee und der schwäbischen Alb liegt(Wikipedia)???. Charakteristisch für dieses Gebiet sind die vulkanisch 
+geprägten Hegauer Kegelberge. Diese Kegelberge sind Schlothe erlöschener Vulkane. Der Vulkanismus des Hegaugebiets hat seinen Ursprung in der Mitte des Miozän, 
+was vor etwa 14 Millionen Jahren war. Es entstanden duzende Vulkane, in deren Schlothe vor ca. 9 Millionen Jahren auch der Hegauer Basalt erstarrte.\\
+Im Pleistozän gab es eine Eiszeit in diesem Gebiet. Durch die entstandenen Kletscher wurde Molasse und Tuff abgetragen, es blieben, die heute noch zu sehenden, 
+Phonolithkerne und Basaltkerne stehen. 
+
+
+
+
+
+
+\section{Die Messgebiete}
+
+
+Es gab im Wesentlichen zwei Messgebiete auf denen wir unsere Messungen durchgeführt haben, sie liegen über Riedheim. In Abbildung \ref{abb:Messgebiete} sind diese Messgebiete 
+eingezeichnet. Unter Messgebiet 1 liegt der Basaltgang, hier wurde mit allen vier Messmethoden Messungen durchgeführt. 
+Auf Messgebiet 2 wurde nur mit Geoelektrik und Seismik gemessen.
+gemessen.
+\begin{figure}
+ \centering
+ \includegraphics[width=0.9\textwidth]{fig/Messgebiete.pdf}
+ \caption[Messgebiete]{Messgebiete auf denen unsere Messungen durchgeführt wurden. Unter Messgebiet 1 ist der Basaltgang.}
+ \label{abb:Messgebiete}
+\end{figure}
+
+Aberhalb den Messgebiets 1 ist eine Steinbruch in dem Basalt frei gelegt ist. Der Aufschluss dieses Basaltgangs ist etwa 5 Meter hoch und 16 Meter breit. 
+Es ist zu erkennen, dass der Basalt nicht im ganzen Aufschuss in gleichem Zustand vorliegt. In der Mitte sieht er wesentlich kompakter aus als an den Rändern.
+Dieser Basaltgang geht unterirdisch weiter und läuft schräg durch das Messgebiet 1.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.9\textwidth]{fig/Uebersichtskarte der Messgebiete.pdf}
+ \caption[Messgebiete]{Messgebiete auf denen die Geländeübung durchgeführt wurde. Unser Messgebiet Riedheim ist unten links (A59/1) eingezeichnet.}
+ \label{abb:Messgebiete}
+\end{figure}
