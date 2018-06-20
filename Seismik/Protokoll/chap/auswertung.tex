@@ -3,7 +3,10 @@ Am Abend nach dem Versuch erhielten wir ausgedruckt alle Seismogramme, die mit H
 
 \section{Profil S21-S22 }
 
-Dieses Profil liegt über dem Basaltgang, was in Abbildung \ref{fig:Kartierung} mit der unterlegten Magnetik-Kartierung zu sehen ist. Das zugehörige Laufzeitdiagramm ist im Anhang beigefügt. Da unsere Fragestellung ist, ob sich diese Messmethode überhaupt für das Vermessen des Basaltgangs eignet, betrachten wir zunächst nur den Hinschuss. 
+Dieses Profil liegt über dem Basaltgang, was in Abbildung \ref{fig:Kartierung} mit der unterlegten Magnetik-Kartierung zu sehen ist. Das zugehörige Laufzeitdiagramm ist im Anhang beigefügt. Da unsere Fragestellung ist, ob sich diese Messmethode überhaupt für das Vermessen des Basaltgangs eignet, betrachten wir zunächst nur den Hinschuss.
+
+
+??? Ändern!! Wohin???
 Wir vermuten, dass diese Schwankungen vom Basaltgang verursacht werden. Bei der Refraktionsseismik geht man von unendlichen geraden Platten aus. Wie wir in der Geoelektrik herausgefunden haben, ist der Basaltgang selbst stark verwittert und kann in keiner Weise als gerade Fläche angenommen werden.
 
 \begin{figure}[!ht]
@@ -13,30 +16,14 @@ Wir vermuten, dass diese Schwankungen vom Basaltgang verursacht werden. Bei der 
  \label{fig:Kartierung}
 \end{figure}
 
-Wie in Kapitel \ref{sec:zweiSchichten} beschrieben wurde, werden nun die seismischen Geschwindigkeiten, die relevanten Winkel und die Schichtmächtigkeiten bestimmt.\\
-Die Rechnungen wurden mit Python durchgeführt und die Ergebnisse sind in Tabelle \ref{tab:S21-S22} aufgeführt.\\
+Wie in Kapitel \ref{sec:zweiSchichten} beschrieben wurde, werden für den Hinschuss die seismischen Geschwindigkeiten, die relevanten Winkel und die Schichtmächtigkeiten bestimmt.
+Die Rechnungen wurden mit Python durchgeführt und die Ergebnisse sind in Tabelle~\ref{tab:S21-S22} aufgeführt.
+Die Schichtmächtigkeit der ersten Schicht ist $d_1 =\SI{0.95}{m}$ und für die Schichtmächtigkeit der zweiten Schicht ergibt sich $d_2 = \SI{2.50}{m}$.
 
-% Die Geschwindigkeiten 
-% \begin{align}
-%  v_1 &= \SI{181.82}{m/s} \\
-%  v_2 &= \SI{615.38}{m/s} \\
-%  v_3 &= \SI{1818.18}{m/s}
-% \end{align}
-% werden aus den Geradensteigungen bestimmt.
-% Daraus werden die Winkel 
-% \begin{align}
-%  \vartheta_1 &= \SI{0.2999}{rad} \\
-%  \vartheta_2 &= \SI{0.3453}{rad} \\
-%  \vartheta_12 &= \SI{0.1002}{rad}
-% \end{align}
-% berechnet.
-Die Schichtmächtigkeit der ersten Schicht ist $d_1 =\SI{0.95}{m}$ und für die Schichtmächtigkeit der zweiten Schicht ergibt sich $d2 = \SI{2.50}{m}$.\\
-
-Für die Fehlerbetrachtung haben wir neue, etwas abweichende aber plausible , 
-Ausgleichsgeraden durch die Messpunkte gelegt. Mit den neuen Werten wird die Berechnung wiederholt. Die Differenz der neuen Größen und zuvor berechneten optimalen Größen ist der Fehler auf die Werte. In Tabelle \ref{tab:S21-S22} werden die Werte, die bereits berechnet wurden, als Optimalwerte bezeichnet. Als Toleranzwerte bezeichnen wir die Werte die aus den weniger passenden Fitgeraden berechnet wurden. Der Fehler ist die Differenz zwischen diesen beiden Messungen.
+Für die Fehlerbetrachtung haben wir neue, etwas abweichende, aber plausible, 
+Ausgleichsgeraden durch die Messpunkte gelegt. Mit den neuen Werten wird die Berechnung wiederholt. Die Differenz der neuen Größen und zuvor berechneten optimalen Größen ist der Fehler auf die Werte. In Tabelle~\ref{tab:S21-S22} werden die Werte, die bereits berechnet wurden, als Optimalwerte bezeichnet. Als Toleranzwerte bezeichnen wir die Werte, die aus den weniger passenden Fitgeraden berechnet wurden. Der Fehler ist die Differenz zwischen diesen beiden Messungen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{table}[!ht]
 \centering
 \caption{Werte der Profilmessung S21-S22}
@@ -53,14 +40,12 @@ $\vartheta_2$ in rad & 0.3453 & 0.4182 & 0.0732 \\
 $\vartheta_{12}$ in rad & 0.1002 & 0.1156 & 0.0154 \\
 $d_1$ in m & 0.95 & 1.15 & 0.20 \\
 $d_2$ in m & 2.50 & 2.64 & 0.14 \\
-
 \bottomrule
 \end{tabular}
 \end{table}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Die Schichtgrenze in $\SI{0.95 \pm 0.20}{m}$  Tiefe deutet darauf hin, dass hier der Basaltgang anfängt. Allerdings haben wir in $\SI{2.50 \pm 0.14}{m}$ Tiefe schon die nächste Schichtgrenze. Leider passen die berechneten Geschwindigkeiten nicht zu den seismischen Geschwindigkeiten von Basalt. Die Seismische Geschwindigkeit von Basalt sind $\SI{4000}{m/s}$ und unsere höchste gemessene Geschwindigkeit ist $\SI{1818.18 \pm 40.23}{m/s}$.\\
+Die Schichtgrenze in $\SI{0.95 \pm 0.20}{m}$  Tiefe deutet darauf hin, dass hier der Basaltgang anfängt. Allerdings haben wir in $\SI{2.50 \pm 0.14}{m}$ Tiefe schon die nächste Schichtgrenze. Die berechneten Geschwindigkeiten passen nicht zu den seismischen Geschwindigkeiten von Basalt. Die seismische Geschwindigkeit von Basalt ist $\SI{4000}{m/s}$ und unsere höchste gemessene Geschwindigkeit ist $\SI{1818.18 \pm 40.23}{m/s}$.
 Die Refraktionsseismik eignet sich wie vermutet wahrscheinlich einfach nicht zum bestimmen der Tiefe des Basaltgangs. 
 
 
@@ -68,11 +53,9 @@ Die Refraktionsseismik eignet sich wie vermutet wahrscheinlich einfach nicht zum
 
 Das Laufzeitdiagramm (siehe Anhang) mit eingetragenem Hin- und Rückschuss dieses Profils ist achsensymmetrisch um $x=20$\,m. Daraus lässt sich schließen, dass keine geneigten Schichtgrenzen vorliegen.
 Die Messung wurde durchgeführt, um einen Vergleich zum Profil S21-S22 zu haben.
-Wie bereits für das Profil Profil S21-S22 wurden die in Tabelle \ref{tab:S31-S32} eingetragenen Werte berechnet. Als Fehler ist die Differenz des Toleranzwertes und des Optimalwertes eingetragen.\\
-
+Wie bereits für das Profil S21-S22 wurden die in Tabelle \ref{tab:S31-S32} eingetragenen Werte berechnet. Als Fehler ist die Differenz des Toleranzwertes und des Optimalwertes eingetragen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{table}[!ht]
 \centering
 \caption{Werte der Profilmessung S31-S32}
@@ -89,26 +72,21 @@ $\vartheta_2$ in rad & 0.382 & 0.471 & 0.089 \\
 $\vartheta_{12}$ in rad & 0.052 & 0.106 & 0.054 \\
 $d_1$ in m & 0.49 & 1.05 & 0.56 \\
 $d_2$ in m & 3.08 & 3.93 & 0.85 \\
-
 \bottomrule
 \end{tabular}
 \end{table}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
-
-Die Fehler sind teilweise leider sehr hoch, was aber daran liegt, dass das Laufzeitdiagramm sehr viel Spielraum für die Lage der Geraden lies. 
-Wir können hier aber zwei Schichtgrenzen bestimmen, die bei Berücksichtigung der Fehler, in der gleichen Tiefe liegen, wie die Schichtgrenzen des Profils S21-S22. Es handelt sich also vermutlich um die gleichen gemessenen Schichten.
+Die Fehler sind teilweise sehr hoch, was aber daran liegt, dass das Laufzeitdiagramm sehr viel Spielraum für die Lage der Geraden ließ. 
+Wir können hier aber zwei Schichtgrenzen bestimmen, die bei Berücksichtigung der Fehler in der gleichen Tiefe liegen wie die Schichtgrenzen des Profils S21-S22. Es handelt sich also vermutlich um die gleichen gemessenen Schichten.
 
 \section{Vergleich Profil S21-S22 und Profil S31-S32}
 
-Aus der Magnetik und Geoelektrik wissen wir, dass unter dem Profil S31-S32 kein Basaltgang ist. Daher können wir nun mit großer Sicherheit sagen, dass die berechneten Schichtengrenzen nicht die Obergrenze des Basalts ist. Somit eignet sich die Refraktionsseismik eindeutig nicht zur Bestimmung der Lage und Tiefe des Basaltgangs. Vergleicht man das Diagramm der Messung über und neben dem Basaltgang, stellt man fest, dass es im Laufzeitdiagramm des Profils S21-S22 einige kleine Ausreißer der Werte nach oben und unten gibt. Die Messwerte des Profils S31-S32 liegen im Laufzeitdiagramm relativ schön auf einer Kurve. Wir gehen davon aus, das die Ausreißer durch den Basaltgang verursacht werden. Somit ist der Basaltgang indirekt in den Messwerten sichtbar.
+Aus der Magnetik und Geoelektrik wissen wir, dass unter dem Profil S31-S32 kein Basaltgang sind. Daher können wir nun mit großer Sicherheit sagen, dass die berechneten Schichtengrenzen nicht die Obergrenze des Basalts ist. Somit eignet sich die Refraktionsseismik eindeutig nicht zur Bestimmung der Lage und Tiefe des Basaltgangs. Vergleicht man das Diagramm der Messung über und neben dem Basaltgang, stellt man fest, dass es im Laufzeitdiagramm des Profils S21-S22 einige kleine Ausreißer der Werte nach oben und unten gibt. Die Messwerte des Profils S31-S32 liegen im Laufzeitdiagramm relativ schön auf einer Kurve. Wir gehen davon aus, das die Ausreißer durch den Basaltgang verursacht werden. Somit ist der Basaltgang wahrscheinlich indirekt in den Messwerten sichtbar.
 
 \section{Profil S11-S12}
 
-Das Laufzeitdiagramm der Messung am Profil S11-S12 mit S.I.S.Sy befindet sich in Abbildung \ref{fig:plotsissy}. Sowohl beim Hin- als auch beim Rückschuss sind zwei gerade Abschnitte zu erkennen. Beim Rückschuss weichen die gemessenen Werte im Bereich der Profilkoordinate 50\,m bis 95\,m relativ stark von der Geradenform ab. Dies könnte an der oberflächlich in diesem Bereich stark ausgeprägten Topographie liegen. Beim Hinschuss ist dies jedoch nicht so deutlich im Laufzeitdiagramm zu sehen. Zunächst wurden für die Auswertung die Schichtdicke für Hin-und Rückschuss mit der Annahme nicht geneigter Schichtgrenzen berechnet. Da diese Werte 1,3\,m Differenz aufwiesen, wurde eine geneigte Schicht über dem homogenen Halbraum angenommen.
+Das Laufzeitdiagramm der Messung am Profil S11-S12 mit S.I.S.Sy befindet sich in Abbildung \ref{fig:plotsissy}. Sowohl beim Hin- als auch beim Rückschuss sind zwei gerade Abschnitte zu erkennen. Beim Rückschuss weichen die gemessenen Werte im Bereich der Profilkoordinate 50\,m bis 95\,m relativ stark von der Geradenform ab. Dies könnte an der oberflächlich in diesem Bereich stark ausgeprägten Topographie liegen. Beim Hinschuss ist dies jedoch nicht so deutlich im Laufzeitdiagramm zu sehen.
 
 \begin{figure}[!ht]
  \centering
@@ -116,6 +94,8 @@ Das Laufzeitdiagramm der Messung am Profil S11-S12 mit S.I.S.Sy befindet sich in
  \caption{Laufzeit und gefittete Geraden der Messung mit S.I.S.Sy auf Profil S11-S12}
  \label{fig:plotsissy}
 \end{figure}
+
+Zunächst wurden für die Auswertung die Schichtdicke für Hin-und Rückschuss mit der Annahme nicht geneigter Schichtgrenzen berechnet. Da diese Werte 1,3\,m Differenz aufwiesen, wurde eine geneigte Schicht über dem homogenen Halbraum angenommen.
 
 Die Berechnung der in Tabelle \ref{tab:werte} aufgeführten Werte wurde wie in Kapitel \ref{sec:geneigteSchicht} beschrieben durchgeführt. Da die Intercept-Zeit des Hinschusses größer als die des Rückschusses ist, beziehen sich die Werte mit Index $+$ auf den Hinschuss und die mit Index $-$ auf den Rückschuss. Als Toleranzwerte werden wieder diejenigen Werte bezeichnet, die mit einer anderen Wahl der Geraden berechnet wurden und dennoch im optischen Toleranzbereich liegen. Die Differenz dieses Werts und des Werts der per Augenmaß am bestem passenden Geraden ergibt dann den Fehler der jeweiligen Größe. Da beim Hin- und Rückschuss nicht genau dieselbe Geschwindigkeit der direkten Welle bestimmt wurde, wird der Mittelwert $v_1$ dieser beiden Geschwindigkeiten für die weiteren Berechnungen verwendet. Vergleicht man die Werte für $d_-$ und $d_+-s\sin(\alpha)$, weichen sie 0,08\,m voneinander ab. Sie stimmen nicht genau überein, weil die Geschwindigkeit $v_1$ der direkten Welle aus den Werten von Hin- und Rückschuss gemittelt wurde. Die Richtigkeit Rechnung kann dadurch aber bestätigt werden.
 
@@ -145,12 +125,11 @@ $s$&m&139&-&-\\
 \end{tabular}
 \end{table}
 
+
+
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=\textwidth]{fig/}
 %  \caption{}
 %  \label{fig:}
 % \end{figure}
-
-
-
