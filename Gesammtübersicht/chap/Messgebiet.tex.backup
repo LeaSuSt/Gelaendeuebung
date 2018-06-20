@@ -36,3 +36,17 @@ Dieser Basaltgang geht unterirdisch weiter und läuft schräg durch das Messgebi
  \caption[Messgebiete]{Messgebiete auf denen die Geländeübung durchgeführt wurde. Unser Messgebiet Riedheim ist unten links (A59/1) eingezeichnet.}
  \label{abb:Messgebiete}
 \end{figure}
+
+In Abbildung \ref{abb:Geolog} ist eine Geologische Karte unseres Messgebiets zu sehen. In der Mitte ist in schwarz der Basaltgang oberhalb des Steinbruchs zu sehen, denn dort wurde er sicher nachgewiesen.
+Unterhalb des Steinbruchs ist die Lage des Basaltgangs durch zwei gestrichelte Linien angegeben, da hier nicht eindeutig nachgewiesen wurde ob es sich um Basalt handelt. Der Untergrund unter dem Messgebiet 1 besteht nach dieser Karte aus älterem Juranagelfluh. Dies wurde der Legende der Karte entnommen. Das Messgebiet 2 liegt teilweise über älterem Juranagelfluh und oberer Süßwassermolasse.
+
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.9\textwidth]{fig/Geolog.pdf}
+ \caption[Geologische Karte]{Geologische Karte des Messgebiets Riedheim}
+ \label{abb:Geolog}
+\end{figure}
+
+

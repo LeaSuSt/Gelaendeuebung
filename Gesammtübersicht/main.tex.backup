@@ -36,7 +36,7 @@
 \newcommand{\emailadressen}{lea.stockmeier@web.de, tabea.friedrich@t-online.de}
 % optionale Angabe von Emailadresse(n) für den Kontakt mit dem Betreuer
 
-\newcommand{\versuch}{Gesamtübersicht} % Name des Versuchs
+\newcommand{\versuch}{Toller Name Versuch} % Name des Versuchs
 \newcommand{\versuchsnr}{80}               % bitte die korrekte Nummer dem 
                                            % Arbeitsplatz am Versuchstag 
                                            % entnehmen
@@ -90,7 +90,7 @@
 % english or ngerman (new german für neue deutsche Rechtschreibung statt german)
 \SelectLanguage{ngerman}
 
-\title{Geophysikalische Geländeübungen \\ SS 2018 \\ Gesamtübersicht}
+\title{Geophysikalische Geländeübungen \\ SS 2018 \\ Gesammtübersicht}
 \subtitle{Messgebiet A59/1 (Riedheim)}
 \author{\\ Svenja Müller \\ mueller-svenja@gmx.net
 \\ \\und\\ \\
