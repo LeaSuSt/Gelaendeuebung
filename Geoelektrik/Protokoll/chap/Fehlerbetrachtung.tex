@@ -1,7 +1,8 @@
 %Fehlerbetrachtung Geoelektrik
-Unsere Messwerte können durch viele Fehler bei der Durchführung der Messung und Auswertung beinflusst werden. Dabei überwiegen die systematischen Fehler. So wird z.B von ebenen Schichten ausgegangen. Dies ist mit hoher wahrscheinlichkeit nicht gegeben. 
-Die Messung wird auch durch viele Umwelteinflüsse beeinflusst. Dazu zählen künstliche Ströme an der Erdoberfläche oder Bäume die durch Wasserspeicher in ihren Würzeln die elektrische Leitfähigkeit lokal erhöhen. Entlang des Profils an dem die Wennerkartierung und Tomagraphie durchgeführt wurde stehen sehr viele Bäume. Diese Messungen wurden also wahrscheinlich stark von diesen lokalen Wasserspeichern beeinflusst. In unseren Messwerten sind aber keine Anomalien zu erkennen, die darauf zurück zu führen wären.\\
-Eine weitere Fehlerquelle ist das Stecken der Elektroden. Beim Stecken der Elektroden hat man sich an einem Massband orientiert. Dieses war aber über teilweise ungemähtes Gras gelegt, was sicher einen Fehler von durchschnittlich  $\SI{\pm 0,2}{m}$ ausmacht. Daher kann der Fehler auf die Skala des Messbands vernachlässigt werden.  
+Unsere Messwerte können durch viele Fehler bei der Durchführung der Messung und Auswertung beeinflusst werden. Dabei überwiegen die systematischen Fehler. So wird z.B. von ebenen Schichten ausgegangen. Dies ist jedoch mit hoher Wahrscheinlichkeit nicht gegeben. 
+Die Messung wird auch durch viele Umwelteinflüsse beeinflusst. Dazu zählen künstliche Ströme an der Erdoberfläche oder Bäume, die durch Wasserspeicher in ihren Wurzeln die elektrische Leitfähigkeit lokal erhöhen. Entlang des Profils, an dem die Wenner-Kartierung und Tomographie durchgeführt wurden, stehen sehr viele Bäume. Diese Messungen wurden also wahrscheinlich stark von diesen lokalen Wasserspeichern beeinflusst. In unseren Messwerten sind aber keine Anomalien zu erkennen, die darauf zurückzuführen wären.
+
+Eine weitere Fehlerquelle ist das Stecken der Elektroden. Beim Stecken der Elektroden orientierte man sich an einem Maßband. Dieses war aber über teilweise nicht gemähtes Gras gelegt, was sicher einen Fehler von durchschnittlich  $\SI{\pm 0,2}{m}$ ausmacht. Daher kann der Fehler auf die Skala des Maßbands vernachlässigt werden.  
 Mit diesem Fehler und Gaußscher Fehlerfortpflanzung 
 \begin{equation}
 \sigma_y = \sqrt{\sum_i \left( \frac{\partial y}{\partial x_i}\cdot \sigma_{x_i}\right)^2}
@@ -12,17 +13,14 @@ $$F = \frac{2 \pi}{\frac{1}{r_{\mathrm{AM}}} - \frac{1}{r_{\mathrm{MB}}} + \frac
 wobei $ r_\mathrm{AM} = r_\mathrm{NB} = \SI{5 \pm 0.2}{m}$  und $ r_{\mathrm{AN}} =  r_{\mathrm{MB}} = \SI{10 \pm 0.4}{m}$ ist.
 
 Der Geometriefaktor ist $f= 31,4 \pm 2 $. 
-Wir beechnen nur auf den größten Wert des spezifischen Widerstands einen Fehler, da dieser auch der größte Fehler ist. 
+Wir berechnen nur auf den größten Wert des spezifischen Widerstands einen Fehler, da dieser auch der größte Fehler ist. 
 
-Die Berechnugn wurde mit Python durchgeführt, der spezifische Wiederstand
+Die Berechnung wurde mit Python durchgeführt. Der spezifische Widerstand
 \begin{equation}
-\rho = \frac{V}{I} \, F. 
+\rho = \frac{V}{I} \, F
 \end{equation}
-
-
 ist $\rho= \SI{33,9 \pm 2,14}{\Omega m}$.
 
-Dieser Fehler ist relativ gering. Wir vermuten dass Fehler die z.B. durch die Annahme gerade, unendlich ausgedente Schichten im Untergrund gemacht werden wesentlich größer sind. Weshalb man diesen Fehler vernachlässigen kann.
+Dieser Fehler ist relativ gering. Wir vermuten, dass Fehler, die z.B. durch die Annahme gerader, unendlich ausgedehnter Schichten im Untergrund gemacht werden, wesentlich größer sind. Deshalb kann dieser Fehler vernachlässigt werden.
 
-Für die Sondierng waren die Abstände der Elektroden sehr groß gewählt, so das hier der Fehler durch das Massband vernachlässigt werden kann. Insgesammt finden wir es sehr schwer auf die Sondireung einen sinnvollen Fehler anzugeben, da wir nicht einemal mit sicherheit sagen können wie viele Schichten im Untergrund sind. Wir nehmen an, dass die Fehler durch die Annahme, dass im Untergrund gerade, unendlich ausgedente Schichten sind, so viel größer sind als alle Fehler, die sonst entstanden, dass es nicht viel Sinn macht, hier wirklich einen genauen Fehler auf unsere Werte anzugeben.
-
+Für die Sondierung waren die Abstände der Elektroden sehr groß gewählt, sodass hier der Fehler durch das Maßband vernachlässigt werden kann. Insgesamt finden wir es sehr schwer, auf die Sondierung einen sinnvollen Fehler anzugeben, da wir nicht einmal mit Sicherheit sagen können, wie viele Schichten im Untergrund sind. Wir nehmen an, dass die Fehler durch die Annahme, dass im Untergrund gerade, unendlich ausgedehnte Schichten sind, so viel größer sind als alle Fehler, die sonst entstanden, dass es nicht viel Sinn macht, hier wirklich einen genauen Fehler auf unsere Werte anzugeben.

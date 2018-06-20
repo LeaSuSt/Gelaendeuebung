@@ -36,7 +36,7 @@
 \newcommand{\emailadressen}{lea.stockmeier@web.de, tabea.friedrich@t-online.de}
 % optionale Angabe von Emailadresse(n) für den Kontakt mit dem Betreuer
 
-\newcommand{\versuch}{Toller Name Versuch} % Name des Versuchs
+\newcommand{\versuch}{Geoelektrik} % Name des Versuchs
 \newcommand{\versuchsnr}{80}               % bitte die korrekte Nummer dem 
                                            % Arbeitsplatz am Versuchstag 
                                            % entnehmen
@@ -90,12 +90,12 @@
 % english or ngerman (new german für neue deutsche Rechtschreibung statt german)
 \SelectLanguage{ngerman}
 
-\title{Geophysikalische Geländeübungen \\ SS 2018 \\ Name Versuch}
+\title{Geophysikalische Geländeübungen \\ SS 2018 \\ Geoelektrik}
 \subtitle{Messgebiet A59/1 (Riedheim)}
 \author{\\ Svenja Müller \\ mueller-svenja@gmx.net
 \\ \\und\\ \\
 Lea Stockmeier \\ lea.stockmeier@web.de \\ \\ \\
-Betreuer: Vorname1 Nachname1 und Vorname2 Nachname2}
+Betreuer: Eva Schroth und Fabian Kühn}
 \date{\vfill\vfill\vfill \today}
 
 
@@ -120,14 +120,29 @@ Betreuer: Vorname1 Nachname1 und Vorname2 Nachname2}
     % Contents
     \MainMatter
     
-    \emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
+%     \emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
                                         %        in toc]{name of the chapter}
-    \pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
+%     \pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
                                         %        added]{name of the chapter}
     
+    \chapter{Einleitung}
+    \input{./chap/einleitung.tex}
+    
+    \chapter{Theoretische Grundlagen}
+    \input{./chap/Grundlagen.tex}
+    
+    \chapter{Versuchsbeschreibung}
+    \input{./chap/Versuchsbeschreibung.tex}
+    
     \chapter{Auswertung}
-%     \input{./chap/chapter1.tex} %\cleardoublepage
+    \input{./chap/Auswertung.tex} %\cleardoublepage
 
+    \chapter{Fehlerbetrachtung}
+    \input{./chap/Fehlerbetrachtung.tex} %\cleardoublepage
+    
+    \chapter{Zusammenfassung}
+    \input{./chap/Zusammenfassung.tex} %\cleardoublepage
+    
     % appendix for more or less interesting calculations
     \Appendix
     \chapter*{\appendixname} \addcontentsline{toc}{chapter}{\appendixname}
