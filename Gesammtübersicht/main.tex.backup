@@ -19,7 +19,6 @@
 \usepackage[onehalfspacing]{setspace}
 
 
-
 %% ---------------------------------------------
 %% |    Informationen über dieses Protokoll    |
 %% ---------------------------------------------
@@ -37,7 +36,7 @@
 \newcommand{\emailadressen}{lea.stockmeier@web.de, tabea.friedrich@t-online.de}
 % optionale Angabe von Emailadresse(n) für den Kontakt mit dem Betreuer
 
-\newcommand{\versuch}{Seismik} % Name des Versuchs
+\newcommand{\versuch}{Toller Name Versuch} % Name des Versuchs
 \newcommand{\versuchsnr}{80}               % bitte die korrekte Nummer dem 
                                            % Arbeitsplatz am Versuchstag 
                                            % entnehmen
@@ -91,12 +90,12 @@
 % english or ngerman (new german für neue deutsche Rechtschreibung statt german)
 \SelectLanguage{ngerman}
 
-\title{Geophysikalische Geländeübungen \\ SS 2018 \\ Seismik}
+\title{Geophysikalische Geländeübungen \\ SS 2018 \\ Gesammtübersicht}
 \subtitle{Messgebiet A59/1 (Riedheim)}
 \author{\\ Svenja Müller \\ mueller-svenja@gmx.net
 \\ \\und\\ \\
 Lea Stockmeier \\ lea.stockmeier@web.de \\ \\ \\
-Betreuer: Val\'{e}rie Krampe und Tilman Steinweg}
+Betreuer: Vorname1 Nachname1 und Vorname2 Nachname2}
 \date{\vfill\vfill\vfill \today}
 
 
@@ -121,28 +120,13 @@ Betreuer: Val\'{e}rie Krampe und Tilman Steinweg}
     % Contents
     \MainMatter
     
-%     \emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
+    \emptychapter[1]{Messprotokoll 1}{} % usage: \emptychapter[page displayed 
                                         %        in toc]{name of the chapter}
-%     \pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
+    \pseudochapter[3]{Messprotokoll 2}  % usage: \pseudochapter[number of pages 
                                         %        added]{name of the chapter}
     
-    \chapter{Einleitung}
-    \input{./chap/einleitung.tex}
-    
-    \chapter{Theoretische Grundlagen}
-    \input{./chap/theorie.tex} %\cleardoublepage
-    
-    \chapter{Versuchsdurchführung}
-    \input{./chap/beschreibung.tex}
-    
-    \chapter{Auswertung}
-    \input{./chap/auswertung.tex}
-    
-    \chapter{Fehlerbetrachtung}
-    \input{./chap/fehlerbetrachtung.tex}
-    
-    \chapter{Zusammenfassung}
-    \input{./chap/Zusammenfassung.tex}
+    \chapter{Messstandort}
+    \input{./chap/Messgebiet.tex} %\cleardoublepage
 
     % appendix for more or less interesting calculations
     \Appendix
