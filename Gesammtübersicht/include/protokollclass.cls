@@ -436,7 +436,7 @@
     \renewcommand\thetable{\Alph{section}.\arabic{table}}
     \renewcommand\theequation{\Alph{section}.\arabic{equation}}
     \numberwithin{equation}{section}
-    \lhead[\thepage]{Appendix}
+    \lhead[\thepage]{\appendixname}
     \ifthenelse{\boolean{chapWiseNumb}}
     {
         \StrMid{\appendixname}{1}{3}[\appendixnameshort]

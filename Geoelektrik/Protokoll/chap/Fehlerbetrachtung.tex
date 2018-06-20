@@ -11,15 +11,18 @@ kann nun ein Fehler auf den Geometriefaktor berechnet werden. Der Geometriefakto
 $$F = \frac{2 \pi}{\frac{1}{r_{\mathrm{AM}}} - \frac{1}{r_{\mathrm{MB}}} + \frac{1}{r_{\mathrm{NB}}} - \frac{1}{r_{\mathrm{AN}}}}\,,$$
 wobei $ r_\mathrm{AM} = r_\mathrm{NB} = \SI{5 \pm 0.2}{m}$  und $ r_{\mathrm{AN}} =  r_{\mathrm{MB}} = \SI{10 \pm 0.4}{m}$ ist.
 
-Der Geometriefaktor ist $f= 31,4 \pm 2 $. Daraus wird nun ein Fehler auf den spezifischen Widerstand  
+Der Geometriefaktor ist $f= 31,4 \pm 2 $. 
+Wir beechnen nur auf den größten Wert des spezifischen Widerstands einen Fehler, da dieser auch der größte Fehler ist. 
+
+Die Berechnugn wurde mit Python durchgeführt, der spezifische Wiederstand
 \begin{equation}
-\rho = \frac{V}{I} \, F.
-\end{equation} \label{eq:roh}
-bestimmt.
-Die Berechnugn wurde mit Python durchgeführt, der spezifische Wiederstand ist $\rho= \SI{33,9 \pm 2,14}{\Omega m}$.
+\rho = \frac{V}{I} \, F. 
+\end{equation}
+
+
+ist $\rho= \SI{33,9 \pm 2,14}{\Omega m}$.
+
 Dieser Fehler ist relativ gering. Wir vermuten dass Fehler die z.B. durch die Annahme gerade, unendlich ausgedente Schichten im Untergrund gemacht werden wesentlich größer sind. Weshalb man diesen Fehler vernachlässigen kann.
-
-
 
 Für die Sondierng waren die Abstände der Elektroden sehr groß gewählt, so das hier der Fehler durch das Massband vernachlässigt werden kann. Insgesammt finden wir es sehr schwer auf die Sondireung einen sinnvollen Fehler anzugeben, da wir nicht einemal mit sicherheit sagen können wie viele Schichten im Untergrund sind. Wir nehmen an, dass die Fehler durch die Annahme, dass im Untergrund gerade, unendlich ausgedente Schichten sind, so viel größer sind als alle Fehler, die sonst entstanden, dass es nicht viel Sinn macht, hier wirklich einen genauen Fehler auf unsere Werte anzugeben.
 
