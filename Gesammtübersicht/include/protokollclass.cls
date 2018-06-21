@@ -409,8 +409,7 @@
     \pagestyle{fancy}
     \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ %
                                              \thechapter.\ ##1}{}}
-    \lhead[\thepage]{\leftmark}\chead[]{}\rhead[Praktikumsprotokoll zum %
-                                                Versuch \versuch]{\thepage}
+    \lhead[\thepage]{\leftmark}\chead[]{}\rhead[\versuch \;zur geophysikalischen Geländeübung 2018]{\thepage}
     \lfoot{}\cfoot{}\rfoot{}
     \ifthenelse{\boolean{chapWiseNumb}}
     {
