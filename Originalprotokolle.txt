@@ -1,0 +1,35 @@
+"Label des Protokolls (unten rechts auf Originalprotokoll hingeschrieben)" - "Dateiname von Dropbox".png
+
+Seismik:
+MP_S1 - Messprotokoll
+
+Geoelektrik:
+MP_E1 - Wenner1
+MP_E2 - Wenner2
+MP_E3 - Tomographie
+MP_E4 - Schlumberger1
+MP_E5 - Schlumberger2
+
+Magnetik:
+MP_M1 - Karte1
+MP_M2 - Kalibrierung
+MP_M3 - Basismessung
+MP_M4 - VergleichMagnetometer
+MP_M5 - Mitschrieb2
+MP_M6 - M21_M2_PM_Seite1   (Seite 2 ist die Rückseite, hat nicht eine Extrabeschriftung)
+MP_M7 - M22_M23_PM_Seite1
+MP_M8 - M24_M25_PM_Seite1
+MP_M9 - M26_M27_PM_Seite1
+MP_M10 - M28_M29_PM_Seite1
+MP_M11 - M21_M2_Flux_Seite1
+MP_M12 - M24_M25_Flux_Seite1
+MP_M13 - EinflussHuette
+
+Gravimetrie:
+MP_G1 - Versuchsbeschreibung1
+MP_G2 - Messprotokoll1-156g
+MP_G3 - Messprotokoll2-156g
+MP_G4 - Messprotokoll1-686g
+MP_G5 - Messprotokoll2-686g
+MP_G6 - Tachymetrie1
+MP_G7 - Tachymetrie2
